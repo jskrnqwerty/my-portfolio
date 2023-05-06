@@ -1,9 +1,19 @@
+// @use "./abstracts";
+@use "./abstracts/colors" as c;
+@use "./abstracts/sizes" as s;
+@use "./components/about-me";
+@use "./components/contact-me";
+@use "./components/current-projects";
+@use "./components/footer";
+@use "./components/header";
+@use "./components/intro";
+@use "./components/projects";
+@use "./components/skills";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Sen', sans-serif;
 }
 
-h1 {
-  color: yellow;
-}

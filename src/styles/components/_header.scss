@@ -1,0 +1,34 @@
+@use "../abstracts/colors" as clr;
+@use "../abstracts/sizes" as sz;
+
+.header {
+  width: sz.$website-width;
+  margin: 0 auto;
+  padding: 1.5em 0 3rem;
+  
+  &_menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: calc(2% + 1em);
+    
+    &_item {
+      
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: sz.$menu-item;
+        letter-spacing: 0.2rem;
+        color: clr.$text;
+        padding-bottom: 1.5em;
+        transition: all ease 50ms;
+        cursor: pointer;
+      }
+
+      a:hover {
+        border-bottom: 0.3rem solid clr.$accent;
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+$max-width-px: 1400px;
+// $width: clamp(10px, 100%, 1400px);
+$website-width: min($max-width-px, 60vw + 11em);
+$menu-item: 1.3rem;
+$block-gap: 5em;
