@@ -10,25 +10,42 @@ import "./styles/styles.css";
 function App() {
   return (
     <>
-      <div className="header">
-        <Header />
+      <div
+        id="home"
+        className="wrapper"
+      >
+        <div id="header">
+          <Header />
+        </div>
+        <div id="intro">
+          <Intro />
+        </div>
       </div>
-      <div className="intro">
-        <Intro />
-      </div>
-      <div className="about-me">
+      <div
+        id="about-me"
+        className="wrapper"
+      >
         <AboutMe />
       </div>
-      <div className="skills">
+      <div
+        id="skills"
+        className="wrapper"
+      >
         <Skills />
       </div>
-      <div className="projects">
+      <div
+        id="projects"
+        className="wrapper"
+      >
         <Projects />
       </div>
-      <div className="contact-me">
+      <div
+        id="contact-me"
+        className="wrapper"
+      >
         <ContactMe />
       </div>
-      <div className="footer">
+      <div id="footer">
         <Footer />
       </div>
     </>

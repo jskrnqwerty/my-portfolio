@@ -1,0 +1,10 @@
+@use "../abstracts/colors" as clr;
+@use "../abstracts/sizes" as sz;
+
+#intro {
+  width: sz.$website-width;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+
+}

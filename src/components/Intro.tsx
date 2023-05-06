@@ -1,8 +1,13 @@
 const Intro = () => {
   return (
     <>
-      <h1>Intro</h1>
-      <p>intro content</p>
+      <h1>
+        Jaskaran Singh Kainth
+        <br />
+        <span>Front-end</span>
+        <br />
+        <span>Web Developer</span>
+      </h1>
     </>
   );
 };

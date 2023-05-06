@@ -1,6 +1,6 @@
 // @use "./abstracts";
-@use "./abstracts/colors" as c;
-@use "./abstracts/sizes" as s;
+@use "./abstracts/colors" as clr;
+@use "./abstracts/sizes" as sz;
 @use "./components/about-me";
 @use "./components/contact-me";
 @use "./components/current-projects";
@@ -17,3 +17,13 @@
   font-family: 'Sen', sans-serif;
 }
 
+.wrapper {
+  width: sz.$website-width;
+  margin: 0 auto;
+  margin-bottom: sz.$block-gap;
+}
+
+#home {
+  height: 100vh;
+
+}
