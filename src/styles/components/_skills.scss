@@ -1,0 +1,16 @@
+@use "../abstracts/colors" as clr;
+@use "../abstracts/sizes" as sz;
+
+
+#skills {
+  
+  .social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+ 
+  svg {
+    stroke: black;
+    height: 9rem;
+  }
+}

@@ -1,7 +1,9 @@
 const Projects = () => {
   return (
     <>
-      <h1>Projects</h1>
+      <h2>
+        <span className="underline">Projects</span>
+      </h2>
     </>
   );
 };

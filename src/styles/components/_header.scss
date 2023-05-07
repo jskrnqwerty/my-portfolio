@@ -24,6 +24,8 @@
 
     &_item:hover {
       border-bottom: 0.3rem solid clr.$accent;
+      // border-bottom: sz.$border-bottom;
+      @extend %border-bottom;
     }
   }
 }

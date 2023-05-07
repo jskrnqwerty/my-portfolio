@@ -1,5 +1,13 @@
 $text: black;
 
-$bg: white;
+$bg: rgb(245, 245, 245);
 
 $accent: orange;
+
+%border-bottom {
+  border-bottom: 0.3rem solid $accent;
+}
+
+%transition {
+  transition: all ease 200ms;
+}

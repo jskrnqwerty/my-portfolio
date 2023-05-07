@@ -10,11 +10,47 @@
 @use "./components/projects";
 @use "./components/skills";
 
+
+@mixin heading-styles ($font-size: 1rem) {
+  text-transform: uppercase;
+  font-size: $font-size;
+}
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Sen', sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: clr.$bg;
+}
+
+h1 {
+  @include heading-styles(3rem);
+
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+h2 {
+  padding-bottom: 3rem;
+  @include heading-styles(2.5rem)
+}
+
+span.underline {
+  @extend %border-bottom;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.8rem;
 }
 
 .wrapper {
@@ -25,5 +61,6 @@
 
 #home {
   height: 100vh;
-
+  position: relative;
 }
+

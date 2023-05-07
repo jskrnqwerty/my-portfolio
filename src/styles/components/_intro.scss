@@ -1,10 +1,46 @@
 @use "../abstracts/colors" as clr;
 @use "../abstracts/sizes" as sz;
 
+%intro-font-styling {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
 #intro {
-  width: sz.$website-width;
-  min-height: 90vh;
+  // width: sz.$website-width;
+  min-height: 80vh;
   display: flex;
   align-items: center;
+  // justify-content: center;
+  gap: 1px;
+  text-transform: uppercase;
+  letter-spacing: -0.1rem;
+  
+  .intro-text h1 span{
+    @extend %border-bottom;
+  }
+  
+  .intro-text p {
+    @extend %intro-font-styling;
+    margin-top: 1rem;
+  }
+  
+  .down-arrow {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  svg {
+    width: 3rem;
+  }
+
+  .down-arrow:hover {
+    fill: clr.$accent;
+    @extend %transition;
+  }
 
 }
