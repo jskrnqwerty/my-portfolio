@@ -14,6 +14,15 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
   }
+
+  // @media screen and (max-widht: 800px) {
+  //   .skills-container {
+  //     // display: grid;
+  //     grid-template-columns: repeat(3, 1fr);
+  //     // gap: 1rem;
+  //   }
+    
+  // }
   
   .skill-wrapper {
     text-align: center;
@@ -24,10 +33,12 @@
     font-size: 1rem;
     font-weight: 700;
     cursor: default;
+    line-height: 1.5rem;
   }
 
   svg {
-    height: 5rem;
+    // height:5em;
+    height: calc(3vw + 2em);
   }  
 
   .react:hover, .typescript:hover, .javascript:hover, .sass:hover,
@@ -35,8 +46,11 @@
   .npm:hover, .vite:hover, .create-react-app:hover, .api:hover,
   .mui:hover, .bootstrap:hover, .figma:hover, .photoshop:hover,
   .git:hover, .github:hover, .github-pages:hover, .netlify:hover,
-  .squarespace:hover, .bigcommerce:hover, .python:hover {
-    .fill-accent {
+  .squarespace:hover, .bigcommerce:hover, .python:hover, .responsive-design:hover,
+  .accessibility:hover, .agile-scrum:hover, .seo:hover, .markdown:hover,
+  .dom:hover, .css-flexbox:hover, .css-grid:hover, .pattern:hover {
+
+    .fill-accent{
       @extend %transition;
       fill: clr.$accent;
     }
@@ -49,6 +63,10 @@
     .stroke-accent {
       @extend %transition;
       stroke: clr.$accent;
+    }
+    .fill-accent-soft-skill{
+      @extend %transition;
+      fill: clr.$accent-soft-skill;
     }
   }
 }

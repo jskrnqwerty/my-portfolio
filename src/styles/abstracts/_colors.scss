@@ -1,10 +1,11 @@
-$text: black;
+$text: #000000;
 $light-text: rgb(160, 160, 160);
 
 $bg: rgb(245, 245, 245);
 // $bg: lightblue;
 
-$accent: orange;
+$accent: #ffa500;
+$accent-soft-skill: #add8e6;
 
 %border-bottom {
   border-bottom: 0.3rem solid $accent;
