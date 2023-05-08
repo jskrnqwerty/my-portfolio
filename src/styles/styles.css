@@ -105,6 +105,16 @@ span.underline, #intro .intro-text h1 span, #header .menu_item:hover {
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
 }
+@media screen and (max-width: 800px) {
+  #skills .skills-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 400px) {
+  #skills .skills-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 #skills .skill-wrapper {
   text-align: center;
 }
@@ -195,7 +205,7 @@ p {
 }
 
 .wrapper {
-  width: min(1200px, 60vw + 11em);
+  width: min(1200px, 60vw + 8em);
   margin: 0 auto;
   margin-bottom: 10em;
 }

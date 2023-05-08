@@ -88,6 +88,20 @@ const Skills = () => {
       ),
     },
     {
+      name: "Git • GitHub",
+      icon: (
+        <GitIcon
+          fillColor={accentColor}
+          strokeColor={accentColor}
+          bgColor={bgColor}
+        />
+      ),
+    },
+    // {
+    //   name: "GitHub",
+    //   icon: <GitHubIcon fillColor={accentColor} />,
+    // },
+    {
       name: "React Router",
       icon: <ReactRouterIcon fillColor={accentColor} />,
     },
@@ -125,47 +139,33 @@ const Skills = () => {
       name: "Photoshop",
       icon: <PhotoshopIcon fillColor={accentColor} />,
     },
-    {
-      name: "Git",
-      icon: (
-        <GitIcon
-          fillColor={accentColor}
-          strokeColor={accentColor}
-          bgColor={bgColor}
-        />
-      ),
-    },
-    {
-      name: "GitHub",
-      icon: <GitHubIcon fillColor={accentColor} />,
-    },
     { name: "GitHub Pages", icon: <GitHubPagesIcon fillColor={accentColor} /> },
     { name: "Netlify", icon: <NetlifyIcon fillColor={accentColor} /> },
     { name: "Squarespace", icon: <SquarespaceIcon fillColor={accentColor} /> },
     { name: "BigCommerce", icon: <BigCommerceIcon fillColor={accentColor} /> },
     { name: "Python", icon: <PythonIcon fillColor={accentColor} /> },
+    { name: "Agile • Scrum", icon: <AgileScrumIcon fillColor={accentColor} /> },
+    { name: "SEO", icon: <SeoIcon fillColor={accentColor} /> },
+    { name: "Markdown", icon: <MarkdownIcon fillColor={accentColor} /> },
     {
       name: "Responsive Design",
       icon: <ResponsiveDesignIcon fillColor={accentColor} />,
     },
-    {
-      name: "Accessibility",
-      icon: <AccesibilityIcon strokeColor={accentColor} />,
-    },
-    { name: "Agile • Scrum", icon: <AgileScrumIcon fillColor={accentColor} /> },
-    { name: "SEO", icon: <SeoIcon fillColor={accentColor} /> },
-    { name: "Markdown", icon: <MarkdownIcon fillColor={accentColor} /> },
     { name: "DOM", icon: <DomIcon fillColor={accentColor} /> },
     { name: "CSS Flexbox", icon: <CSSFlexBoxIcon strokeColor={accentColor} /> },
     { name: "CSS Grid", icon: <CSSGridIcon fillColor={accentColor} /> },
     {
-      name: "Pattern recognition",
-      icon: <PatternIcon fillColor={accentColor} />,
+      name: "Accessibility",
+      icon: <AccesibilityIcon strokeColor={accentColor} />,
     },
-    {
-      name: "Critical Thinking",
-      icon: <ThinkingIcon strokeColor={accentColor} />,
-    },
+    // {
+    //   name: "Pattern recognition",
+    //   icon: <PatternIcon fillColor={accentColor} />,
+    // },
+    // {
+    //   name: "Critical Thinking",
+    //   icon: <ThinkingIcon strokeColor={accentColor} />,
+    // },
   ];
   return (
     <>

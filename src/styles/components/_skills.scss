@@ -12,17 +12,19 @@
   .skills-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
+    gap: 1rem;  
   }
 
-  // @media screen and (max-widht: 800px) {
-  //   .skills-container {
-  //     // display: grid;
-  //     grid-template-columns: repeat(3, 1fr);
-  //     // gap: 1rem;
-  //   }
-    
-  // }
+  @media screen and (max-width: 800px) {
+    .skills-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .skills-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
   
   .skill-wrapper {
     text-align: center;
