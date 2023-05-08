@@ -2,15 +2,53 @@
 @use "../abstracts/sizes" as sz;
 
 
+@mixin icon-color ($stroke: none, $fill: none) {
+  stroke: $stroke;
+  fill: $fill;
+}
+
 #skills {
   
-  .social-icons {
+  .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
   }
- 
+  
+  .skill-wrapper {
+    text-align: center;
+  }
+  
+  p {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: default;
+  }
+
   svg {
-    stroke: black;
-    height: 9rem;
+    height: 5rem;
+  }  
+
+  .react:hover, .typescript:hover, .javascript:hover, .sass:hover,
+  .css:hover, .html:hover,.react-router:hover, .redux:hover,
+  .npm:hover, .vite:hover, .create-react-app:hover, .api:hover,
+  .mui:hover, .bootstrap:hover, .figma:hover, .photoshop:hover,
+  .git:hover, .github:hover, .github-pages:hover, .netlify:hover,
+  .squarespace:hover, .bigcommerce:hover, .python:hover {
+    .fill-accent {
+      @extend %transition;
+      fill: clr.$accent;
+    }
+
+    .fill-bg {
+      @extend %transition;
+      fill: clr.$bg;
+    }
+
+    .stroke-accent {
+      @extend %transition;
+      stroke: clr.$accent;
+    }
   }
 }

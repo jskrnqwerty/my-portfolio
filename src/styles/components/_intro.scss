@@ -32,15 +32,10 @@
     text-align: center;
     width: 100%;
     padding: 1rem;
-  }
-
-  svg {
-    width: 3rem;
-  }
-
-  .down-arrow:hover {
-    fill: clr.$accent;
-    @extend %transition;
+    
+    svg {
+      width: 3rem;
+    }
   }
 
 }

@@ -1,6 +1,8 @@
 $text: black;
+$light-text: rgb(160, 160, 160);
 
 $bg: rgb(245, 245, 245);
+// $bg: lightblue;
 
 $accent: orange;
 
@@ -11,3 +13,4 @@ $accent: orange;
 %transition {
   transition: all ease 200ms;
 }
+

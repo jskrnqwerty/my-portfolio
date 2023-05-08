@@ -2,24 +2,35 @@ span.underline, #intro .intro-text h1 span, #header .menu_item:hover {
   border-bottom: 0.3rem solid orange;
 }
 
-#intro .down-arrow:hover, #about-me svg:hover g, #about-me svg:hover path {
+.icon:hover g, .icon:hover path, #skills .react:hover .fill-accent, #skills .typescript:hover .fill-accent, #skills .javascript:hover .fill-accent, #skills .sass:hover .fill-accent,
+#skills .css:hover .fill-accent, #skills .html:hover .fill-accent, #skills .react-router:hover .fill-accent, #skills .redux:hover .fill-accent,
+#skills .npm:hover .fill-accent, #skills .vite:hover .fill-accent, #skills .create-react-app:hover .fill-accent, #skills .api:hover .fill-accent,
+#skills .mui:hover .fill-accent, #skills .bootstrap:hover .fill-accent, #skills .figma:hover .fill-accent, #skills .photoshop:hover .fill-accent,
+#skills .git:hover .fill-accent, #skills .github:hover .fill-accent, #skills .github-pages:hover .fill-accent, #skills .netlify:hover .fill-accent,
+#skills .squarespace:hover .fill-accent, #skills .bigcommerce:hover .fill-accent, #skills .python:hover .fill-accent, #skills .react:hover .fill-bg, #skills .typescript:hover .fill-bg, #skills .javascript:hover .fill-bg, #skills .sass:hover .fill-bg,
+#skills .css:hover .fill-bg, #skills .html:hover .fill-bg, #skills .react-router:hover .fill-bg, #skills .redux:hover .fill-bg,
+#skills .npm:hover .fill-bg, #skills .vite:hover .fill-bg, #skills .create-react-app:hover .fill-bg, #skills .api:hover .fill-bg,
+#skills .mui:hover .fill-bg, #skills .bootstrap:hover .fill-bg, #skills .figma:hover .fill-bg, #skills .photoshop:hover .fill-bg,
+#skills .git:hover .fill-bg, #skills .github:hover .fill-bg, #skills .github-pages:hover .fill-bg, #skills .netlify:hover .fill-bg,
+#skills .squarespace:hover .fill-bg, #skills .bigcommerce:hover .fill-bg, #skills .python:hover .fill-bg, #skills .react:hover .stroke-accent, #skills .typescript:hover .stroke-accent, #skills .javascript:hover .stroke-accent, #skills .sass:hover .stroke-accent,
+#skills .css:hover .stroke-accent, #skills .html:hover .stroke-accent, #skills .react-router:hover .stroke-accent, #skills .redux:hover .stroke-accent,
+#skills .npm:hover .stroke-accent, #skills .vite:hover .stroke-accent, #skills .create-react-app:hover .stroke-accent, #skills .api:hover .stroke-accent,
+#skills .mui:hover .stroke-accent, #skills .bootstrap:hover .stroke-accent, #skills .figma:hover .stroke-accent, #skills .photoshop:hover .stroke-accent,
+#skills .git:hover .stroke-accent, #skills .github:hover .stroke-accent, #skills .github-pages:hover .stroke-accent, #skills .netlify:hover .stroke-accent,
+#skills .squarespace:hover .stroke-accent, #skills .bigcommerce:hover .stroke-accent, #skills .python:hover .stroke-accent {
   transition: all ease 200ms;
 }
 
-#about-me p:first-child {
-  margin-top: 1rem;
-}
 #about-me .social-icons {
   display: flex;
   justify-content: right;
   gap: 2rem;
 }
-#about-me svg {
+#about-me svg, #about-me path {
+  cursor: pointer;
   height: 2rem;
 }
-#about-me svg:hover g, #about-me svg:hover path {
-  fill: orange;
-}
+
 #footer {
   text-align: center;
 }
@@ -72,20 +83,50 @@ span.underline, #intro .intro-text h1 span, #header .menu_item:hover {
   width: 100%;
   padding: 1rem;
 }
-#intro svg {
+#intro .down-arrow svg {
   width: 3rem;
 }
-#intro .down-arrow:hover {
-  fill: orange;
-}
 
-#skills .social-icons {
+#skills .skills-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+#skills .skill-wrapper {
+  text-align: center;
+}
+#skills p {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: default;
 }
 #skills svg {
-  stroke: black;
-  height: 9rem;
+  height: 5rem;
+}
+#skills .react:hover .fill-accent, #skills .typescript:hover .fill-accent, #skills .javascript:hover .fill-accent, #skills .sass:hover .fill-accent,
+#skills .css:hover .fill-accent, #skills .html:hover .fill-accent, #skills .react-router:hover .fill-accent, #skills .redux:hover .fill-accent,
+#skills .npm:hover .fill-accent, #skills .vite:hover .fill-accent, #skills .create-react-app:hover .fill-accent, #skills .api:hover .fill-accent,
+#skills .mui:hover .fill-accent, #skills .bootstrap:hover .fill-accent, #skills .figma:hover .fill-accent, #skills .photoshop:hover .fill-accent,
+#skills .git:hover .fill-accent, #skills .github:hover .fill-accent, #skills .github-pages:hover .fill-accent, #skills .netlify:hover .fill-accent,
+#skills .squarespace:hover .fill-accent, #skills .bigcommerce:hover .fill-accent, #skills .python:hover .fill-accent {
+  fill: orange;
+}
+#skills .react:hover .fill-bg, #skills .typescript:hover .fill-bg, #skills .javascript:hover .fill-bg, #skills .sass:hover .fill-bg,
+#skills .css:hover .fill-bg, #skills .html:hover .fill-bg, #skills .react-router:hover .fill-bg, #skills .redux:hover .fill-bg,
+#skills .npm:hover .fill-bg, #skills .vite:hover .fill-bg, #skills .create-react-app:hover .fill-bg, #skills .api:hover .fill-bg,
+#skills .mui:hover .fill-bg, #skills .bootstrap:hover .fill-bg, #skills .figma:hover .fill-bg, #skills .photoshop:hover .fill-bg,
+#skills .git:hover .fill-bg, #skills .github:hover .fill-bg, #skills .github-pages:hover .fill-bg, #skills .netlify:hover .fill-bg,
+#skills .squarespace:hover .fill-bg, #skills .bigcommerce:hover .fill-bg, #skills .python:hover .fill-bg {
+  fill: rgb(245, 245, 245);
+}
+#skills .react:hover .stroke-accent, #skills .typescript:hover .stroke-accent, #skills .javascript:hover .stroke-accent, #skills .sass:hover .stroke-accent,
+#skills .css:hover .stroke-accent, #skills .html:hover .stroke-accent, #skills .react-router:hover .stroke-accent, #skills .redux:hover .stroke-accent,
+#skills .npm:hover .stroke-accent, #skills .vite:hover .stroke-accent, #skills .create-react-app:hover .stroke-accent, #skills .api:hover .stroke-accent,
+#skills .mui:hover .stroke-accent, #skills .bootstrap:hover .stroke-accent, #skills .figma:hover .stroke-accent, #skills .photoshop:hover .stroke-accent,
+#skills .git:hover .stroke-accent, #skills .github:hover .stroke-accent, #skills .github-pages:hover .stroke-accent, #skills .netlify:hover .stroke-accent,
+#skills .squarespace:hover .stroke-accent, #skills .bigcommerce:hover .stroke-accent, #skills .python:hover .stroke-accent {
+  stroke: orange;
 }
 
 * {
@@ -94,6 +135,7 @@ span.underline, #intro .intro-text h1 span, #header .menu_item:hover {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  cursor: default;
 }
 
 body {
@@ -127,8 +169,21 @@ p {
   margin: 0 auto;
   margin-bottom: 10em;
 }
+.wrapper h2 {
+  text-align: center;
+}
 
 #home {
   height: 100vh;
   position: relative;
+}
+
+.icon:hover g, .icon:hover path {
+  fill: orange;
+}
+
+.light-text {
+  color: rgb(160, 160, 160);
+  font-weight: 100;
+  letter-spacing: 0.1rem;
 }/*# sourceMappingURL=styles.css.map */

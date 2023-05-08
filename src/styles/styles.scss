@@ -22,7 +22,9 @@
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  cursor: default;
 }
+
 
 body {
   background-color: clr.$bg;
@@ -57,6 +59,10 @@ p {
   width: sz.$website-width;
   margin: 0 auto;
   margin-bottom: sz.$block-gap;
+
+  h2 {
+    text-align: center;
+  }
 }
 
 #home {
@@ -64,3 +70,15 @@ p {
   position: relative;
 }
 
+.icon:hover {
+  g, path {
+    fill: clr.$accent;
+    @extend %transition;
+  }
+}
+
+.light-text{
+  color: clr.$light-text;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}

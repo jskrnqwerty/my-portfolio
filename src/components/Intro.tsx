@@ -10,7 +10,7 @@ const Intro = () => {
       </div>
       <a
         href="#about-me"
-        className="down-arrow"
+        className="down-arrow icon"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
