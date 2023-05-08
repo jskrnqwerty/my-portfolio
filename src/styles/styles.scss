@@ -9,6 +9,7 @@
 @use "./components/intro";
 @use "./components/projects";
 @use "./components/skills";
+@use "./components/my-socials";
 
 
 @mixin heading-styles ($font-size: 1rem) {
@@ -25,9 +26,26 @@
   cursor: default;
 }
 
-
 body {
   background-color: clr.$bg;
+}
+
+button {
+  text-transform: uppercase;
+  background-color: clr.$accent;
+  cursor: pointer;
+  padding: calc(2em - 1vw) 1em;
+  // padding: 0.5em 1em;
+  font-size: calc(sz.$font-medium - 0.2rem);
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  border: 0;
+}
+
+button:hover {
+  background-color: black;
+  color: orange;
+  @extend %transition;
 }
 
 h1 {
@@ -35,24 +53,59 @@ h1 {
 
 }
 
-.lowercase {
-  text-transform: lowercase;
-}
-
 h2 {
   padding-bottom: 3rem;
   @include heading-styles(2.5rem)
+}
+
+input, textarea {
+  border: 0px;
+  padding: 0.8rem 1rem;
+  cursor: text;
+  font-size: calc(sz.$text);
+}
+
+input:focus, textarea:focus {
+  outline: 1px solid clr.$accent;
+}
+
+p {
+  font-size: sz.$text;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.8rem;
+}
+
+input::placeholder, textarea::placeholder {
+  text-transform: uppercase;
 }
 
 span.underline {
   @extend %border-bottom;
 }
 
-p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  letter-spacing: 0.05rem;
-  line-height: 1.8rem;
+textarea {
+  resize: none;
+}
+
+#home {
+  height: 100vh;
+  position: relative;
+}
+
+.icon:hover {
+  @extend %fill-accent;
+}
+
+.light-text{
+
+  color: clr.$light-text;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 
 .wrapper {
@@ -65,20 +118,7 @@ p {
   }
 }
 
-#home {
-  height: 100vh;
-  position: relative;
-}
+@media screen and (max-width: sz.$breakpoint-1) {
 
-.icon:hover {
-  g, path {
-    fill: clr.$accent;
-    @extend %transition;
-  }
-}
 
-.light-text{
-  color: clr.$light-text;
-  font-weight: 100;
-  letter-spacing: 0.1rem;
 }

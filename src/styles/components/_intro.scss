@@ -8,22 +8,19 @@
 }
 
 #intro {
-  // width: sz.$website-width;
-  min-height: 80vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
-  // justify-content: center;
-  gap: 1px;
   text-transform: uppercase;
-  letter-spacing: -0.1rem;
   
   .intro-text h1 span{
     @extend %border-bottom;
   }
   
   .intro-text p {
+    margin-top: 1.3rem;
     @extend %intro-font-styling;
-    margin-top: 1rem;
+    line-height: 3rem;
   }
   
   .down-arrow {
@@ -37,5 +34,14 @@
       width: 3rem;
     }
   }
+
+  // .blink {
+  //   animation: cursor 1s linear infinite;
+  // }
+  // @keyframes cursor {
+  //   0% {opacity: 0;}
+  //   50% {opacity: 0.5;}
+  //   100% {opacity: 1;}
+  // }
 
 }

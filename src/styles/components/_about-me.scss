@@ -2,26 +2,26 @@
 @use "../abstracts/sizes" as sz;
 
 #about-me {
+  .pronunciation {
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+  }
+
   // p:first-child {
-    // margin-top: 1rem;
+  //   margin-top: 0rem;
   // }
-  .social-icons {
-    display: flex;
-    justify-content: right;
-    gap: 2rem;
-  }
-  a {
-  }
+  // .social-icons {
+  //   display: flex;
+  //   // justify-content: space-evenly;
+  //   justify-content: center;
+  //   gap: 3rem;
+  //   margin-top: 2em;
+  //   // max-width: 20em;
+  // }
   
-  svg, path {
-    cursor: pointer;
-    height: 2rem;
-  }
-  
-  // svg:hover {
-  //   g, path{
-  //     fill: clr.$accent;
-  //     @extend %transition;
-  //   }
+
+  // svg, path {
+  //   cursor: pointer;
+  //   height: 2.5rem;
   // }
 }

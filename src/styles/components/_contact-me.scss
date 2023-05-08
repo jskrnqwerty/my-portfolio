@@ -1,2 +1,39 @@
 @use "../abstracts/colors" as clr;
 @use "../abstracts/sizes" as sz;
+
+#contact-me {
+  .contact-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: calc(3vw + 1em);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+  }
+  
+  input, textarea {
+    min-width: 100%;
+  }
+  
+  textarea {
+    min-height: 10em;
+  }
+  
+  button {
+    min-width:100%;
+  }
+
+  
+  @media screen and (max-width: sz.$breakpoint-1) {
+    
+    .contact-container {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    
+  }
+}

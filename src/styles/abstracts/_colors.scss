@@ -1,11 +1,13 @@
-$text: #000000;
+$text: rgb(0, 0, 0);
 $light-text: rgb(160, 160, 160);
 
 $bg: rgb(245, 245, 245);
 // $bg: lightblue;
 
-$accent: #ffa500;
+$accent: rgb(255, 166, 0);
+$accent-low-opacity: rgba(255, 165, 0, 0.8);
 $accent-soft-skill: #add8e6;
+
 
 %border-bottom {
   border-bottom: 0.3rem solid $accent;
@@ -15,3 +17,31 @@ $accent-soft-skill: #add8e6;
   transition: all ease 200ms;
 }
 
+%fill-accent {
+  .fill-accent{
+    @extend %transition;
+    fill: $accent;
+  }
+}
+
+%fill-bg {
+  .fill-bg {
+    @extend %transition;
+    fill: $bg;
+  }
+}
+
+%stroke-accent {
+  .stroke-accent {
+    @extend %transition;
+    stroke: $accent;
+  }
+}
+
+%fill-accent-soft-skill {
+  .fill-accent-soft-skill
+  {
+    @extend %transition;
+    fill: $accent-soft-skill;
+  }
+}

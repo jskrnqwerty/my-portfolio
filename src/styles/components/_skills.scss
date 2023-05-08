@@ -12,17 +12,24 @@
   .skills-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;  
+    gap: 1em;  
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: sz.$breakpoint-1) {
     .skills-container {
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: sz.$breakpoint-2) {
+    .skills-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5em;
+    }
+  }
+  @media screen and (max-width: sz.$breakpoint-3) {
     .skills-container {
       grid-template-columns: repeat(1, 1fr);
+      // gap: 0.5em;
     }
   }
   
@@ -52,23 +59,9 @@
   .accessibility:hover, .agile-scrum:hover, .seo:hover, .markdown:hover,
   .dom:hover, .css-flexbox:hover, .css-grid:hover, .pattern:hover {
 
-    .fill-accent{
-      @extend %transition;
-      fill: clr.$accent;
-    }
-
-    .fill-bg {
-      @extend %transition;
-      fill: clr.$bg;
-    }
-
-    .stroke-accent {
-      @extend %transition;
-      stroke: clr.$accent;
-    }
-    .fill-accent-soft-skill{
-      @extend %transition;
-      fill: clr.$accent-soft-skill;
-    }
+    @extend %fill-accent;
+    @extend %fill-accent-soft-skill;
+    @extend %fill-bg;
+    @extend %stroke-accent;
   }
 }
