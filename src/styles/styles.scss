@@ -25,7 +25,11 @@
   padding: 0;
   cursor: default;
 }
-
+a {
+  text-decoration: none;
+  color: clr.$text;
+  cursor: pointer;
+}
 body {
   background-color: clr.$bg;
 }

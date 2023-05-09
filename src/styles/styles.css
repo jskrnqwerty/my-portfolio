@@ -2,7 +2,7 @@ span.underline, #intro .intro-text h1 span, #header .menu_item:hover {
   border-bottom: 0.3rem solid rgb(255, 166, 0);
 }
 
-button:hover, .icon:hover .fill-accent-soft-skill, .icon:hover .stroke-accent, .icon:hover .fill-bg, .icon:hover .fill-accent {
+button:hover, #footer a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover .stroke-accent, .icon:hover .fill-bg, .icon:hover .fill-accent {
   transition: all ease 200ms;
 }
 
@@ -62,7 +62,35 @@ button:hover, .icon:hover .fill-accent-soft-skill, .icon:hover .stroke-accent, .
 }
 
 #footer {
+  position: relative;
   text-align: center;
+  min-height: 10em;
+  margin-top: 15em;
+  margin-bottom: 0;
+}
+#footer a {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+#footer a:hover {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(255, 166, 0);
+}
+#footer p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+#footer svg {
+  height: 1.5rem;
 }
 
 #header {
@@ -166,6 +194,12 @@ svg, path {
   margin: 0;
   padding: 0;
   cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
 }
 
 body {

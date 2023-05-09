@@ -14,9 +14,9 @@ function App() {
         id="home"
         className="wrapper"
       >
-        <div id="header">
+        <header id="header">
           <Header />
-        </div>
+        </header>
         <div id="intro">
           <Intro />
         </div>
@@ -45,9 +45,12 @@ function App() {
       >
         <ContactMe />
       </div>
-      <div id="footer">
+      <footer
+        id="footer"
+        className="wrapper"
+      >
         <Footer />
-      </div>
+      </footer>
     </>
   );
 }

@@ -2,5 +2,39 @@
 @use "../abstracts/sizes" as sz;
 
 #footer {
-  text-align: center;  
+  position: relative;
+  text-align: center;
+  min-height: 10em;
+  margin-top: calc(sz.$block-gap + 5em);
+  margin-bottom: 0;
+
+  
+  
+  a {
+    display: block;
+    font-size: sz.$text;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+  a:hover {
+    font-size: calc(sz.$text + 0.2rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: clr.$accent;
+    @extend %transition;
+  }
+  
+  p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  svg {
+    height: 1.5rem;
+  }
 }
