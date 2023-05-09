@@ -38,7 +38,7 @@ const ContactMe = () => {
             />
             <textarea
               className="textarea"
-              placeholder="Pineapple does not belong on a pizza"
+              placeholder="Pineapple does not belong on pizza"
               required
             />
             <button

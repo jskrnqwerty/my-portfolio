@@ -2,9 +2,18 @@
 @use "../abstracts/sizes" as sz;
 
 #about-me {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
 
   .pronunciation {
     margin-top: 0.3rem;
     margin-bottom: 0;
   } 
+
+  .my-socials {
+    gap: 3em;
+    // justify-content: space-around;
+  }
 }

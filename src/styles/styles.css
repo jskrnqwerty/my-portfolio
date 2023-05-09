@@ -22,11 +22,27 @@ button:hover, #footer a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover 
   fill: #add8e6;
 }
 
+#about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #about-me .pronunciation {
   margin-top: 0.3rem;
   margin-bottom: 0;
 }
+#about-me .my-socials {
+  gap: 3em;
+}
 
+#contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact-me .my-socials {
+  gap: 3rem;
+}
 #contact-me .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -111,7 +127,6 @@ button:hover, #footer a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover 
   color: rgb(0, 0, 0);
   padding-bottom: 1.5em;
   transition: all ease 50ms;
-  cursor: pointer;
 }
 #header .menu_item:hover {
   border-bottom: 0.3rem solid rgb(255, 166, 0);
@@ -139,6 +154,9 @@ button:hover, #footer a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover 
   text-align: center;
   width: 100%;
   padding: 1rem;
+}
+#intro svg {
+  height: 3rem;
 }
 
 #skills .skills-container {
@@ -176,17 +194,6 @@ button:hover, #footer a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover 
   height: calc(3vw + 2em);
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 2em;
-}
-
-svg, path {
-  cursor: pointer;
-  height: 2.5rem;
-} 
 * {
   box-sizing: border-box;
   font-family: "Sen", sans-serif;
@@ -284,7 +291,7 @@ textarea {
   display: flex;
   justify-content: space-evenly;
   margin-top: 3em;
-  min-width: 100%;
+  max-width: 50%;
 }
 .my-socials svg, .my-socials path {
   cursor: pointer;
