@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const SassIcon = ({ fillColor }: IconType) => {
   return (
     <svg
-      className="sass"
+      className="sass icon"
       aria-label="SASS logo"
       // width="800px"
       // height="800px"

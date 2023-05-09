@@ -23,17 +23,14 @@
     line-height: 3rem;
   }
   
-  .down-arrow {
+  .scroll-down {
     position: absolute;
     bottom: 0;
     text-align: center;
     width: 100%;
     padding: 1rem;
-    
-    svg {
-      width: 3rem;
-    }
   }
+
 
   // .blink {
   //   animation: cursor 1s linear infinite;

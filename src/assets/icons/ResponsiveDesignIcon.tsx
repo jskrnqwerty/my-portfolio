@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const ResponsiveDesignIcon = ({ fillColor }: IconType) => {
   return (
     <svg
-      className="responsive-design"
+      className="responsive-design icon"
       aria-label="Responsive design icon"
       // fill="#000000"
       // width="800px"

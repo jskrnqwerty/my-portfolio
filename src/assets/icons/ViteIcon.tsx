@@ -8,7 +8,7 @@ const ViteIcon = ({ fillColor, bgColor }: IconType) => {
       viewBox="0 0 32 32"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      className="vite"
+      className="vite icon"
       aria-label="Vite logo"
     >
       {/* <title>Vite</title> */}

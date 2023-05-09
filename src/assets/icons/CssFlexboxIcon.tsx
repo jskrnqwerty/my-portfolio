@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const CSSFlexBoxIcon = ({ strokeColor }: IconType) => {
   return (
     <svg
-      className="css-flexbox"
+      className="css-flexbox icon"
       aria-label="CSS Flexbox icon"
       // width="800px"
       // height="800px"

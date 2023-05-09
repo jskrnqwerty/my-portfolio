@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const PythonIcon = ({ fillColor }: IconType) => {
   return (
     <svg
-      className="python"
+      className="python icon"
       aria-label="Python logo"
       // width="800px"
       // height="800px"

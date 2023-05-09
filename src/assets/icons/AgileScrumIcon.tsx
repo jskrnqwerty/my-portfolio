@@ -1,9 +1,9 @@
 import { IconType } from "../../types/types";
 
-const AgileScrumIcon = ({ fillColor, bgColor }: IconType) => {
+const AgileScrumIcon = ({ fillColor }: IconType) => {
   return (
     <svg
-      className="agile-scrum"
+      className="agile-scrum icon"
       aria-label="Agile Methodlogy icon"
       // fill="#000000"
       // width="800px"

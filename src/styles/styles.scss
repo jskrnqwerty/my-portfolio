@@ -43,8 +43,9 @@ button {
 }
 
 button:hover {
-  background-color: black;
-  color: orange;
+  background-color: white;
+  color: clr.$accent;
+  outline: 2px solid clr.$accent;
   @extend %transition;
 }
 
@@ -90,11 +91,15 @@ textarea {
 
 #home {
   height: 100vh;
+  height: 100svh;
   position: relative;
 }
 
 .icon:hover {
   @extend %fill-accent;
+  @extend %fill-accent-soft-skill;
+  @extend %fill-bg;
+  @extend %stroke-accent;
 }
 
 .light-text{
@@ -108,17 +113,29 @@ textarea {
   text-transform: lowercase;
 }
 
+.my-socials {
+  display: flex;
+  justify-content: space-evenly;
+  // justify-content: center;
+  // gap: 15%;
+  margin-top: 3em;
+  min-width: 100%;
+  
+  svg, path {
+    cursor: pointer;
+    height: 2.5rem;
+  }
+}
+
 .wrapper {
   width: sz.$website-width;
+  max-width: 85%;
+
   margin: 0 auto;
   margin-bottom: sz.$block-gap;
 
   h2 {
     text-align: center;
   }
-}
-
-@media screen and (max-width: sz.$breakpoint-1) {
-
 
 }

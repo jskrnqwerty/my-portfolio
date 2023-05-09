@@ -31,13 +31,13 @@ import SquarespaceIcon from "../assets/icons/SquarespaceIcon";
 import ThinkingIcon from "../assets/icons/ThinkingIcon";
 import TypescriptIcon from "../assets/icons/TypescriptIcon";
 import ViteIcon from "../assets/icons/ViteIcon";
-import { iconColors, bgColors } from "../types/types";
+import { iconColors, bgColors, skillsType } from "../types/types";
 
 const Skills = () => {
   const accentColor: iconColors = "#000";
   const bgColor: bgColors = "rgb(245, 245, 245)";
 
-  const skills = [
+  const skills: skillsType[] = [
     {
       name: "React.js",
       icon: (

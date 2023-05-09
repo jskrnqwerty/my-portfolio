@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const DomIcon = ({ fillColor }: IconType) => {
   return (
     <svg
-      className="dom"
+      className="dom icon"
       aria-label="Document Object Model icon"
       // fill="#000000"
       // width="800px"

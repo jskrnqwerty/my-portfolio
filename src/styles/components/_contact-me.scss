@@ -27,13 +27,18 @@
     min-width:100%;
   }
 
-  
+  a {
+    font-weight: 700;
+    color: clr.$text;
+    text-decoration: underline 3px clr.$accent;
+    cursor: pointer;
+  }
+
   @media screen and (max-width: sz.$breakpoint-1) {
     
     .contact-container {
       display: flex;
       flex-direction: column-reverse;
     }
-    
   }
 }

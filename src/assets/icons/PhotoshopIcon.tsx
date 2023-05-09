@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const PhotoshopIcon = ({ fillColor }: IconType) => {
   return (
     <svg
-      className="photoshop"
+      className="photoshop icon"
       aria-label="Photoshop logo"
       // fill="#000000"
       version="1.1"

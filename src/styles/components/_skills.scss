@@ -50,18 +50,18 @@
     height: calc(3vw + 2em);
   }  
 
-  .react:hover, .typescript:hover, .javascript:hover, .sass:hover,
-  .css:hover, .html:hover,.react-router:hover, .redux:hover,
-  .npm:hover, .vite:hover, .create-react-app:hover, .api:hover,
-  .mui:hover, .bootstrap:hover, .figma:hover, .photoshop:hover,
-  .git:hover, .github:hover, .github-pages:hover, .netlify:hover,
-  .squarespace:hover, .bigcommerce:hover, .python:hover, .responsive-design:hover,
-  .accessibility:hover, .agile-scrum:hover, .seo:hover, .markdown:hover,
-  .dom:hover, .css-flexbox:hover, .css-grid:hover, .pattern:hover {
+  // .react:hover, .typescript:hover, .javascript:hover, .sass:hover,
+  // .css:hover, .html:hover,.react-router:hover, .redux:hover,
+  // .npm:hover, .vite:hover, .create-react-app:hover, .api:hover,
+  // .mui:hover, .bootstrap:hover, .figma:hover, .photoshop:hover,
+  // .git:hover, .github:hover, .github-pages:hover, .netlify:hover,
+  // .squarespace:hover, .bigcommerce:hover, .python:hover, .responsive-design:hover,
+  // .accessibility:hover, .agile-scrum:hover, .seo:hover, .markdown:hover,
+  // .dom:hover, .css-flexbox:hover, .css-grid:hover, .pattern:hover {
 
-    @extend %fill-accent;
-    @extend %fill-accent-soft-skill;
-    @extend %fill-bg;
-    @extend %stroke-accent;
-  }
+  //   @extend %fill-accent;
+  //   @extend %fill-accent-soft-skill;
+  //   @extend %fill-bg;
+  //   @extend %stroke-accent;
+  // }
 }

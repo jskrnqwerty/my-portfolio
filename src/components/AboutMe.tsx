@@ -1,4 +1,8 @@
-import MySocials from "./MySocials";
+import FrontendMentorIcon from "../assets/icons/FrontendMentorIcon";
+import GitHubIcon from "../assets/icons/GitHubIcon";
+import LinkedinIcon from "../assets/icons/LinkedinIcon";
+import TwitterIcon from "../assets/icons/TwitterIcon";
+import { accentColor } from "../data/Data";
 
 const AboutMe = () => {
   return (
@@ -27,7 +31,15 @@ const AboutMe = () => {
         right company. Drop me a line and/or your favourite restaurant in
         Toronto in the contact form below or check me out at:
       </p>
-      <MySocials />
+      {/* <div className="my-socials"> */}
+      {/* <MySocials /> */}
+      <div className="my-socials">
+        <LinkedinIcon fillColor={accentColor} />
+        <GitHubIcon fillColor={accentColor} />
+        <TwitterIcon fillColor={accentColor} />
+        <FrontendMentorIcon fillColor={accentColor} />
+        {/* </div> */}
+      </div>
     </>
   );
 };

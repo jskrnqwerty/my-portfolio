@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const CSSGridIcon = ({ fillColor }: IconType) => {
   return (
     <svg
-      className="css-grid"
+      className="css-grid icon"
       aria-label="CSS Grid icon"
       // width="800px"
       // height="800px"

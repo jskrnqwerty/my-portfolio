@@ -5,7 +5,7 @@ const CreateReactAppIcon = ({ fillColor }: IconType) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 170.96 159.93"
-      className="create-react-app"
+      className="create-react-app icon"
       aria-label="Create React App logo"
     >
       {/* <defs><style>.cls-1{(fill = "#09d3ac")}</style></defs> */}

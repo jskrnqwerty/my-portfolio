@@ -14,7 +14,7 @@ const AccesibilityIcon = ({ strokeColor }: IconType) => {
       stroke-linejoin="round"
       // fill="none"
       color="#000000"
-      className="accessibility"
+      className="accessibility icon"
       aria-label="Accessibility icon"
     >
       {" "}

@@ -1,3 +1,9 @@
+import FrontendMentorIcon from "../assets/icons/FrontendMentorIcon";
+import GitHubIcon from "../assets/icons/GitHubIcon";
+import LinkedinIcon from "../assets/icons/LinkedinIcon";
+import TwitterIcon from "../assets/icons/TwitterIcon";
+import { accentColor } from "../data/Data";
+
 const ContactMe = () => {
   const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
@@ -10,7 +16,10 @@ const ContactMe = () => {
       <div className="contact-container">
         <div className="contact-form">
           <form
-            action=""
+            // action=""
+            onSubmit={() => {
+              console.log("Form sbumit");
+            }}
             // className="contact-form"
           >
             <input
@@ -33,6 +42,7 @@ const ContactMe = () => {
               required
             />
             <button
+              type="submit"
               onClick={(e) => handleClick(e)}
               aria-label="Submit contact form"
             >
@@ -52,9 +62,17 @@ const ContactMe = () => {
           <p>
             Straight shot to my inbox:
             <br />
-            <span>kainth.jaskaran@gmail.com</span>
+            <a href="mailto: kainth.jaskaran@gmail.com">
+              kainth.jaskaran@gmail.com
+            </a>
           </p>
         </div>
+      </div>
+      <div className="my-socials">
+        <LinkedinIcon fillColor={accentColor} />
+        <GitHubIcon fillColor={accentColor} />
+        <TwitterIcon fillColor={accentColor} />
+        <FrontendMentorIcon fillColor={accentColor} />
       </div>
     </>
   );

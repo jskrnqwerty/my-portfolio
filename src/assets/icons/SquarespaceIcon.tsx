@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const SquarespaceIcon = ({ fillColor }: IconType) => {
   return (
     <svg
-      className="squarespace"
+      className="squarespace icon"
       aria-label="Squarespace logo"
       // width="800px"
       // height="800px"

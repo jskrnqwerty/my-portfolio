@@ -3,11 +3,11 @@ import { IconType } from "../../types/types";
 const JavascriptIcon = ({ fillColor, bgColor }: IconType) => {
   return (
     <svg
+      className="javascript icon"
       xmlns="http://www.w3.org/2000/svg"
       aria-label="JavaScript logo"
-      role="img"
+      // role="img"
       viewBox="0 0 512 512"
-      className="javascript"
     >
       <rect
         className="fill-accent"

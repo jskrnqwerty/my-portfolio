@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const GitIcon = ({ fillColor, strokeColor, bgColor }: IconType) => {
   return (
     <svg
-      className="git"
+      className="git icon"
       aria-label="Git logo"
       // width="800px"
       // height="800px"

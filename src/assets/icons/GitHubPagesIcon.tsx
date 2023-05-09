@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const GitHubPagesIcon = ({ fillColor }: IconType) => {
   return (
     <svg
-      className="github-pages"
+      className="github-pages icon"
       aria-label="Github Pages icon"
       version="1.1"
       id="_x32_"

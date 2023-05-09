@@ -10,7 +10,7 @@ const MuiIcon = ({ fillColor }: IconType) => {
       xmlns="http://www.w3.org/2000/svg"
       // xmlns:xlink="http://www.w3.org/1999/xlink"
       preserveAspectRatio="xMidYMid"
-      className="mui"
+      className="mui icon"
       aria-label="Material UI logo"
     >
       <g>

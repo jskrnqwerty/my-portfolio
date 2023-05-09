@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const PatternIcon = ({ fillColor }: IconType) => {
   return (
     <svg
-      className="pattern"
+      className="pattern icon"
       aria-label="Pattern Recognition icon"
       // width="800px"
       // height="800px"

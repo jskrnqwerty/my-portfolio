@@ -1,5 +1,6 @@
+import { menuType } from "../types/types";
+
 const Header = () => {
-  type menuType = { name: string; path: string };
   const menu: menuType[] = [
     { name: "Home", path: "#" },
     { name: "About", path: "#about-me" },

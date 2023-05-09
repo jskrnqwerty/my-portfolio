@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const BigCommerceIcon = ({ fillColor }: IconType) => {
   return (
     <svg
-      className="bigcommerce"
+      className="bigcommerce icon"
       aria-label="Bigcommerce logo"
       // fill="#000000"
       // width="800px"

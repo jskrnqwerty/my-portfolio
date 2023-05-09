@@ -6,7 +6,7 @@ const ReactIcon = ({ fillColor, strokeColor }: IconType) => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="-11.5 -10.23174 23 20.46348"
       aria-label="React logo"
-      className="react"
+      className="react icon"
     >
       {/* <title>React.js</title> */}
       <circle

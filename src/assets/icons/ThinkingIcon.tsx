@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const ThinkingIcon = ({ strokeColor }: IconType) => {
   return (
     <svg
-      className="thinking"
+      className="thinking icon"
       aria-label="Critical Thinking icon"
       // width="800px"
       // height="800px"

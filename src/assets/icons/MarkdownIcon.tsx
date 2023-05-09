@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const MarkdownIcon = ({ fillColor }: IconType) => {
   return (
     <svg
-      className="markdown"
+      className="markdown icon"
       aria-label="Markdown logo"
       // width="800px"
       // height="800px"

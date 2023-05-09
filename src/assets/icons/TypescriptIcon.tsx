@@ -7,7 +7,7 @@ const TypescriptIcon = ({ fillColor, bgColor }: IconType) => {
       // height="800px"
       viewBox="0 2 32 28"
       xmlns="http://www.w3.org/2000/svg"
-      className="typescript"
+      className="typescript icon"
       aria-label="TypeScript logo"
     >
       {/* <title>TypeScript</title> */}

@@ -3,7 +3,7 @@ import { IconType } from "../../types/types";
 const SeoIcon = ({ fillColor }: IconType) => {
   return (
     <svg
-      className="seo"
+      className="seo icon"
       aria-label="SEO icon"
       // fill="#000000"
       // width="800px"

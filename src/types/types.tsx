@@ -7,3 +7,7 @@ export type IconType = {
   strokeColor?: iconColors;
   bgColor?: bgColors;
 };
+
+export type menuType = { name: string; path: string };
+
+export type skillsType = { name: string; icon: JSX.Element };

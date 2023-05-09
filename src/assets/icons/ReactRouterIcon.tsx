@@ -10,7 +10,7 @@ const ReactRouterIcon = ({ fillColor }: IconType) => {
       xmlns="http://www.w3.org/2000/svg"
       // xlink="http://www.w3.org/1999/xlink"
       preserveAspectRatio="xMidYMid"
-      className="react-router"
+      className="react-router icon"
       aria-label="React Router logo"
     >
       <g>
