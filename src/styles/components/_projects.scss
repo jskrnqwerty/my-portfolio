@@ -1,2 +1,35 @@
 @use "../abstracts/colors" as clr;
 @use "../abstracts/sizes" as sz;
+
+#projects {
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: sz.$main-grid-gap;
+
+    .project-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: sz.$main-grid-gap;
+    }
+    .project-details {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      justify-content: center;
+    }
+
+    img {
+      max-width: 100%;
+    }
+    svg {
+      // background-color: orangered;
+      width: 2rem;
+    }
+    path {
+      // fill: black;
+      stroke: black;
+    }
+  }
+}

@@ -11,3 +11,14 @@ export type IconType = {
 export type menuType = { name: string; path: string };
 
 export type skillsType = { name: string; icon: JSX.Element };
+
+export type projectsType = {
+  title: string;
+  imgSrc: string;
+  imgAlt: string;
+  intro: string;
+  description: string;
+  madeWith: JSX.Element[];
+  liveSiteUrl?: string;
+  githubRepoUrl?: string;
+};

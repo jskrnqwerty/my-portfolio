@@ -1,4 +1,4 @@
-import { IconType } from "../../types/types";
+import { IconType } from "../../types/Types";
 
 const SquarespaceIcon = ({ fillColor }: IconType) => {
   return (

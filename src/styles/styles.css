@@ -159,6 +159,33 @@ button:hover, #footer a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover 
   height: 3rem;
 }
 
+#projects .projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(3vw + 1em);
+}
+#projects .projects-container .project-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: calc(3vw + 1em);
+}
+#projects .projects-container .project-details {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: center;
+}
+#projects .projects-container img {
+  max-width: 100%;
+}
+#projects .projects-container svg {
+  width: 2rem;
+}
+#projects .projects-container path {
+  stroke: black;
+}
+
 #skills .skills-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -241,14 +268,21 @@ h2 {
   font-size: 2.5rem;
 }
 
-input, textarea {
+h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+input,
+textarea {
   border: 0px;
   padding: 0.8rem 1rem;
   cursor: text;
   font-size: 1.2rem;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: 1px solid rgb(255, 166, 0);
 }
 
@@ -263,7 +297,8 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   text-transform: uppercase;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   text-transform: uppercase;
 }
 
@@ -293,7 +328,8 @@ textarea {
   margin-top: 3em;
   max-width: 50%;
 }
-.my-socials svg, .my-socials path {
+.my-socials svg,
+.my-socials path {
   cursor: pointer;
   height: 2.5rem;
 }

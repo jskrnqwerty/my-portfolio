@@ -1,4 +1,4 @@
-import { menuType } from "../types/types";
+import { menuType } from "../types/Types";
 
 const Header = () => {
   const menu: menuType[] = [

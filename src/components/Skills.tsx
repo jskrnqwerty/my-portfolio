@@ -31,7 +31,7 @@ import SquarespaceIcon from "../assets/icons/SquarespaceIcon";
 import ThinkingIcon from "../assets/icons/ThinkingIcon";
 import TypescriptIcon from "../assets/icons/TypescriptIcon";
 import ViteIcon from "../assets/icons/ViteIcon";
-import { iconColors, bgColors, skillsType } from "../types/types";
+import { iconColors, bgColors, skillsType } from "../types/Types";
 
 const Skills = () => {
   const accentColor: iconColors = "#000";

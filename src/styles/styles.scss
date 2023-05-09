@@ -10,15 +10,14 @@
 @use "./components/projects";
 @use "./components/skills";
 
-
-@mixin heading-styles ($font-size: 1rem) {
+@mixin heading-styles($font-size: 1rem) {
   text-transform: uppercase;
   font-size: $font-size;
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Sen', sans-serif;
+  font-family: "Sen", sans-serif;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -55,22 +54,27 @@ button:hover {
 
 h1 {
   @include heading-styles(3rem);
-
 }
 
 h2 {
   padding-bottom: 3rem;
-  @include heading-styles(2.5rem)
+  @include heading-styles(2.5rem);
 }
 
-input, textarea {
+h3 {
+  @include heading-styles(1.5rem);
+}
+
+input,
+textarea {
   border: 0px;
   padding: 0.8rem 1rem;
   cursor: text;
   font-size: calc(sz.$text);
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: 1px solid clr.$accent;
 }
 
@@ -81,7 +85,8 @@ p {
   line-height: 1.8rem;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   text-transform: uppercase;
 }
 
@@ -106,8 +111,7 @@ textarea {
   @extend %stroke-accent;
 }
 
-.light-text{
-
+.light-text {
   color: clr.$light-text;
   font-weight: 100;
   letter-spacing: 0.1rem;
@@ -125,8 +129,9 @@ textarea {
   margin-top: 3em;
   // min-width: 100%;
   max-width: 50%;
-  
-  svg, path {
+
+  svg,
+  path {
     cursor: pointer;
     height: 2.5rem;
   }
@@ -142,5 +147,4 @@ textarea {
   h2 {
     text-align: center;
   }
-
 }
