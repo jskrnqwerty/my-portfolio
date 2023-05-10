@@ -1,36 +1,11 @@
 import { projects } from "../data/Data";
 
 const Projects = () => {
-  // const projects = {
-  //   title: "",
-  //   imgSrc: "",
-  //   imgAlt: "",
-  //   intro: "",
-  //   description: "",
-  //   madeWith: [],
-  //   liveSiteUrl: "",
-  //   githubRepoUrl: "",
-  // };
   return (
     <>
       <h2>
         <span className="underline">Projects</span>
       </h2>
-      {/* <div className="projects-container">
-        <div className="project-wrapper">
-          <img
-            src="src\assets\images\laptop-stencil-google-keep.png"
-            alt="Google Keep screenshot"
-            className="project-snapshot"
-          />
-          <div
-            className="project-details"
-            id="dfgdfg"
-          >
-            Description
-          </div>
-        </div>
-      </div> */}
       <div className="projects-container">
         {projects.map((project, index) => (
           <div

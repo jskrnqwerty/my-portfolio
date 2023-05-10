@@ -2,7 +2,6 @@ import FrontendMentorIcon from "../assets/icons/FrontendMentorIcon";
 import GitHubIcon from "../assets/icons/GitHubIcon";
 import LinkedinIcon from "../assets/icons/LinkedinIcon";
 import TwitterIcon from "../assets/icons/TwitterIcon";
-import { accentColor } from "../data/Data";
 
 const ContactMe = () => {
   const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -69,10 +68,10 @@ const ContactMe = () => {
         </div>
       </div>
       <div className="my-socials">
-        <LinkedinIcon fillColor={accentColor} />
-        <GitHubIcon fillColor={accentColor} />
-        <TwitterIcon fillColor={accentColor} />
-        <FrontendMentorIcon fillColor={accentColor} />
+        <LinkedinIcon />
+        <GitHubIcon />
+        <TwitterIcon />
+        <FrontendMentorIcon />
       </div>
     </>
   );

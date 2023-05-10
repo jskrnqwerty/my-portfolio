@@ -1,6 +1,5 @@
 import ApiIcon from "../assets/icons/ApiIcon";
 import CssIcon from "../assets/icons/CssIcon";
-import HtmlIcon from "../assets/icons/HtmlIcon";
 import MuiIcon from "../assets/icons/MuiIcon";
 import ReactIcon from "../assets/icons/ReactIcon";
 import ReactRouterIcon from "../assets/icons/ReactRouterIcon";

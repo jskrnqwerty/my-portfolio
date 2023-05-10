@@ -2,7 +2,6 @@ import FrontendMentorIcon from "../assets/icons/FrontendMentorIcon";
 import GitHubIcon from "../assets/icons/GitHubIcon";
 import LinkedinIcon from "../assets/icons/LinkedinIcon";
 import TwitterIcon from "../assets/icons/TwitterIcon";
-import { accentColor } from "../data/Data";
 
 const AboutMe = () => {
   return (
@@ -34,10 +33,10 @@ const AboutMe = () => {
       {/* <div className="my-socials"> */}
       {/* <MySocials /> */}
       <div className="my-socials">
-        <LinkedinIcon fillColor={accentColor} />
-        <GitHubIcon fillColor={accentColor} />
-        <TwitterIcon fillColor={accentColor} />
-        <FrontendMentorIcon fillColor={accentColor} />
+        <LinkedinIcon />
+        <GitHubIcon />
+        <TwitterIcon />
+        <FrontendMentorIcon />
         {/* </div> */}
       </div>
     </>

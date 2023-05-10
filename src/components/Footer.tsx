@@ -1,5 +1,4 @@
 import HandsIcon from "../assets/icons/HandsIcon";
-import { accentColor } from "../data/Data";
 
 const Footer = () => {
   return (
@@ -13,9 +12,9 @@ const Footer = () => {
       <p>
         Designed with{" "}
         <span className="hands icon">
-          <HandsIcon fillColor={accentColor} />
+          <HandsIcon />
         </span>{" "}
-        by Jaskaran
+        by Jaskaran 2023
       </p>
     </>
   );
