@@ -1,18 +1,16 @@
 @use "../abstracts/colors" as clr;
 @use "../abstracts/sizes" as sz;
 
-
-@mixin icon-color ($stroke: none, $fill: none) {
-  stroke: $stroke;
-  fill: $fill;
-}
+// @mixin icon-color ($stroke: none, $fill: none) {
+//   stroke: $stroke;
+//   fill: $fill;
+// }
 
 #skills {
-  
   .skills-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1em;  
+    gap: 1em;
   }
 
   @media screen and (max-width: sz.$breakpoint-1) {
@@ -32,11 +30,11 @@
       // gap: 0.5em;
     }
   }
-  
+
   .skill-wrapper {
     text-align: center;
   }
-  
+
   p {
     text-transform: uppercase;
     font-size: 1rem;
@@ -48,7 +46,7 @@
   svg {
     // height:5em;
     height: calc(3vw + 2em);
-  }  
+  }
 
   // .react:hover, .typescript:hover, .javascript:hover, .sass:hover,
   // .css:hover, .html:hover,.react-router:hover, .redux:hover,

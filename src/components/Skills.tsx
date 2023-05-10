@@ -31,140 +31,96 @@ import SquarespaceIcon from "../assets/icons/SquarespaceIcon";
 import ThinkingIcon from "../assets/icons/ThinkingIcon";
 import TypescriptIcon from "../assets/icons/TypescriptIcon";
 import ViteIcon from "../assets/icons/ViteIcon";
-import { iconColors, bgColors, skillsType } from "../types/Types";
+import { skillsType } from "../types/Types";
 
 const Skills = () => {
-  const accentColor: iconColors = "#000";
-  const bgColor: bgColors = "rgb(245, 245, 245)";
-
   const skills: skillsType[] = [
     {
       name: "React.js",
-      icon: (
-        <ReactIcon
-          fillColor={accentColor}
-          strokeColor={accentColor}
-        />
-      ),
+      icon: <ReactIcon />,
     },
     {
       name: "TypeScript",
-      icon: (
-        <TypescriptIcon
-          fillColor={accentColor}
-          bgColor={bgColor}
-        />
-      ),
+      icon: <TypescriptIcon />,
     },
     {
       name: "JavaScript • ES6",
-      icon: (
-        <JavascriptIcon
-          fillColor={accentColor}
-          bgColor={bgColor}
-        />
-      ),
+      icon: <JavascriptIcon />,
     },
     {
       name: "SASS • SCSS",
-      icon: <SassIcon fillColor={accentColor} />,
+      icon: <SassIcon />,
     },
     {
       name: "CSS 3",
-      icon: (
-        <CssIcon
-          fillColor={accentColor}
-          bgColor={bgColor}
-        />
-      ),
+      icon: <CssIcon />,
     },
     {
       name: "HTML 5",
-      icon: (
-        <HtmlIcon
-          fillColor={accentColor}
-          bgColor={bgColor}
-        />
-      ),
+      icon: <HtmlIcon />,
     },
     {
       name: "Git • GitHub",
-      icon: (
-        <GitIcon
-          fillColor={accentColor}
-          strokeColor={accentColor}
-          bgColor={bgColor}
-        />
-      ),
+      icon: <GitIcon />,
     },
     // {
     //   name: "GitHub",
-    //   icon: <GitHubIcon fillColor={accentColor} />,
+    //   icon: <GitHubIcon />,
     // },
     {
       name: "React Router",
-      icon: <ReactRouterIcon fillColor={accentColor} />,
+      icon: <ReactRouterIcon />,
     },
     {
       name: "Redux Toolkit",
-      icon: <ReduxIcon fillColor={accentColor} />,
+      icon: <ReduxIcon />,
     },
     {
       name: "NPM",
-      icon: (
-        <NpmIcon
-          fillColor={accentColor}
-          bgColor={bgColor}
-        />
-      ),
+      icon: <NpmIcon />,
     },
     {
       name: "Vite",
-      icon: (
-        <ViteIcon
-          fillColor={accentColor}
-          bgColor={bgColor}
-        />
-      ),
+      icon: <ViteIcon />,
     },
     {
       name: "Create React App",
-      icon: <CreateReactAppIcon fillColor={accentColor} />,
+      icon: <CreateReactAppIcon />,
     },
-    { name: "API", icon: <ApiIcon fillColor={accentColor} /> },
-    { name: "Material UI", icon: <MuiIcon fillColor={accentColor} /> },
-    { name: "Bootstrap", icon: <BootstrapIcon fillColor={accentColor} /> },
-    { name: "Figma", icon: <FigmaIcon fillColor={accentColor} /> },
+    { name: "API", icon: <ApiIcon /> },
+    { name: "Material UI", icon: <MuiIcon /> },
+    { name: "Bootstrap", icon: <BootstrapIcon /> },
+    { name: "Figma", icon: <FigmaIcon /> },
     {
       name: "Photoshop",
-      icon: <PhotoshopIcon fillColor={accentColor} />,
+      icon: <PhotoshopIcon />,
     },
-    { name: "GitHub Pages", icon: <GitHubPagesIcon fillColor={accentColor} /> },
-    { name: "Netlify", icon: <NetlifyIcon fillColor={accentColor} /> },
-    { name: "Squarespace", icon: <SquarespaceIcon fillColor={accentColor} /> },
-    { name: "BigCommerce", icon: <BigCommerceIcon fillColor={accentColor} /> },
-    { name: "Python", icon: <PythonIcon fillColor={accentColor} /> },
-    { name: "Agile • Scrum", icon: <AgileScrumIcon fillColor={accentColor} /> },
-    { name: "SEO", icon: <SeoIcon fillColor={accentColor} /> },
-    { name: "Markdown", icon: <MarkdownIcon fillColor={accentColor} /> },
+    { name: "GitHub Pages", icon: <GitHubPagesIcon /> },
+    { name: "Netlify", icon: <NetlifyIcon /> },
+    { name: "Squarespace", icon: <SquarespaceIcon /> },
+    { name: "BigCommerce", icon: <BigCommerceIcon /> },
+    { name: "Python", icon: <PythonIcon /> },
+    { name: "Agile • Scrum", icon: <AgileScrumIcon /> },
+    { name: "SEO", icon: <SeoIcon /> },
+    { name: "Markdown", icon: <MarkdownIcon /> },
     {
       name: "Responsive Design",
-      icon: <ResponsiveDesignIcon fillColor={accentColor} />,
+      icon: <ResponsiveDesignIcon />,
     },
-    { name: "DOM", icon: <DomIcon fillColor={accentColor} /> },
-    { name: "CSS Flexbox", icon: <CSSFlexBoxIcon strokeColor={accentColor} /> },
-    { name: "CSS Grid", icon: <CSSGridIcon fillColor={accentColor} /> },
+    { name: "DOM", icon: <DomIcon /> },
+    { name: "CSS Flexbox", icon: <CSSFlexBoxIcon /> },
+    { name: "CSS Grid", icon: <CSSGridIcon /> },
     {
       name: "Accessibility",
-      icon: <AccesibilityIcon strokeColor={accentColor} />,
+      icon: <AccesibilityIcon />,
     },
     // {
     //   name: "Pattern recognition",
-    //   icon: <PatternIcon fillColor={accentColor} />,
+    //   icon: <PatternIcon />,
     // },
     // {
     //   name: "Critical Thinking",
-    //   icon: <ThinkingIcon strokeColor={accentColor} />,
+    //   icon: <ThinkingIcon />,
     // },
   ];
   return (

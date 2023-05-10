@@ -1,6 +1,6 @@
-import { IconType } from "../../types/Types";
+import { iconHoverColor } from "../../data/Data";
 
-const MarkdownIcon = ({ fillColor }: IconType) => {
+const MarkdownIcon = () => {
   return (
     <svg
       className="markdown icon"
@@ -11,9 +11,10 @@ const MarkdownIcon = ({ fillColor }: IconType) => {
       // fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <title>Markdown</title>
       <path
         className="fill-accent"
-        fill={fillColor}
+        fill={iconHoverColor}
         // fill="#000000"
         fill-rule="evenodd"
         clip-rule="evenodd"

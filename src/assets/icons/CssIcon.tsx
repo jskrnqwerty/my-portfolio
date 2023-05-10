@@ -1,6 +1,6 @@
-import { IconType } from "../../types/Types";
+import { iconHoverColor, bgColor } from "../../data/Data";
 
-const CssIcon = ({ fillColor, bgColor }: IconType) => {
+const CssIcon = () => {
   return (
     <svg
       // width="800px"
@@ -11,17 +11,18 @@ const CssIcon = ({ fillColor, bgColor }: IconType) => {
       className="css icon"
       aria-label="CSS 3 logo"
     >
+      <title>CSS 3</title>
       <path
         className="fill-accent"
         d="M6 28L4 3H28L26 28L16 31L6 28Z"
         // fill="#1172B8"
-        fill={fillColor}
+        fill={iconHoverColor}
       />
       <path
         className="fill-accent"
         d="M26 5H16V29.5L24 27L26 5Z"
         // fill="#33AADD"
-        fill={fillColor}
+        fill={iconHoverColor}
       />
       <path
         className="fill-bg"

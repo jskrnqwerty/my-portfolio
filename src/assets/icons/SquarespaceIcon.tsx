@@ -1,6 +1,6 @@
-import { IconType } from "../../types/Types";
+import { iconHoverColor } from "../../data/Data";
 
-const SquarespaceIcon = ({ fillColor }: IconType) => {
+const SquarespaceIcon = () => {
   return (
     <svg
       className="squarespace icon"
@@ -12,9 +12,7 @@ const SquarespaceIcon = ({ fillColor }: IconType) => {
       xmlns="http://www.w3.org/2000/svg"
       // xmlns:xlink="http://www.w3.org/1999/xlink"
     >
-      <title>squarespace [#132]</title>
-      <desc>Created with Sketch.</desc>
-      <defs></defs>
+      <title>Squarespace - Website Builder</title>
       <g
         id="Page-1"
         stroke="none"
@@ -24,7 +22,7 @@ const SquarespaceIcon = ({ fillColor }: IconType) => {
       >
         <g
           className="fill-accent"
-          fill={fillColor}
+          fill={iconHoverColor}
           id="Dribbble-Light-Preview"
           transform="translate(-140.000000, -7601.000000)"
           // fill="#000000"

@@ -162,13 +162,21 @@ button:hover, #footer a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover 
 #projects .projects-container {
   display: flex;
   flex-direction: column;
-  gap: calc(3vw + 1em);
+  row-gap: calc(3vw + 1em);
+  -moz-column-gap: 9em;
+       column-gap: 9em;
 }
 #projects .projects-container .project-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
   gap: calc(3vw + 1em);
+  margin-bottom: 5em;
+}
+@media screen and (max-width: 825px) {
+  #projects .projects-container .project-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 #projects .projects-container .project-details {
   display: flex;
@@ -180,10 +188,26 @@ button:hover, #footer a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover 
   max-width: 100%;
 }
 #projects .projects-container svg {
-  width: 2rem;
+  width: 3.5rem;
 }
-#projects .projects-container path {
-  stroke: black;
+#projects .projects-container .made-with {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-top: 0.5em;
+}
+#projects .projects-container .project-links {
+  display: flex;
+}
+#projects .projects-container .project-live-site {
+  margin-right: 1em;
+}
+#projects .projects-container .project-live-site,
+#projects .projects-container .project-gh-repo {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 1.5em;
+  border-bottom: 2px solid rgb(255, 166, 0);
 }
 
 #skills .skills-container {

@@ -1,6 +1,6 @@
-import { IconType } from "../../types/Types";
+import { iconHoverColor } from "../../data/Data";
 
-const PythonIcon = ({ fillColor }: IconType) => {
+const PythonIcon = () => {
   return (
     <svg
       className="python icon"
@@ -11,9 +11,10 @@ const PythonIcon = ({ fillColor }: IconType) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <title>Python 3</title>
       <path
         className="fill-accent"
-        fill={fillColor}
+        fill={iconHoverColor}
         fill-rule="evenodd"
         clip-rule="evenodd"
         // fill="url(#paint0_linear_87_8204)"
@@ -21,7 +22,7 @@ const PythonIcon = ({ fillColor }: IconType) => {
       />
       <path
         className="fill-accent"
-        fill={fillColor}
+        fill={iconHoverColor}
         fill-rule="evenodd"
         clip-rule="evenodd"
         d="M18.9834 30C21.1805 30 22.9616 28.2755 22.9616 26.1482V23.4815L16.0763 23.4815L16.0763 22.7408L26.0217 22.7408C28.2188 22.7408 29.9998 21.0162 29.9998 18.8889V13.1111C29.9998 10.9838 28.2188 9.25928 26.0217 9.25928L23.7266 9.25928V12.5185C23.7266 14.6459 21.9455 16.3704 19.7485 16.3704L12.4042 16.3704C10.5451 16.3704 9.03809 17.8296 9.03809 19.6296L9.03809 26.1482C9.03809 28.2755 10.8192 30 13.0162 30H18.9834ZM19.9015 25.2593C19.1409 25.2593 18.5244 25.8562 18.5244 26.5926C18.5244 27.329 19.1409 27.9259 19.9015 27.9259C20.662 27.9259 21.2785 27.329 21.2785 26.5926C21.2785 25.8562 20.662 25.2593 19.9015 25.2593Z"

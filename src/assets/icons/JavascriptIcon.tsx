@@ -1,6 +1,6 @@
-import { IconType } from "../../types/Types";
+import { iconHoverColor, bgColor } from "../../data/Data";
 
-const JavascriptIcon = ({ fillColor, bgColor }: IconType) => {
+const JavascriptIcon = () => {
   return (
     <svg
       className="javascript icon"
@@ -9,13 +9,14 @@ const JavascriptIcon = ({ fillColor, bgColor }: IconType) => {
       // role="img"
       viewBox="0 0 512 512"
     >
+      <title>JavaScript • ES6</title>
       <rect
         className="fill-accent"
         width="512"
         height="512"
         rx="15%"
         // fill="#f7df1e"
-        fill={fillColor}
+        fill={iconHoverColor}
       />
       <path
         className="fill-bg"

@@ -1,6 +1,6 @@
-import { IconType } from "../../types/Types";
+import { iconHoverColor } from "../../data/Data";
 
-const PhotoshopIcon = ({ fillColor }: IconType) => {
+const PhotoshopIcon = () => {
   return (
     <svg
       className="photoshop icon"
@@ -15,10 +15,11 @@ const PhotoshopIcon = ({ fillColor }: IconType) => {
       // enable-background="new 0 0 512 512"
       // xml:space="preserve"
     >
+      <title>Adobe Photoshop</title>
       <g>
         <path
           className="fill-accent"
-          fill={fillColor}
+          fill={iconHoverColor}
           display="inline"
           d="M426.333,0.5H85.667C38.825,0.5,0.5,38.825,0.5,85.667v340.667c0,46.842,38.325,85.167,85.167,85.167
    h340.667c46.842,0,85.167-38.325,85.167-85.167V85.667C511.5,38.825,473.175,0.5,426.333,0.5z M245.329,260.524

@@ -34,8 +34,9 @@ const Projects = () => {
       <div className="projects-container">
         {projects.map((project, index) => (
           <div
-            className="project-wrapper"
             key={index}
+            // className={`"project-"${index}`}
+            className="project-wrapper"
           >
             <img
               className="project-snapshot"
@@ -51,20 +52,24 @@ const Projects = () => {
                   <span key={index}>{madeWithIcon}</span>
                 ))}
               </div>
-              <a
-                href={project.liveSiteUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Site{" | "}
-              </a>
-              <a
-                href={project.githubRepoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github Repo
-              </a>
+              <div className="project-links">
+                <a
+                  href={project.liveSiteUrl}
+                  className="project-live-site"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Site
+                </a>
+                <a
+                  href={project.githubRepoUrl}
+                  className="project-gh-repo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github Repo
+                </a>
+              </div>
             </div>
           </div>
         ))}

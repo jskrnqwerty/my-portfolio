@@ -1,6 +1,6 @@
-import { IconType } from "../../types/Types";
+import { iconHoverColor } from "../../data/Data";
 
-const ReactIcon = ({ fillColor, strokeColor }: IconType) => {
+const ReactIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,21 +8,21 @@ const ReactIcon = ({ fillColor, strokeColor }: IconType) => {
       aria-label="React logo"
       className="react icon"
     >
-      {/* <title>React.js</title> */}
+      <title>React.js</title>
       <circle
         className="fill-accent stroke-accent"
         cx="0"
         cy="0"
         r="2.05"
-        fill={fillColor}
-        stroke={strokeColor}
+        fill={iconHoverColor}
+        stroke={iconHoverColor}
       />
       <g
         className="stroke-accent"
         fill="none"
         stroke-width="1"
         // stroke="#61dafb"
-        stroke={strokeColor}
+        stroke={iconHoverColor}
       >
         <ellipse
           rx="11"

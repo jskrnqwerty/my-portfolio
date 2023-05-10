@@ -1,6 +1,6 @@
-import { IconType } from "../../types/Types";
+import { iconHoverColor, bgColor } from "../../data/Data";
 
-const HtmlIcon = ({ fillColor, bgColor }: IconType) => {
+const HtmlIcon = () => {
   return (
     <svg
       // width="800px"
@@ -11,17 +11,18 @@ const HtmlIcon = ({ fillColor, bgColor }: IconType) => {
       className="html icon"
       aria-label="HTML 5 logo"
     >
+      <title>HTML 5</title>
       <path
         className="fill-accent"
         d="M6 28L4 3H28L26 28L16 31L6 28Z"
         // fill="#E44D26"
-        fill={fillColor}
+        fill={iconHoverColor}
       />
       <path
         className="fill-accent"
         d="M26 5H16V29.5L24 27L26 5Z"
         // fill="#F16529"
-        fill={fillColor}
+        fill={iconHoverColor}
       />
       <path
         className="fill-bg"

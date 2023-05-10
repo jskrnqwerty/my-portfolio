@@ -1,6 +1,6 @@
-import { IconType } from "../../types/Types";
+import { iconHoverColor } from "../../data/Data";
 
-const GitHubPagesIcon = ({ fillColor }: IconType) => {
+const GitHubPagesIcon = () => {
   return (
     <svg
       className="github-pages icon"
@@ -12,10 +12,11 @@ const GitHubPagesIcon = ({ fillColor }: IconType) => {
       viewBox="0 0 512 512"
       // xml:space="preserve"
     >
+      <title>GitHub Pages - Web Hosting</title>
       <g>
         <path
           className="fill-accent"
-          fill={fillColor}
+          fill={iconHoverColor}
           d="M464,0H48C21.492,0,0,21.492,0,48v416c0,26.508,21.492,48,48,48h416c26.508,0,48-21.492,48-48V48
         C512,21.492,490.508,0,464,0z M444.664,35c10.492,0,19,8.508,19,19s-8.508,19-19,19c-10.492,0-19-8.508-19-19
         S434.172,35,444.664,35z M374.164,35c10.492,0,19,8.508,19,19s-8.508,19-19,19c-10.492,0-19-8.508-19-19S363.672,35,374.164,35z
@@ -24,7 +25,7 @@ const GitHubPagesIcon = ({ fillColor }: IconType) => {
         />
         <rect
           className="fill-accent"
-          fill={fillColor}
+          fill={iconHoverColor}
           x="96"
           y="192"
           width="152"
@@ -32,7 +33,7 @@ const GitHubPagesIcon = ({ fillColor }: IconType) => {
         />
         <rect
           className="fill-accent"
-          fill={fillColor}
+          fill={iconHoverColor}
           x="96"
           y="352"
           width="328"
@@ -40,7 +41,7 @@ const GitHubPagesIcon = ({ fillColor }: IconType) => {
         />
         <rect
           className="fill-accent"
-          fill={fillColor}
+          fill={iconHoverColor}
           x="304"
           y="192"
           width="120"
@@ -48,7 +49,7 @@ const GitHubPagesIcon = ({ fillColor }: IconType) => {
         />
         <polygon
           className="fill-accent"
-          fill={fillColor}
+          fill={iconHoverColor}
           points="229.042,304 248,304 248,272 96,272 96,304 213.042,304 	"
         />
       </g>

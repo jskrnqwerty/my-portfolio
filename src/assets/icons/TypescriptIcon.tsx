@@ -1,6 +1,6 @@
-import { IconType } from "../../types/Types";
+import { iconHoverColor, bgColor } from "../../data/Data";
 
-const TypescriptIcon = ({ fillColor, bgColor }: IconType) => {
+const TypescriptIcon = () => {
   return (
     <svg
       // width="800px"
@@ -10,7 +10,7 @@ const TypescriptIcon = ({ fillColor, bgColor }: IconType) => {
       className="typescript icon"
       aria-label="TypeScript logo"
     >
-      {/* <title>TypeScript</title> */}
+      <title>TypeScript</title>
       <rect
         className="fill-accent"
         x="2"
@@ -19,7 +19,7 @@ const TypescriptIcon = ({ fillColor, bgColor }: IconType) => {
         height="28"
         rx="1.312"
         // fill="#3178c6"
-        fill={fillColor}
+        fill={iconHoverColor}
       />
       <path
         className="fill-bg"

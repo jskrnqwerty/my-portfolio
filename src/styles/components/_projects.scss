@@ -5,31 +5,61 @@
   .projects-container {
     display: flex;
     flex-direction: column;
-    gap: sz.$main-grid-gap;
+    row-gap: sz.$main-grid-gap;
+    column-gap: 9em;
 
     .project-wrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      align-items: center;
+      // align-items: center;
       gap: sz.$main-grid-gap;
+      margin-bottom: 5em;
+    }
+
+    @media screen and (max-width: sz.$breakpoint-1) {
+      .project-wrapper {
+        // background-color: pink;
+        display: flex;
+        flex-direction: column;
+      }
     }
     .project-details {
       display: flex;
       flex-direction: column;
       min-height: 100%;
       justify-content: center;
+      // gap: 1.5em;
     }
 
     img {
       max-width: 100%;
     }
+
     svg {
-      // background-color: orangered;
-      width: 2rem;
+      width: 3.5rem;
     }
-    path {
-      // fill: black;
-      stroke: black;
+
+    .made-with {
+      display: flex;
+      gap: 1em;
+      align-items: center;
+      margin-top: 0.5em;
+    }
+
+    .project-links {
+      display: flex;
+    }
+
+    .project-live-site {
+      margin-right: 1em;
+    }
+
+    .project-live-site,
+    .project-gh-repo {
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-top: 1.5em;
+      border-bottom: 2px solid clr.$accent;
     }
   }
 }

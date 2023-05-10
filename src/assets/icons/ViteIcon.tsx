@@ -1,6 +1,6 @@
-import { IconType } from "../../types/Types";
+import { iconHoverColor, bgColor } from "../../data/Data";
 
-const ViteIcon = ({ fillColor, bgColor }: IconType) => {
+const ViteIcon = () => {
   return (
     <svg
       // width="800px"
@@ -11,12 +11,12 @@ const ViteIcon = ({ fillColor, bgColor }: IconType) => {
       className="vite icon"
       aria-label="Vite logo"
     >
-      {/* <title>Vite</title> */}
+      <title>Vite - Local Development Server</title>
       <path
         className="fill-accent"
         d="M29.8836 6.146L16.7418 29.6457c-.2714.4851-.9684.488-1.2439.0052L2.0956 6.1482c-.3-.5262.1498-1.1635.746-1.057l13.156 2.3516a.7144.7144 0 00.2537-.0004l12.8808-2.3478c.5942-.1083 1.0463.5241.7515 1.0513z"
         // fill="url(#paint0_linear)"
-        fill={fillColor}
+        fill={iconHoverColor}
       />
       <path
         className="fill-bg"

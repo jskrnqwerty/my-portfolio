@@ -1,6 +1,6 @@
-import { IconType } from "../../types/Types";
+import { iconHoverColor } from "../../data/Data";
 
-const AccesibilityIcon = ({ strokeColor }: IconType) => {
+const AccesibilityIcon = () => {
   return (
     <svg
       // width="800px"
@@ -17,20 +17,17 @@ const AccesibilityIcon = ({ strokeColor }: IconType) => {
       className="accessibility icon"
       aria-label="Accessibility icon"
     >
-      {" "}
-      {/* <title id="accessibilityHumanIconTitle">
-        Accessibility features
-      </title>{" "} */}
+      <title>Accessibility</title>
       <circle
         className="stroke-accent"
-        stroke={strokeColor}
+        stroke={iconHoverColor}
         cx="12"
         cy="3"
         r="1"
       />
       <path
         className="stroke-accent"
-        stroke={strokeColor}
+        stroke={iconHoverColor}
         d="M16 21L12 13M12 13V7M12 13L8 21M12 7L18 9M12 7L6 9"
       />{" "}
     </svg>

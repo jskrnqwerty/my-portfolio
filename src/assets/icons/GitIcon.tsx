@@ -1,6 +1,6 @@
-import { IconType } from "../../types/Types";
+import { iconHoverColor, bgColor } from "../../data/Data";
 
-const GitIcon = ({ fillColor, strokeColor, bgColor }: IconType) => {
+const GitIcon = () => {
   return (
     <svg
       className="git icon"
@@ -12,7 +12,7 @@ const GitIcon = ({ fillColor, strokeColor, bgColor }: IconType) => {
       xmlns="http://www.w3.org/2000/svg"
       // xmlns:xlink="http://www.w3.org/1999/xlink"
     >
-      <title>team-collaboration/version-control/git</title>
+      <title>Git - Version Control</title>
       <desc>Created with Sketch.</desc>
       <defs></defs>
       <g
@@ -24,8 +24,8 @@ const GitIcon = ({ fillColor, strokeColor, bgColor }: IconType) => {
       >
         <g
           className="fill-accent stroke-accent"
-          fill={fillColor}
-          stroke={strokeColor}
+          fill={iconHoverColor}
+          stroke={iconHoverColor}
           id="container"
           transform="translate(2.000000, 2.000000)"
           // fill="#000000"
@@ -70,14 +70,14 @@ const GitIcon = ({ fillColor, strokeColor, bgColor }: IconType) => {
           ></path>
           <path
             className="fill-accent"
-            fill={fillColor}
+            fill={iconHoverColor}
             d="M7.602625,12.267 C6.017125,12.267 5.2230625,13.2001875 5.2230625,15.0639375 C5.2230625,16.8016875 6.017125,17.6705625 7.602625,17.6705625 C9.1395625,17.6705625 9.9060625,16.78725 9.9060625,15.025875 C9.9060625,14.2935 9.7301875,13.6648125 9.3784375,13.1371875 C8.94925,12.558375 8.358625,12.267 7.602625,12.267 Z"
             id="Shape"
             // fill="#000000"
           ></path>
           <path
             className="fill-accent"
-            fill={fillColor}
+            fill={iconHoverColor}
             d="M4.8083125,29.64975 C4.8083125,30.9556875 5.91475,31.6119375 8.1315625,31.6119375 C10.0714375,31.6119375 11.0400625,30.93075 11.0400625,29.571 C11.0400625,28.2860625 9.9835,27.6429375 7.8664375,27.6429375 C5.8268125,27.6455625 4.807,28.3123125 4.8083125,29.64975 Z"
             id="Shape"
             // fill="#000000"

@@ -1,6 +1,6 @@
-import { IconType } from "../../types/Types";
+import { iconHoverColor } from "../../data/Data";
 
-const FrontendMentorIcon = ({ fillColor }: IconType) => {
+const FrontendMentorIcon = () => {
   return (
     <a
       href="https://www.frontendmentor.io/profile/jskrnqwerty"
@@ -14,7 +14,7 @@ const FrontendMentorIcon = ({ fillColor }: IconType) => {
         className="frontend-mentor icon"
         aria-label="Frontend Mentor logo"
       >
-        <title>frontendmentor.io/jskrnqwerty</title>
+        <title>FrontendMentor.io/jskrnqwerty</title>
         <g
           fill-rule="nonzero"
           fill="none"
@@ -29,21 +29,21 @@ const FrontendMentorIcon = ({ fillColor }: IconType) => {
             d="M24.762 12.167a.756.756 0 0 1-.307-.065l-6.438-2.883a.751.751 0 0 1 0-1.37l6.438-2.873a.752.752 0 0 1 .991.379.752.752 0 0 1-.38.991l-4.905 2.189 4.906 2.197a.75.75 0 0 1-.305 1.435z"
             // fill="#67BECE"
             // fill="#000"
-            fill={fillColor}
+            fill={iconHoverColor}
           />
           <path
             className="fill-accent"
             d="M15.988 22.626c-7.078 0-13.266-4.778-15.045-11.62a.749.749 0 1 1 1.451-.378 14.044 14.044 0 0 0 13.594 10.498.75.75 0 0 1 0 1.5z"
             // fill="#3F54A3"
             // fill="#000"
-            fill={fillColor}
+            fill={iconHoverColor}
           />
           <path
             className="fill-accent"
             d="M13.404 16.398a.75.75 0 0 1-.75-.75V1.391a.75.75 0 0 1 1.5 0v14.257a.75.75 0 0 1-.75.75z"
             // fill="#67BECE"
             // fill="#000"
-            fill={fillColor}
+            fill={iconHoverColor}
           />
           {/* <g fill="#F9C7C5">
           <path d="M41.71 24.798a.744.744 0 0 1-.53-.22l-3.273-3.274-3.273 3.273a.75.75 0 1 1-1.061-1.061l3.804-3.804a.749.749 0 0 1 1.06 0l3.804 3.805a.75.75 0 0 1-.531 1.281z" />
