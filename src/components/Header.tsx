@@ -13,10 +13,12 @@ const Header = () => {
     <>
       <nav className="menu">
         {menu.map((item, index) => (
-          <div className="menu-item-wrapper">
+          <div
+            className="menu-item-wrapper"
+            key={index}
+          >
             <a
               className="menu_item"
-              key={index}
               href={item.path}
             >
               {item.name}

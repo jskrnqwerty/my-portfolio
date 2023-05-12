@@ -130,15 +130,13 @@ const Skills = () => {
       </h2>
       <div className="skills-container">
         {skills.map((item, index) => (
-          <>
-            <div
-              className="skill-wrapper"
-              key={index}
-            >
-              {item.icon}
-              <p>{item.name}</p>
-            </div>
-          </>
+          <div
+            className="skill-wrapper"
+            key={index}
+          >
+            {item.icon}
+            <p>{item.name}</p>
+          </div>
         ))}
       </div>
     </>
