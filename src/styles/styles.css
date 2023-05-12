@@ -155,8 +155,10 @@ button:hover, #footer a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover 
   width: 100%;
   padding: 1rem;
 }
-#intro svg {
+#intro svg,
+#intro path {
   height: 3rem;
+  cursor: pointer;
 }
 
 #projects .projects-container {

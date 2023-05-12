@@ -12,17 +12,17 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  
-  .intro-text h1 span{
+
+  .intro-text h1 span {
     @extend %border-bottom;
   }
-  
+
   .intro-text p {
     margin-top: 1.3rem;
     @extend %intro-font-styling;
     line-height: 3rem;
   }
-  
+
   .scroll-down {
     position: absolute;
     bottom: 0;
@@ -31,10 +31,11 @@
     padding: 1rem;
   }
 
-  svg {
+  svg,
+  path {
     height: 3rem;
+    cursor: pointer;
   }
-
 
   // .blink {
   //   animation: cursor 1s linear infinite;
@@ -44,5 +45,4 @@
   //   50% {opacity: 0.5;}
   //   100% {opacity: 1;}
   // }
-
 }

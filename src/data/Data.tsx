@@ -17,7 +17,9 @@ export const projects: projectsType[] = [
     title: "Dont Keep",
     intro: "Note taking app - A Google Keep clone",
     description: "Google Keep Clone was created to keep track of ",
-    imgSrc: "src/assets/images/laptop-stencil-google-keep.png",
+    // imgSrc: "src/assets/images/laptop-stencil-google-keep.png",
+    imgSrc:
+      "https://raw.githubusercontent.com/jskrnqwerty/my-portfolio/master/src/assets/images/laptop-stencil-google-keep.png",
     imgAlt: "Google Keep Clone screenshot",
     madeWith: [
       <ReactIcon />,
@@ -40,7 +42,9 @@ export const projects: projectsType[] = [
       </p>
     )} 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`,
-    imgSrc: "src/assets/images/laptop-stencil.png",
+    // imgSrc: "src/assets/images/laptop-stencil.png",
+    imgSrc:
+      "https://raw.githubusercontent.com/jskrnqwerty/my-portfolio/master/src/assets/images/laptop-stencil.png",
     imgAlt: "Image Alt Text",
     madeWith: [<ReactIcon />, <TypescriptIcon />, <ApiIcon />, <CssIcon />],
     liveSiteUrl: "#",
@@ -63,7 +67,9 @@ export const projects: projectsType[] = [
     intro: "Project Intro",
     description:
       " Project Description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    imgSrc: "src/assets/images/laptop-stencil.png",
+    // imgSrc: "src/assets/images/laptop-stencil.png",
+    imgSrc:
+      "https://raw.githubusercontent.com/jskrnqwerty/my-portfolio/master/src/assets/images/laptop-stencil.png",
     imgAlt: "Image Alt Text",
     madeWith: [
       <ReactIcon />,
@@ -79,7 +85,9 @@ export const projects: projectsType[] = [
     intro: "Web development portfolio",
     description:
       " Project Description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    imgSrc: "src/assets/images/laptop-stencil.png",
+    // imgSrc: "src/assets/images/laptop-stencil.png",
+    imgSrc:
+      "https://raw.githubusercontent.com/jskrnqwerty/my-portfolio/master/src/assets/images/laptop-stencil.png",
     imgAlt: "Image Alt Text",
     madeWith: [
       <ReactIcon />,
