@@ -22,11 +22,11 @@ const NetlifyIcon = () => {
         >
           <stop
             offset="0%"
-            stop-color="#20C6B7"
+            stopColor="#20C6B7"
           />
           <stop
             offset="100%"
-            stop-color="#4D9ABF"
+            stopColor="#4D9ABF"
           />
         </radialGradient>
       </defs>

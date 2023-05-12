@@ -11,7 +11,7 @@ const FigmaIcon = () => {
       // xmlns:xlink="http://www.w3.org/1999/xlink"
       preserveAspectRatio="xMidYMid"
       className="figma icon"
-      aria-aria-label="Figma logo"
+      aria-label="Figma logo"
     >
       <title>Figma</title>
       <g>

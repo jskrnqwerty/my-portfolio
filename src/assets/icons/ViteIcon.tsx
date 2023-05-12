@@ -34,14 +34,10 @@ const ViteIcon = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="matrix(.07142 0 0 .07142 1.3398 1.8944)"
         >
-          <stop
-            stop-color="#41D1FF"
-            id="stop38"
-          />
+          <stop stopColor="#41D1FF" />
           <stop
             offset="1"
-            stop-color="#BD34FE"
-            id="stop40"
+            stopColor="#BD34FE"
           />
         </linearGradient>
         <linearGradient
@@ -53,19 +49,14 @@ const ViteIcon = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="matrix(.07142 0 0 .07142 1.3398 1.8944)"
         >
-          <stop
-            stop-color="#FFEA83"
-            id="stop43"
-          />
+          <stop stopColor="#FFEA83" />
           <stop
             offset=".0833"
-            stop-color="#FFDD35"
-            id="stop45"
+            stopColor="#FFDD35"
           />
           <stop
             offset="1"
-            stop-color="#FFA800"
-            id="stop47"
+            stopColor="#FFA800"
           />
         </linearGradient>
       </defs>

@@ -16,7 +16,7 @@ const FrontendMentorIcon = () => {
       >
         <title>FrontendMentor.io/jskrnqwerty</title>
         <g
-          fill-rule="nonzero"
+          fillRule="nonzero"
           fill="none"
         >
           <g

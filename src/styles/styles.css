@@ -131,6 +131,21 @@ button:hover, #footer a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover 
 #header .menu_item:hover {
   border-bottom: 0.3rem solid rgb(255, 166, 0);
 }
+@media screen and (max-width: 825px) {
+  #header .menu_item {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 415px) {
+  #header .menu_item {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  #header .menu_item {
+    font-size: 0.6rem;
+  }
+}
 
 #intro .intro-text p {
   margin-bottom: 1rem;

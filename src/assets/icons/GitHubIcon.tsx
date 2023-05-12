@@ -18,9 +18,9 @@ const GitHubIcon = () => {
         <g
           className="fill-accent"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           // fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           fill={iconHoverColor}
         >
           <g transform="translate(-140.000000, -7559.000000)">

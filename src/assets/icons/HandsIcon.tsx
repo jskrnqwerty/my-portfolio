@@ -3,6 +3,8 @@ import { iconHoverColor } from "../../data/Data";
 const HandsIcon = () => {
   return (
     <svg
+      className="hands icon"
+      aria-label="hands"
       // fill="#000000"
       // width="800px"
       // height="800px"

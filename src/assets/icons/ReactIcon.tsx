@@ -20,7 +20,7 @@ const ReactIcon = () => {
       <g
         className="stroke-accent"
         fill="none"
-        stroke-width="1"
+        strokeWidth="1"
         // stroke="#61dafb"
         stroke={iconHoverColor}
       >
