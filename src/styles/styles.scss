@@ -3,11 +3,11 @@
 @use "./abstracts/sizes" as sz;
 @use "./components/about-me";
 @use "./components/contact-me";
-@use "./components/current-projects";
 @use "./components/footer";
 @use "./components/header";
 @use "./components/intro";
 @use "./components/projects";
+@use "./components/resume";
 @use "./components/skills";
 
 @mixin heading-styles($font-size: 1rem) {

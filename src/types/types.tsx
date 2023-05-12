@@ -21,4 +21,7 @@ export type projectsType = {
   madeWith: JSX.Element[];
   liveSiteUrl?: string;
   githubRepoUrl?: string;
+  frontendMentorUrl?: string;
 };
+
+// export type projectLinksType = { destination: string; destinationUrl: string };

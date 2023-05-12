@@ -9,30 +9,30 @@
     gap: 3rem;
   }
 
-
   .contact-container {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: sz.$main-grid-gap;
   }
-  
+
   form {
     display: flex;
     flex-direction: column;
     gap: 1em;
     align-items: center;
   }
-  
-  input, textarea {
+
+  input,
+  textarea {
     min-width: 100%;
   }
-  
+
   textarea {
     min-height: 10em;
   }
-  
+
   button {
-    min-width:100%;
+    min-width: 100%;
   }
 
   a {
@@ -42,8 +42,12 @@
     cursor: pointer;
   }
 
+  a:hover {
+    @extend %transition;
+    color: clr.$accent;
+  }
+
   @media screen and (max-width: sz.$breakpoint-1) {
-    
     .contact-container {
       display: flex;
       flex-direction: column-reverse;

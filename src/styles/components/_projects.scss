@@ -40,6 +40,10 @@
     }
 
     .made-with {
+      text-transform: uppercase;
+      // margin-bottom: 1em;
+    }
+    .made-with-icons {
       display: flex;
       gap: 1em;
       align-items: center;
@@ -48,18 +52,18 @@
 
     .project-links {
       display: flex;
+      gap: 1.5rem;
     }
 
-    .project-live-site {
-      margin-right: 1em;
-    }
-
-    .project-live-site,
-    .project-gh-repo {
+    .project-link {
       text-transform: uppercase;
       font-weight: bold;
       padding-top: 1.5em;
       border-bottom: 2px solid clr.$accent;
+    }
+    .project-link:hover {
+      @extend %transition;
+      color: clr.$accent;
     }
   }
 }

@@ -22,28 +22,49 @@ const Projects = () => {
               <h3>{project.title}</h3>
               <p>{project.intro}</p>
               <p>{project.description}</p>
-              <div className="made-with">
+              <h4 className="made-with">Made With</h4>
+              <div className="made-with-icons">
                 {project.madeWith.map((madeWithIcon, index) => (
                   <span key={index}>{madeWithIcon}</span>
                 ))}
               </div>
               <div className="project-links">
-                <a
-                  href={project.liveSiteUrl}
-                  className="project-live-site"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live Site
-                </a>
-                <a
-                  href={project.githubRepoUrl}
-                  className="project-gh-repo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Github Repo
-                </a>
+                {project.liveSiteUrl ? (
+                  <a
+                    href={project.liveSiteUrl}
+                    className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Site
+                  </a>
+                ) : (
+                  ""
+                )}
+                {project.githubRepoUrl ? (
+                  <a
+                    href={project.githubRepoUrl}
+                    className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Github Repo
+                  </a>
+                ) : (
+                  ""
+                )}
+                {project.frontendMentorUrl ? (
+                  <a
+                    href={project.frontendMentorUrl}
+                    className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Frontend Mentor
+                  </a>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
           </div>
