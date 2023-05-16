@@ -94,6 +94,10 @@ span.underline {
   @extend %border-bottom;
 }
 
+svg {
+  max-width: 100%;
+}
+
 textarea {
   resize: none;
 }
@@ -123,12 +127,15 @@ textarea {
 
 .my-socials {
   display: flex;
-  justify-content: space-evenly;
-  // justify-content: center;
-  // gap: 15%;
   margin-top: 3em;
+  // justify-content: space-evenly;
+  // justify-content: center;
+  // gap: 3rem;
+  gap: calc(3vw + 0.5em);
+  align-self: center;
+
   // min-width: 100%;
-  max-width: 50%;
+  // max-width: 50%;
 
   svg,
   path {
