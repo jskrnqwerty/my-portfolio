@@ -38,6 +38,8 @@
 
   @media screen and (max-width: sz.$breakpoint-2) {
     .menu {
+      justify-content: center;
+      gap: 0.5em;
       &_item {
         font-size: calc(sz.$font-medium - 0.4rem);
       }

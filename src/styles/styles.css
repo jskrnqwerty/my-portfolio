@@ -155,6 +155,10 @@ button:hover, #projects .projects-container .project-link:hover, #footer a:hover
   }
 }
 @media screen and (max-width: 475px) {
+  #header .menu {
+    justify-content: center;
+    gap: 0.5em;
+  }
   #header .menu_item {
     font-size: 0.9rem;
   }

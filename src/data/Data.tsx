@@ -6,11 +6,19 @@ import ReactRouterIcon from "../assets/icons/ReactRouterIcon";
 import ResponsiveDesignIcon from "../assets/icons/ResponsiveDesignIcon";
 import SassIcon from "../assets/icons/SassIcon";
 import TypescriptIcon from "../assets/icons/TypescriptIcon";
-import { iconColors, bgColors, projectsType } from "../types/Types";
+import { iconColors, bgColors, projectsType, menuType } from "../types/Types";
 
 export const accentColor: iconColors = "#000";
 export const bgColor: bgColors = "rgb(245, 245, 245)";
 export const iconHoverColor = accentColor;
+
+export const menu: menuType[] = [
+  { name: "Home", path: "#" },
+  { name: "About", path: "#about-me" },
+  { name: "Projects", path: "#projects" },
+  // { name: "Resume", path: "#resume" },
+  { name: "Contact", path: "#contact-me" },
+];
 
 export const projects: projectsType[] = [
   {

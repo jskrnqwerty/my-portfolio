@@ -1,13 +1,13 @@
-import { menuType } from "../types/Types";
+import { menu } from "../data/Data";
 
 const Header = () => {
-  const menu: menuType[] = [
-    { name: "Home", path: "#" },
-    { name: "About", path: "#about-me" },
-    { name: "Projects", path: "#projects" },
-    // { name: "Resume", path: "#resume" },
-    { name: "Contact", path: "#contact-me" },
-  ];
+  // const menu: menuType[] = [
+  //   { name: "Home", path: "#" },
+  //   { name: "About", path: "#about-me" },
+  //   { name: "Projects", path: "#projects" },
+  //   // { name: "Resume", path: "#resume" },
+  //   { name: "Contact", path: "#contact-me" },
+  // ];
 
   return (
     <>
