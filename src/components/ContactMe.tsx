@@ -14,11 +14,11 @@ const ContactMe = () => {
   const [message, setMessage] = useState<string>("");
   // const [isMessage, setIsMessage] = useState<boolean>(true);
   const [isMessageSent, setIsMessageSent] = useState<boolean>(false);
-  const formRef = useRef<null>(null);
+  const formRef = useRef(null);
 
   const currForm = formRef.current;
 
-  if (currForm === null) return;
+  if (currForm === null) return null;
 
   const resetForm = () => {
     setName("");
