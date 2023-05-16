@@ -21,11 +21,11 @@ const Projects = () => {
             <div className="project-details">
               <h3>{project.title}</h3>
               <p>{project.intro}</p>
-              {project.description.map((desc, index) => (
-                <ul>
+              <ul>
+                {project.description.map((desc, index) => (
                   <li key={index}>{desc}</li>
-                </ul>
-              ))}
+                ))}
+              </ul>
               <h4 className="made-with">Made With</h4>
               <div className="made-with-icons">
                 {project.madeWith.map((madeWithIcon, index) => (

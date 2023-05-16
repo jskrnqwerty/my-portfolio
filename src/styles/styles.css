@@ -65,15 +65,15 @@ button:hover, #projects .projects-container .project-link:hover, #footer a:hover
 #contact-me form {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  align-items: center;
+  gap: 2em;
 }
 #contact-me input,
 #contact-me textarea {
   min-width: 100%;
+  position: relative;
 }
 #contact-me textarea {
-  min-height: 10em;
+  min-height: 12rem;
 }
 #contact-me button {
   min-width: 100%;
@@ -87,6 +87,19 @@ button:hover, #projects .projects-container .project-link:hover, #footer a:hover
 }
 #contact-me a:hover {
   color: rgb(255, 166, 0);
+}
+#contact-me .name-input,
+#contact-me .email-input,
+#contact-me .message-input {
+  position: relative;
+}
+#contact-me .name-input .error,
+#contact-me .email-input .error,
+#contact-me .message-input .error {
+  position: absolute;
+  top: -2em;
+  font-size: 0.8rem;
+  color: red;
 }
 @media screen and (max-width: 825px) {
   #contact-me .contact-container {

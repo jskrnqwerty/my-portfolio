@@ -15,17 +15,18 @@
   form {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    align-items: center;
+    gap: 2em;
+    // align-items: center;
   }
 
   input,
   textarea {
     min-width: 100%;
+    position: relative;
   }
 
   textarea {
-    min-height: 10em;
+    min-height: 12rem;
   }
 
   button {
@@ -42,6 +43,18 @@
   a:hover {
     @extend %transition;
     color: clr.$accent;
+  }
+
+  .name-input,
+  .email-input,
+  .message-input {
+    position: relative;
+    .error {
+      position: absolute;
+      top: -2em;
+      font-size: sz.$error;
+      color: clr.$error;
+    }
   }
 
   @media screen and (max-width: sz.$breakpoint-1) {

@@ -7,6 +7,7 @@ $accent: rgb(255, 166, 0);
 $accent-low-opacity: rgba(255, 165, 0, 0.8);
 $accent-soft-skill: #add8e6;
 
+$error: red;
 
 %border-bottom {
   border-bottom: 0.3rem solid $accent;
@@ -17,7 +18,7 @@ $accent-soft-skill: #add8e6;
 }
 
 %fill-accent {
-  .fill-accent{
+  .fill-accent {
     @extend %transition;
     fill: $accent;
   }
@@ -38,8 +39,7 @@ $accent-soft-skill: #add8e6;
 }
 
 %fill-accent-soft-skill {
-  .fill-accent-soft-skill
-  {
+  .fill-accent-soft-skill {
     @extend %transition;
     fill: $accent-soft-skill;
   }
