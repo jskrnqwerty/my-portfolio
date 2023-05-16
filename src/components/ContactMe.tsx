@@ -14,8 +14,40 @@ const ContactMe = () => {
   const [message, setMessage] = useState<string>("");
   const [isMessage, setIsMessage] = useState<boolean>(true);
   const [isMessageSent, setIsMessageSent] = useState<boolean>(false);
-  const formRef = useRef();
+  const formRef = useRef<null>(null);
 
+  const currForm = formRef.current;
+
+  if (currForm === null) return;
+
+  const resetForm = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_krp21or",
+        "template_3xbsl89",
+        currForm,
+        "CiIl2S76uR87bcKtb"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsMessageSent(true);
+          resetForm();
+          // e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   // const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
   //   e.preventDefault();
 
@@ -50,34 +82,6 @@ const ContactMe = () => {
   //   console.log("isValid", isValid);
   //   setIsEmailValid(isValid);
   // };
-  const resetForm = () => {
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
-
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_krp21or",
-        "template_3xbsl89",
-        formRef.current,
-        "CiIl2S76uR87bcKtb"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setIsMessageSent(true);
-          resetForm();
-          // e.target.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
 
   return (
     <>
@@ -105,7 +109,7 @@ const ContactMe = () => {
                 }}
                 required
               />
-              {!isName ? <p className="error">Please enter your name</p> : ""}
+              {/* {!isName ? <p className="error">Please enter your name</p> : ""} */}
             </div>
             <div className="email-input">
               <input
@@ -121,13 +125,13 @@ const ContactMe = () => {
                 }}
                 required
               />
-              {!isEmail ? (
+              {/* {!isEmail ? (
                 <p className="error">Please enter your email address</p>
               ) : !isEmailValid ? (
                 <p className="error">Please enter a valid email address</p>
               ) : (
                 ""
-              )}
+              )} */}
             </div>
             <div className="message-input">
               <textarea
@@ -140,12 +144,12 @@ const ContactMe = () => {
                 }}
                 required
               />
-              {!isMessage ? <p className="error">Say something</p> : ""}
+              {/* {!isMessage ? <p className="error">Say something</p> : ""} */}
             </div>
             <input
               type="submit"
               className="btn"
-              aria-label="Submit contact form"
+              aria-label="Submit form"
               // onClick={(e) => handleClick(e)}
               value={isMessageSent ? "Message Sent!!!" : "Get In Touch"}
             />
