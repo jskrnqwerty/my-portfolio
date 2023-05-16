@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import FrontendMentorIcon from "../assets/icons/FrontendMentorIcon";
 import GitHubIcon from "../assets/icons/GitHubIcon";
 import LinkedinIcon from "../assets/icons/LinkedinIcon";
@@ -13,40 +14,69 @@ const ContactMe = () => {
   const [message, setMessage] = useState<string>("");
   const [isMessage, setIsMessage] = useState<boolean>(true);
   const [isMessageSent, setIsMessageSent] = useState<boolean>(false);
+  const formRef = useRef();
 
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    e.preventDefault();
+  // const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+  //   e.preventDefault();
 
-    if (name === "") {
-      setIsName(false);
-      console.log("Please enter your name");
-    }
-    if (email === "") {
-      setIsEmail(false);
-      console.log("Please enter your email");
-    } else {
-      checkEmailValidity();
-    }
-    if (message === "") {
-      setIsMessage(false);
-      console.log("Please enter your message");
-    }
-    if (isName && isMessage && isEmailValid === true) {
-      console.log("Form submitted:");
-      console.log("isMessageSent:", isMessageSent);
-      setIsMessageSent(true);
-      console.log("isMessageSent:", isMessageSent);
-    }
+  //   if (name === "") {
+  //     setIsName(false);
+  //     console.log("Please enter your name");
+  //   }
+  //   if (email === "") {
+  //     setIsEmail(false);
+  //     console.log("Please enter your email");
+  //   } else {
+  //     checkEmailValidity();
+  //   }
+  //   if (message === "") {
+  //     setIsMessage(false);
+  //     console.log("Please enter your message");
+  //   }
+  //   if (isName && isMessage && isEmailValid === true) {
+  //     console.log("Form submitted:");
+  //     console.log("isMessageSent:", isMessageSent);
+  //     setIsMessageSent(true);
+  //     console.log("isMessageSent:", isMessageSent);
+  //   }
+  // };
+
+  // const checkEmailValidity = () => {
+  //   const emailRegex =
+  //     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/g;
+  //   // /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/g;
+
+  //   const isValid = emailRegex.test(email);
+  //   console.log("isValid", isValid);
+  //   setIsEmailValid(isValid);
+  // };
+  const resetForm = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
-  const checkEmailValidity = () => {
-    const emailRegex =
-      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/g;
-    // /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/g;
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-    const isValid = emailRegex.test(email);
-    console.log("isValid", isValid);
-    setIsEmailValid(isValid);
+    emailjs
+      .sendForm(
+        "service_krp21or",
+        "template_3xbsl89",
+        formRef.current,
+        "CiIl2S76uR87bcKtb"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsMessageSent(true);
+          resetForm();
+          // e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -58,14 +88,13 @@ const ContactMe = () => {
         <div className="contact-form">
           <form
             // action=""
-            onSubmit={() => {
-              console.log("Form sbumit");
-            }}
+            ref={formRef}
+            onSubmit={sendEmail}
           >
             <div className="name-input">
               <input
-                // className="name"
                 type="text"
+                name="sender_name"
                 placeholder="Your Name*"
                 autoComplete="none"
                 aria-label="Your name"
@@ -80,8 +109,8 @@ const ContactMe = () => {
             </div>
             <div className="email-input">
               <input
-                // className="email"
                 type="email"
+                name="sender_email"
                 placeholder="Your Email*"
                 autoComplete="none"
                 aria-label="Your email address"
@@ -102,7 +131,7 @@ const ContactMe = () => {
             </div>
             <div className="message-input">
               <textarea
-                // className="message"
+                name="sender_message"
                 placeholder="Pineapple does not belong on pizza*"
                 value={message}
                 onChange={(e) => {
@@ -113,13 +142,15 @@ const ContactMe = () => {
               />
               {!isMessage ? <p className="error">Say something</p> : ""}
             </div>
-            <button
+            <input
               type="submit"
+              className="btn"
               aria-label="Submit contact form"
-              onClick={(e) => handleClick(e)}
-            >
-              {isMessageSent ? "Error!!!" : "Get In Touch"}
-            </button>
+              // onClick={(e) => handleClick(e)}
+              value={isMessageSent ? "Message Sent!!!" : "Get In Touch"}
+            />
+            {/* {isMessageSent ? "Error!!!" : "Get In Touch"}
+            </input> */}
           </form>
         </div>
         <div className="contact-message">

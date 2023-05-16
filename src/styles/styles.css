@@ -2,7 +2,8 @@ span.underline, #intro .intro-text h1 span, #header .menu_item:hover {
   border-bottom: 0.3rem solid rgb(255, 166, 0);
 }
 
-button:hover, #projects .projects-container .project-link:hover, #footer a:hover, #contact-me a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover .stroke-accent, .icon:hover .fill-bg, .icon:hover .fill-accent {
+button:hover,
+.btn:hover, #projects .projects-container .project-link:hover, #footer a:hover, #contact-me a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover .stroke-accent, .icon:hover .fill-bg, .icon:hover .fill-accent {
   transition: all ease 200ms;
 }
 
@@ -75,7 +76,7 @@ button:hover, #projects .projects-container .project-link:hover, #footer a:hover
 #contact-me textarea {
   min-height: 12rem;
 }
-#contact-me button {
+#contact-me .btn {
   min-width: 100%;
 }
 #contact-me a {
@@ -346,7 +347,8 @@ body {
   background-color: rgb(245, 245, 245);
 }
 
-button {
+button,
+.btn {
   text-transform: uppercase;
   background-color: rgb(255, 166, 0);
   cursor: pointer;
@@ -357,7 +359,8 @@ button {
   border: 0;
 }
 
-button:hover {
+button:hover,
+.btn:hover {
   background-color: white;
   color: rgb(255, 166, 0);
   outline: 2px solid rgb(255, 166, 0);
