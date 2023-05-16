@@ -17,11 +17,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
-    gap: 3em;
+    gap: sz.$main-grid-gap;
 
     .about-me-icon {
       svg {
-        height: clamp(13em, 25vw, 25em);
+        // height: clamp(13em, 25vw, 25em);
+        min-height: 13em;
+        max-height: 25em;
       }
     }
 

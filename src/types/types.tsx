@@ -17,7 +17,7 @@ export type projectsType = {
   imgSrc: string;
   imgAlt: string;
   intro: string;
-  description: string;
+  description: string[];
   madeWith: JSX.Element[];
   liveSiteUrl?: string;
   githubRepoUrl?: string;

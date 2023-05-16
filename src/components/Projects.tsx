@@ -10,18 +10,22 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            // className={`"project-"${index}`}
-            className="project-wrapper"
+            className={`project-item project-item-${index}`}
           >
-            <img
-              className="project-snapshot"
-              src={project.imgSrc}
-              alt={project.imgAlt}
-            />
+            <div className="project-snapshot">
+              <img
+                src={project.imgSrc}
+                alt={project.imgAlt}
+              />
+            </div>
             <div className="project-details">
               <h3>{project.title}</h3>
               <p>{project.intro}</p>
-              <p>{project.description}</p>
+              {project.description.map((desc, index) => (
+                <ul>
+                  <li key={index}>{desc}</li>
+                </ul>
+              ))}
               <h4 className="made-with">Made With</h4>
               <div className="made-with-icons">
                 {project.madeWith.map((madeWithIcon, index) => (

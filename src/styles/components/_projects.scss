@@ -7,50 +7,70 @@
     flex-direction: column;
     row-gap: sz.$main-grid-gap;
     column-gap: 9em;
-
-    .project-wrapper {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      // align-items: center;
-      gap: sz.$main-grid-gap;
-      margin-bottom: 5em;
-    }
-
-    @media screen and (max-width: sz.$breakpoint-1) {
-      .project-wrapper {
-        // background-color: pink;
-        display: flex;
-        flex-direction: column;
-      }
-    }
-    .project-details {
-      display: flex;
-      flex-direction: column;
-      min-height: 100%;
-      justify-content: center;
-      // gap: 1em;
-    }
-
     img {
       max-width: 100%;
     }
-
     svg {
       width: 3.5rem;
     }
 
+    .project-item {
+      display: flex;
+      gap: sz.$main-grid-gap;
+      flex-direction: row;
+      margin-bottom: 5em;
+      .project-snapshot {
+        width: 50%;
+      }
+      .project-details {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+        width: 50%;
+      }
+    }
+
+    .project-item-1,
+    .project-item-3,
+    .project-item-5 {
+      flex-direction: row-reverse;
+      .project-details {
+        align-items: end;
+        text-align: right;
+      }
+    }
+
+    @media screen and (max-width: sz.$breakpoint-1) {
+      .project-item {
+        flex-direction: column;
+        .project-snapshot {
+          width: 100%;
+        }
+        .project-details {
+          width: 100%;
+        }
+      }
+      .project-item-1,
+      .project-item-3,
+      .project-item-5 {
+        // flex-direction: row-reverse;
+        .project-details {
+          align-items: start;
+          text-align: left;
+        }
+      }
+    }
+
     .made-with {
       text-transform: uppercase;
-      // margin-bottom: 1em;
+      margin: 1rem 0;
     }
     .made-with-icons {
       display: flex;
       gap: 1em;
       align-items: center;
-      margin-top: 0.5em;
-      svg {
-        // max-width: 100%;
-      }
+      // margin-top: 1em;
     }
 
     .project-links {

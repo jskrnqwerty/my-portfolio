@@ -6,27 +6,21 @@ import ReactRouterIcon from "../assets/icons/ReactRouterIcon";
 import ResponsiveDesignIcon from "../assets/icons/ResponsiveDesignIcon";
 import SassIcon from "../assets/icons/SassIcon";
 import TypescriptIcon from "../assets/icons/TypescriptIcon";
-import {
-  iconColors,
-  bgColors,
-  projectsType,
-  // projectLinksType,
-} from "../types/Types";
+import { iconColors, bgColors, projectsType } from "../types/Types";
 
 export const accentColor: iconColors = "#000";
 export const bgColor: bgColors = "rgb(245, 245, 245)";
 export const iconHoverColor = accentColor;
 
-// export const projectLinks: projectLinksType = {
-//   destination: "Live Site",
-//   destinationUrl: "",
-// };
-
 export const projects: projectsType[] = [
   {
     title: "Dont Keep",
     intro: "Note taking app - A Google Keep clone",
-    description: "Google Keep Clone was created to keep track of ",
+    description: [
+      "Create notes, pin them to top, edit later, move to archives, or trash them. Drag and drop notes to rearranage the responsive grid.",
+      // "Drag and drop notes to rearranage the responsive grid.",
+      // "Material UI components library helped build the app.",
+    ],
     // imgSrc: "src/assets/images/laptop-stencil-google-keep.png",
     imgSrc:
       "https://raw.githubusercontent.com/jskrnqwerty/my-portfolio/master/src/assets/images/laptop-stencil-google-keep.png",
@@ -42,8 +36,10 @@ export const projects: projectsType[] = [
   },
   {
     title: "Weather App",
-    intro: "Current weather",
-    description: ` Project Description. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`,
+    intro: "Check current weather",
+    description: [
+      "Weather App makes use of two OpenWeather API's; first, to fetch the list of cities all over the world, and then their weather, respectively.",
+    ],
     // imgSrc: "src/assets/gif/weather-app-animated.gif",
     imgSrc:
       "https://raw.githubusercontent.com/jskrnqwerty/my-portfolio/master/src/assets/gif/weather-app-animated.gif",
@@ -53,10 +49,11 @@ export const projects: projectsType[] = [
     githubRepoUrl: "https://github.com/jskrnqwerty/weather-app",
   },
   {
-    title: "Fylo Homepage",
-    intro: "Frontend Mentor Challenge",
-    description:
-      " Project Description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    title: "Fylo",
+    intro: "A simple landing page",
+    description: [
+      "Fylo is a simple, fully responsive landing page build as an answer to a Frontend Mentor challenge.",
+    ],
     // imgSrc: "src/assets/images/laptop-stencil-fylo.png",
     imgSrc:
       "https://raw.githubusercontent.com/jskrnqwerty/my-portfolio/master/src/assets/images/laptop-stencil-fylo.png",
@@ -76,7 +73,7 @@ export const projects: projectsType[] = [
   //   title: "Joke Generator",
   //   intro: "Project Intro",
   //   description:
-  //     " Project Description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  //     [" Project Description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."],
   //   imgSrc: "src/assets/images/laptop-stencil.png",
   //   imgAlt: "Image Alt Text",
   //   madeWith: [<ReactIcon />, <TypescriptIcon />, <ApiIcon />, <CssIcon />],
@@ -86,9 +83,10 @@ export const projects: projectsType[] = [
   // },
   {
     title: "Jskrn.com",
-    intro: "Web development portfolio",
-    description:
-      " Project Description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    intro: "Web Developer Portfolio",
+    description: [
+      "A personal web development portfolio build to document skills and projects",
+    ],
     // imgSrc: "src/assets/images/laptop-stencil-jskrn.png",
     imgSrc:
       "https://raw.githubusercontent.com/jskrnqwerty/my-portfolio/master/src/assets/images/laptop-stencil-jskrn.png",

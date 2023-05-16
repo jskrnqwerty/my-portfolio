@@ -65,6 +65,10 @@ h3 {
   @include heading-styles(1.5rem);
 }
 
+h4 {
+  @include heading-styles(sz.$text);
+}
+
 input,
 textarea {
   border: 0px;
@@ -78,11 +82,16 @@ textarea:focus {
   outline: 1px solid clr.$accent;
 }
 
-p {
+p,
+li {
   font-size: sz.$text;
   margin-bottom: 1rem;
   letter-spacing: 0.05rem;
   line-height: 1.8rem;
+}
+
+li {
+  list-style-type: none;
 }
 
 input::placeholder,
