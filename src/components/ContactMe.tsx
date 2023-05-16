@@ -7,12 +7,12 @@ import TwitterIcon from "../assets/icons/TwitterIcon";
 
 const ContactMe = () => {
   const [name, setName] = useState<string>("");
-  const [isName, setIsName] = useState<boolean>(true);
+  // const [isName, setIsName] = useState<boolean>(true);
   const [email, setEmail] = useState<string>("");
-  const [isEmail, setIsEmail] = useState<boolean>(true);
-  const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
+  // const [isEmail, setIsEmail] = useState<boolean>(true);
+  // const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
   const [message, setMessage] = useState<string>("");
-  const [isMessage, setIsMessage] = useState<boolean>(true);
+  // const [isMessage, setIsMessage] = useState<boolean>(true);
   const [isMessageSent, setIsMessageSent] = useState<boolean>(false);
   const formRef = useRef<null>(null);
 
@@ -105,7 +105,7 @@ const ContactMe = () => {
                 value={name}
                 onChange={(e) => {
                   setName(e.target.value);
-                  setIsName(true);
+                  // setIsName(true);
                 }}
                 required
               />
@@ -121,7 +121,7 @@ const ContactMe = () => {
                 value={email}
                 onChange={(e) => {
                   setEmail(e.target.value);
-                  setIsEmail(true);
+                  // setIsEmail(true);
                 }}
                 required
               />
@@ -140,7 +140,7 @@ const ContactMe = () => {
                 value={message}
                 onChange={(e) => {
                   setMessage(e.target.value);
-                  setIsMessage(true);
+                  // setIsMessage(true);
                 }}
                 required
               />
