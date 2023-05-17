@@ -14,11 +14,12 @@ const ContactMe = () => {
   const [message, setMessage] = useState<string>("");
   // const [isMessage, setIsMessage] = useState<boolean>(true);
   const [isMessageSent, setIsMessageSent] = useState<boolean>(false);
-  const formRef = useRef(null);
+
+  const formRef: any = useRef(); //TODO: remove "any" type from formRef
 
   const currForm = formRef.current;
 
-  if (currForm === null) return null;
+  // if (currForm === "") return null;
 
   const resetForm = () => {
     setName("");
@@ -32,7 +33,8 @@ const ContactMe = () => {
     emailjs
       .sendForm(
         "service_krp21or",
-        "template_3xbsl89",
+        // "template_3xbsl89",
+        "template_vp10ayu",
         currForm,
         "CiIl2S76uR87bcKtb"
       )
