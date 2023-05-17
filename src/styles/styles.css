@@ -456,8 +456,9 @@ textarea {
 .my-socials {
   display: flex;
   margin-top: 5em;
+  justify-content: space-evenly;
   gap: calc(3vw + 0.5em);
-  align-self: center;
+  max-width: 50em;
 }
 .my-socials svg,
 .my-socials path {

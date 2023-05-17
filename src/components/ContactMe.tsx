@@ -175,13 +175,13 @@ const ContactMe = () => {
               kainth.jaskaran@gmail.com
             </a>
           </p>
+          <div className="my-socials">
+            <LinkedinIcon />
+            <GitHubIcon />
+            <TwitterIcon />
+            <FrontendMentorIcon />
+          </div>
         </div>
-      </div>
-      <div className="my-socials">
-        <LinkedinIcon />
-        <GitHubIcon />
-        <TwitterIcon />
-        <FrontendMentorIcon />
       </div>
     </>
   );
