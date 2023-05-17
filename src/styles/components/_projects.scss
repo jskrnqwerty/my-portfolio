@@ -2,6 +2,10 @@
 @use "../abstracts/sizes" as sz;
 
 #projects {
+  .project-sub-heading {
+    padding-top: 0.3em;
+    text-transform: none;
+  }
   .projects-container {
     display: flex;
     flex-direction: column;

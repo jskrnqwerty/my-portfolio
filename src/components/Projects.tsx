@@ -5,6 +5,9 @@ const Projects = () => {
     <>
       <h2>
         <span className="underline">Projects</span>
+        <p className="project-sub-heading light-text">
+          Skills grow. So will this portfolio.
+        </p>
       </h2>
       <div className="projects-container">
         {projects.map((project, index) => (
@@ -52,7 +55,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Github Repo
+                    GitHub Repo
                   </a>
                 ) : (
                   ""

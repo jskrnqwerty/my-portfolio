@@ -104,7 +104,6 @@ export const projects: projectsType[] = [
       <TypescriptIcon />,
       <SassIcon />,
       <ResponsiveDesignIcon />,
-      <CssIcon />,
     ],
     liveSiteUrl: "#",
     githubRepoUrl: "https://github.com/jskrnqwerty/my-portfolio",

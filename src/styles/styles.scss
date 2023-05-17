@@ -59,7 +59,7 @@ h1 {
 }
 
 h2 {
-  padding-bottom: 3rem;
+  padding-bottom: sz.$head-body-gap;
   @include heading-styles(2.5rem);
 }
 
@@ -126,6 +126,10 @@ textarea {
   @extend %stroke-accent;
 }
 
+.last-paragraph {
+  margin-bottom: 0;
+}
+
 .light-text {
   color: clr.$light-text;
   font-weight: 100;
@@ -138,7 +142,7 @@ textarea {
 
 .my-socials {
   display: flex;
-  margin-top: 3em;
+  margin-top: 5em;
   // justify-content: space-evenly;
   // justify-content: center;
   // gap: 3rem;
@@ -164,5 +168,12 @@ textarea {
 
   h2 {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: sz.$breakpoint-2) {
+  h2 {
+    // padding-bottom: calc(sz.$head-body-gap - 3em);
+    padding-bottom: 0;
   }
 }
