@@ -1,4 +1,4 @@
-import AccesibilityIcon from "../assets/icons/AccessibilityIcon";
+// import AccesibilityIcon from "../assets/icons/AccessibilityIcon";
 import AgileScrumIcon from "../assets/icons/AgileScrumIcon";
 import ApiIcon from "../assets/icons/ApiIcon";
 import BigCommerceIcon from "../assets/icons/BigCommerceIcon";
@@ -9,7 +9,7 @@ import CSSGridIcon from "../assets/icons/CssGridIcon";
 import CssIcon from "../assets/icons/CssIcon";
 import DomIcon from "../assets/icons/DomIcon";
 import FigmaIcon from "../assets/icons/FIgmaIcon";
-// import GitHubIcon from "../assets/icons/GitHubIcon";
+import GitHubIcon from "../assets/icons/GitHubIcon";
 import GitHubPagesIcon from "../assets/icons/GitHubPagesIcon";
 import GitIcon from "../assets/icons/GitIcon";
 import HtmlIcon from "../assets/icons/HtmlIcon";
@@ -60,13 +60,13 @@ const Skills = () => {
       icon: <HtmlIcon />,
     },
     {
-      name: "Git • GitHub",
+      name: "Git",
       icon: <GitIcon />,
     },
-    // {
-    //   name: "GitHub",
-    //   icon: <GitHubIcon />,
-    // },
+    {
+      name: "GitHub",
+      icon: <GitHubIcon />,
+    },
     {
       name: "React Router",
       icon: <ReactRouterIcon />,
@@ -110,10 +110,10 @@ const Skills = () => {
     { name: "DOM", icon: <DomIcon /> },
     { name: "CSS Flexbox", icon: <CSSFlexBoxIcon /> },
     { name: "CSS Grid", icon: <CSSGridIcon /> },
-    {
-      name: "Accessibility",
-      icon: <AccesibilityIcon />,
-    },
+    // {
+    //   name: "Accessibility",
+    //   icon: <AccesibilityIcon />,
+    // },
     // {
     //   name: "Pattern recognition",
     //   icon: <PatternIcon />,
