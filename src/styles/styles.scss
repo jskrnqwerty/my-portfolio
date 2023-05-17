@@ -171,9 +171,8 @@ textarea {
   }
 }
 
-@media screen and (max-width: sz.$breakpoint-2) {
+@media screen and (max-width: sz.$breakpoint-1) {
   h2 {
-    // padding-bottom: calc(sz.$head-body-gap - 3em);
-    padding-bottom: 0;
+    padding-bottom: calc(sz.$head-body-gap - 1em);
   }
 }
