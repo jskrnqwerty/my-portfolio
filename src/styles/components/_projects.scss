@@ -46,6 +46,10 @@
     }
 
     @media screen and (max-width: sz.$breakpoint-1) {
+      .project-sub-heading {
+        letter-spacing: 0.01rem;
+        line-height: 1.5rem;
+      }
       .project-item {
         flex-direction: column;
         .project-snapshot {

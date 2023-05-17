@@ -257,6 +257,10 @@ button:hover,
   text-align: right;
 }
 @media screen and (max-width: 825px) {
+  #projects .projects-container .project-sub-heading {
+    letter-spacing: 0.01rem;
+    line-height: 1.5rem;
+  }
   #projects .projects-container .project-item {
     flex-direction: column;
   }

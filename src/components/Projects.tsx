@@ -6,7 +6,7 @@ const Projects = () => {
       <h2>
         <span className="underline">Projects</span>
         <p className="project-sub-heading light-text">
-          Skills grow. So will this portfolio.
+          skills grow. so will this portfolio.
         </p>
       </h2>
       <div className="projects-container">
