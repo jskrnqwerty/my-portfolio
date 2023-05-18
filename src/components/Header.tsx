@@ -1,3 +1,4 @@
+import OpenToWorkIcon from "../assets/icons/OpenToWorkIcon";
 import { menu } from "../data/Data";
 
 const Header = () => {
@@ -12,13 +13,11 @@ const Header = () => {
   return (
     <>
       <nav className="menu">
-        <a href="#contact-me">
-          <img
-            // src="src/assets/images/open-to-work.png"
-            src="https://raw.githubusercontent.com/jskrnqwerty/my-portfolio/master/src/assets/images/open-to-work.png"
-            alt="open-to-work"
-            className="open-to-work"
-          />
+        <a
+          href="#contact-me"
+          className="open-to-work"
+        >
+          <OpenToWorkIcon />
         </a>
         {menu.map((item, index) => (
           <div

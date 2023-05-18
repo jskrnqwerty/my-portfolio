@@ -145,19 +145,20 @@ button:hover,
   position: relative;
   padding: 1.5em 0 3rem;
 }
-#header .open-to-work {
-  position: absolute;
-  height: 6em;
-  left: 0em;
-  top: 28px;
-  cursor: pointer;
-}
 #header .menu {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   list-style-type: none;
   gap: calc(2% + 1em);
+}
+#header .menu .open-to-work svg,
+#header .menu .open-to-work path {
+  position: absolute;
+  height: 6em;
+  left: 0em;
+  top: 28px;
+  cursor: pointer;
 }
 #header .menu_item {
   text-decoration: none;
@@ -172,10 +173,10 @@ button:hover,
   border-bottom: 0.3rem solid rgb(255, 166, 0);
 }
 @media screen and (max-width: 600px) {
-  #header .open-to-work {
+  #header .menu .open-to-work svg,
+  #header .menu .open-to-work path {
     height: 5em;
     top: 4.5em;
-    right: 0em;
     left: 70%;
   }
 }

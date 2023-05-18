@@ -2,18 +2,10 @@
 @use "../abstracts/sizes" as sz;
 
 $open-size: 6em;
+
 #header {
   position: relative;
   padding: 1.5em 0 3rem;
-
-  .open-to-work {
-    position: absolute;
-    height: $open-size;
-    // right: 0em;
-    left: 0em;
-    top: 28px;
-    cursor: pointer;
-  }
 
   .menu {
     display: flex;
@@ -21,6 +13,17 @@ $open-size: 6em;
     flex-wrap: wrap;
     list-style-type: none;
     gap: calc(2% + 1em);
+
+    .open-to-work {
+      svg,
+      path {
+        position: absolute;
+        height: $open-size;
+        left: 0em;
+        top: 28px;
+        cursor: pointer;
+      }
+    }
 
     &_item {
       text-decoration: none;
@@ -40,12 +43,17 @@ $open-size: 6em;
   }
 
   @media screen and (max-width: sz.$breakpoint-1-2) {
-    .open-to-work {
-      height: calc($open-size - 1em);
-      top: 4.5em;
-      right: 0em;
-      left: 70%;
-      // left: 50vw;
+    .menu {
+      .open-to-work {
+        svg,
+        path {
+          height: calc($open-size - 1em);
+          top: 4.5em;
+          left: 70%;
+          // left: 50vw;
+          // right: 0em;
+        }
+      }
     }
   }
   @media screen and (max-width: sz.$breakpoint-1) {
