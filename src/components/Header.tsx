@@ -15,6 +15,7 @@ const Header = () => {
         <a href="#contact-me">
           <img
             src="src/assets/images/open-to-work.png"
+            // src="https://raw.githubusercontent.com/jskrnqwerty/my-portfolio/master/src/assets/images/open-to-work.png"
             alt="open-to-work"
             className="open-to-work"
           />
