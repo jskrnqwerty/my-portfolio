@@ -12,6 +12,13 @@ const Header = () => {
   return (
     <>
       <nav className="menu">
+        <a href="#contact-me">
+          <img
+            src="src/assets/images/open-to-work.png"
+            alt="open-to-work"
+            className="open-to-work"
+          />
+        </a>
         {menu.map((item, index) => (
           <div
             className="menu-item-wrapper"

@@ -2,25 +2,28 @@
 @use "../abstracts/sizes" as sz;
 
 %intro-font-styling {
-  margin-bottom: 1rem;
-  font-weight: bold;
-  font-size: 3rem;
 }
 
 #intro {
+  // position: relative;
   min-height: 70vh;
   display: flex;
   align-items: center;
   text-transform: uppercase;
 
-  .intro-text h1 span {
-    @extend %border-bottom;
-  }
-
-  .intro-text p {
-    margin-top: 1.3rem;
-    @extend %intro-font-styling;
-    line-height: 3rem;
+  .intro-text {
+    max-width: 100%;
+    h1 span {
+      @extend %border-bottom;
+    }
+    .role {
+      margin-top: 1.3rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      font-size: 3rem;
+      // @extend %intro-font-styling;
+      line-height: 3rem;
+    }
   }
 
   .scroll-down {

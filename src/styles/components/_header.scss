@@ -1,8 +1,19 @@
 @use "../abstracts/colors" as clr;
 @use "../abstracts/sizes" as sz;
 
+$open-size: 6em;
 #header {
+  position: relative;
   padding: 1.5em 0 3rem;
+
+  .open-to-work {
+    position: absolute;
+    height: $open-size;
+    // right: 0em;
+    left: 0em;
+    top: 28px;
+    cursor: pointer;
+  }
 
   .menu {
     display: flex;
@@ -28,8 +39,18 @@
     }
   }
 
+  @media screen and (max-width: sz.$breakpoint-1-2) {
+    .open-to-work {
+      height: calc($open-size - 1em);
+      top: 4.5em;
+      right: 0em;
+      left: 70%;
+      // left: 50vw;
+    }
+  }
   @media screen and (max-width: sz.$breakpoint-1) {
     .menu {
+      gap: 1em;
       &_item {
         font-size: calc(sz.$font-medium - 0.3rem);
       }

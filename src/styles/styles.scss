@@ -183,3 +183,21 @@ textarea {
     line-height: 1.5rem;
   }
 }
+@media screen and (max-width: sz.$breakpoint-3) {
+  h1 {
+    @include heading-styles(2.5rem);
+  }
+
+  h2 {
+    padding-bottom: sz.$head-body-gap;
+    @include heading-styles(2rem);
+  }
+
+  h3 {
+    @include heading-styles(1.2rem);
+  }
+
+  h4 {
+    @include heading-styles(sz.$text);
+  }
+}

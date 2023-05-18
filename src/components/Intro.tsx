@@ -7,8 +7,8 @@ const Intro = () => {
         <h1>
           <span>Jaskaran</span>
         </h1>
-        <p>Front-end</p>
-        <p>Web Developer</p>
+        <p className="role">Front-end</p>
+        <p className="role">Web Developer</p>
       </div>
       <a
         href="#about-me"
