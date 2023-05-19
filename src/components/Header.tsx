@@ -1,4 +1,4 @@
-import OpenToWorkIcon from "../assets/icons/OpenToWorkIcon";
+import OpenToWorkIcon from "./icons/OpenToWorkIcon";
 import { menu } from "../data/Data";
 
 const Header = () => {

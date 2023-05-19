@@ -1,4 +1,4 @@
-import HandsIcon from "../assets/icons/HandsIcon";
+import HandsIcon from "./icons/HandsIcon";
 
 const Footer = () => {
   return (

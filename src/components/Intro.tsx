@@ -1,4 +1,4 @@
-import DownArrowIcon from "../assets/icons/DownArrowIcon";
+import DownArrowIcon from "./icons/DownArrowIcon";
 
 const Intro = () => {
   return (

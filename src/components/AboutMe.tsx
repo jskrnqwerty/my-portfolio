@@ -1,8 +1,8 @@
-import FrontendMentorIcon from "../assets/icons/FrontendMentorIcon";
-import GitHubIcon from "../assets/icons/GitHubIcon";
-import LinkedinIcon from "../assets/icons/LinkedinIcon";
-import TwitterIcon from "../assets/icons/TwitterIcon";
-import Me from "../assets/icons/Me";
+import FrontendMentorIcon from "./icons/FrontendMentorIcon";
+import GitHubIcon from "./icons/GitHubIcon";
+import LinkedinIcon from "./icons/LinkedinIcon";
+import TwitterIcon from "./icons/TwitterIcon";
+import Me from "./icons/Me";
 
 const AboutMe = () => {
   return (

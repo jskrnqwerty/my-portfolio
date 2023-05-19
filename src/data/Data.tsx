@@ -1,11 +1,11 @@
-import ApiIcon from "../assets/icons/ApiIcon";
-import CssIcon from "../assets/icons/CssIcon";
-import MuiIcon from "../assets/icons/MuiIcon";
-import ReactIcon from "../assets/icons/ReactIcon";
-import ReactRouterIcon from "../assets/icons/ReactRouterIcon";
-import ResponsiveDesignIcon from "../assets/icons/ResponsiveDesignIcon";
-import SassIcon from "../assets/icons/SassIcon";
-import TypescriptIcon from "../assets/icons/TypescriptIcon";
+import ApiIcon from "../components/icons/ApiIcon";
+import CssIcon from "../components/icons/CssIcon";
+import MuiIcon from "../components/icons/MuiIcon";
+import ReactIcon from "../components/icons/ReactIcon";
+import ReactRouterIcon from "../components/icons/ReactRouterIcon";
+import ResponsiveDesignIcon from "../components/icons/ResponsiveDesignIcon";
+import SassIcon from "../components/icons/SassIcon";
+import TypescriptIcon from "../components/icons/TypescriptIcon";
 import { iconColors, bgColors, projectsType, menuType } from "../types/Types";
 
 export const accentColor: iconColors = "#000";
@@ -22,16 +22,14 @@ export const menu: menuType[] = [
 
 export const projects: projectsType[] = [
   {
-    title: "Dont Keep",
+    title: "Don't Keep",
     intro: "Note taking app - A Google Keep clone",
     description: [
       "Create notes, pin them to top, edit later, move to archives, or trash them. Drag and drop notes to rearranage the responsive grid.",
       // "Drag and drop notes to rearranage the responsive grid.",
       // "Material UI components library helped build the app.",
     ],
-    // imgSrc: "src/assets/images/laptop-stencil-google-keep.png",
-    imgSrc:
-      "https://raw.githubusercontent.com/jskrnqwerty/my-portfolio/master/src/assets/images/laptop-stencil-google-keep.png",
+    imgSrc: "assets/images/laptop-stencil-google-keep.png",
     imgAlt: "Google Keep Clone screenshot",
     madeWith: [
       <ReactIcon />,
@@ -48,10 +46,8 @@ export const projects: projectsType[] = [
     description: [
       "Weather App makes use of two OpenWeather API's; first, to fetch the list of cities all over the world, and then their weather, respectively.",
     ],
-    // imgSrc: "src/assets/gif/weather-app-animated.gif",
-    imgSrc:
-      "https://raw.githubusercontent.com/jskrnqwerty/my-portfolio/master/src/assets/gif/weather-app-animated.gif",
-    imgAlt: "Image Alt Text",
+    imgSrc: "assets/gif/weather-app-animated.gif",
+    imgAlt: "Weather App GIF",
     madeWith: [<ReactIcon />, <TypescriptIcon />, <ApiIcon />, <CssIcon />],
     liveSiteUrl: "https://jskrnqwerty.github.io/weather-app/",
     githubRepoUrl: "https://github.com/jskrnqwerty/weather-app",
@@ -62,10 +58,8 @@ export const projects: projectsType[] = [
     description: [
       "Fylo is a simple, fully responsive landing page build as an answer to a Frontend Mentor challenge.",
     ],
-    // imgSrc: "src/assets/images/laptop-stencil-fylo.png",
-    imgSrc:
-      "https://raw.githubusercontent.com/jskrnqwerty/my-portfolio/master/src/assets/images/laptop-stencil-fylo.png",
-    imgAlt: "Image Alt Text",
+    imgSrc: "assets/images/laptop-stencil-fylo.png",
+    imgAlt: "Fylo Landing Page screenshot",
     madeWith: [
       <ReactIcon />,
       <TypescriptIcon />,
@@ -82,8 +76,8 @@ export const projects: projectsType[] = [
   //   intro: "Project Intro",
   //   description:
   //     [" Project Description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."],
-  //   imgSrc: "src/assets/images/laptop-stencil.png",
-  //   imgAlt: "Image Alt Text",
+  //   imgSrc: "assets/images/laptop-stencil.png",
+  //   imgAlt: "Joke Generator screenshot",
   //   madeWith: [<ReactIcon />, <TypescriptIcon />, <ApiIcon />, <CssIcon />],
 
   //   liveSiteUrl: "#",
@@ -95,10 +89,8 @@ export const projects: projectsType[] = [
     description: [
       "A personal web development portfolio build to document skills and projects",
     ],
-    // imgSrc: "src/assets/images/laptop-stencil-jskrn.png",
-    imgSrc:
-      "https://raw.githubusercontent.com/jskrnqwerty/my-portfolio/master/src/assets/images/laptop-stencil-jskrn.png",
-    imgAlt: "Image Alt Text",
+    imgSrc: "assets/images/laptop-stencil-jskrn.png",
+    imgAlt: "Jskrn.com screenshot",
     madeWith: [
       <ReactIcon />,
       <TypescriptIcon />,

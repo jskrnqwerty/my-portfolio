@@ -1,9 +1,9 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import FrontendMentorIcon from "../assets/icons/FrontendMentorIcon";
-import GitHubIcon from "../assets/icons/GitHubIcon";
-import LinkedinIcon from "../assets/icons/LinkedinIcon";
-import TwitterIcon from "../assets/icons/TwitterIcon";
+import FrontendMentorIcon from "./icons/FrontendMentorIcon";
+import GitHubIcon from "./icons/GitHubIcon";
+import LinkedinIcon from "./icons/LinkedinIcon";
+import TwitterIcon from "./icons/TwitterIcon";
 
 const ContactMe = () => {
   const [name, setName] = useState<string>("");
