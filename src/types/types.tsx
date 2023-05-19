@@ -10,7 +10,7 @@ export type bgColors = "rgb(245, 245, 245)" | "";
 
 export type menuType = { name: string; path: string };
 
-export type skillsType = { name: string; icon: JSX.Element };
+export type skillType = { name: string; icon: JSX.Element };
 
 export type projectsType = {
   title: string;

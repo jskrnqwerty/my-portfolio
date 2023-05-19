@@ -1,4 +1,5 @@
 import { projects } from "../data/Data";
+import { projectsType } from "../types/Types";
 
 const Projects = () => {
   return (
@@ -10,7 +11,7 @@ const Projects = () => {
         </p>
       </h2>
       <div className="projects-container">
-        {projects.map((project, index) => (
+        {projects.map((project: projectsType, index: number) => (
           <div
             key={index}
             className={`project-item project-item-${index}`}
@@ -25,7 +26,7 @@ const Projects = () => {
               <h3>{project.title}</h3>
               <p>{project.intro}</p>
               <ul>
-                {project.description.map((desc, index) => (
+                {project.description.map((desc: string, index: number) => (
                   <li key={index}>{desc}</li>
                 ))}
               </ul>

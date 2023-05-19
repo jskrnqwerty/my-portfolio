@@ -1,12 +1,44 @@
+// import AccesibilityIcon from "../components/icons/AccessibilityIcon";
+import AgileScrumIcon from "../components/icons/AgileScrumIcon";
 import ApiIcon from "../components/icons/ApiIcon";
+import BigCommerceIcon from "../components/icons/BigCommerceIcon";
+import BootstrapIcon from "../components/icons/BootstrapIcon";
+import CreateReactAppIcon from "../components/icons/CreateReactAppIcon";
+import CSSFlexBoxIcon from "../components/icons/CssFlexboxIcon";
+import CSSGridIcon from "../components/icons/CssGridIcon";
 import CssIcon from "../components/icons/CssIcon";
+import DomIcon from "../components/icons/DomIcon";
+import FigmaIcon from "../components/icons/FIgmaIcon";
+import GitHubIcon from "../components/icons/GitHubIcon";
+import GitHubPagesIcon from "../components/icons/GitHubPagesIcon";
+import GitIcon from "../components/icons/GitIcon";
+import HtmlIcon from "../components/icons/HtmlIcon";
+import JavascriptIcon from "../components/icons/JavascriptIcon";
+import MarkdownIcon from "../components/icons/MarkdownIcon";
 import MuiIcon from "../components/icons/MuiIcon";
+import NetlifyIcon from "../components/icons/NetlifyIcon";
+import NpmIcon from "../components/icons/NpmIcon";
+// import PatternIcon from "../components/icons/PatternIcon";
+import PhotoshopIcon from "../components/icons/PhotoshopIcon";
+import PythonIcon from "../components/icons/PythonIcon";
 import ReactIcon from "../components/icons/ReactIcon";
 import ReactRouterIcon from "../components/icons/ReactRouterIcon";
+import ReduxIcon from "../components/icons/ReduxIcon";
 import ResponsiveDesignIcon from "../components/icons/ResponsiveDesignIcon";
 import SassIcon from "../components/icons/SassIcon";
+import SeoIcon from "../components/icons/SeoIcon";
+import SquarespaceIcon from "../components/icons/SquarespaceIcon";
+// import ThinkingIcon from "/components/icons/ThinkingIcon";
 import TypescriptIcon from "../components/icons/TypescriptIcon";
-import { iconColors, bgColors, projectsType, menuType } from "../types/Types";
+import ViteIcon from "../components/icons/ViteIcon";
+
+import {
+  iconColors,
+  bgColors,
+  projectsType,
+  menuType,
+  skillType,
+} from "../types/Types";
 
 export const accentColor: iconColors = "#000";
 export const bgColor: bgColors = "rgb(245, 245, 245)";
@@ -81,7 +113,7 @@ export const projects: projectsType[] = [
   //   madeWith: [<ReactIcon />, <TypescriptIcon />, <ApiIcon />, <CssIcon />],
 
   //   liveSiteUrl: "#",
-  //   githubRepoUrl: "#",
+  //   githubRepoUrl: "https://github.com/jskrnqwerty/joke-generator",
   // },
   {
     title: "Jskrn.com",
@@ -100,4 +132,94 @@ export const projects: projectsType[] = [
     liveSiteUrl: "#",
     githubRepoUrl: "https://github.com/jskrnqwerty/my-portfolio",
   },
+];
+
+export const skills: skillType[] = [
+  {
+    name: "React.js",
+    icon: <ReactIcon />,
+  },
+  {
+    name: "TypeScript",
+    icon: <TypescriptIcon />,
+  },
+  {
+    name: "JavaScript • ES6",
+    icon: <JavascriptIcon />,
+  },
+  {
+    name: "SASS • SCSS",
+    icon: <SassIcon />,
+  },
+  {
+    name: "CSS 3",
+    icon: <CssIcon />,
+  },
+  {
+    name: "HTML 5",
+    icon: <HtmlIcon />,
+  },
+  {
+    name: "Git",
+    icon: <GitIcon />,
+  },
+  {
+    name: "GitHub",
+    icon: <GitHubIcon />,
+  },
+  {
+    name: "React Router",
+    icon: <ReactRouterIcon />,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: <ReduxIcon />,
+  },
+  {
+    name: "NPM",
+    icon: <NpmIcon />,
+  },
+  {
+    name: "Vite",
+    icon: <ViteIcon />,
+  },
+  {
+    name: "Create React App",
+    icon: <CreateReactAppIcon />,
+  },
+  { name: "API", icon: <ApiIcon /> },
+  { name: "Material UI", icon: <MuiIcon /> },
+  { name: "Bootstrap", icon: <BootstrapIcon /> },
+  { name: "Figma", icon: <FigmaIcon /> },
+  {
+    name: "Photoshop",
+    icon: <PhotoshopIcon />,
+  },
+  { name: "GitHub Pages", icon: <GitHubPagesIcon /> },
+  { name: "Netlify", icon: <NetlifyIcon /> },
+  { name: "Squarespace", icon: <SquarespaceIcon /> },
+  { name: "BigCommerce", icon: <BigCommerceIcon /> },
+  { name: "Python", icon: <PythonIcon /> },
+  { name: "Agile • Scrum", icon: <AgileScrumIcon /> },
+  { name: "SEO", icon: <SeoIcon /> },
+  { name: "Markdown", icon: <MarkdownIcon /> },
+  {
+    name: "Responsive Design",
+    icon: <ResponsiveDesignIcon />,
+  },
+  { name: "DOM", icon: <DomIcon /> },
+  { name: "CSS Flexbox", icon: <CSSFlexBoxIcon /> },
+  { name: "CSS Grid", icon: <CSSGridIcon /> },
+  // {
+  //   name: "Accessibility",
+  //   icon: <AccesibilityIcon />,
+  // },
+  // {
+  //   name: "Pattern recognition",
+  //   icon: <PatternIcon />,
+  // },
+  // {
+  //   name: "Critical Thinking",
+  //   icon: <ThinkingIcon />,
+  // },
 ];
