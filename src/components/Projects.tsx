@@ -32,9 +32,11 @@ const Projects = () => {
               </ul>
               <h4 className="made-with">Made With</h4>
               <div className="made-with-icons">
-                {project.madeWith.map((madeWithIcon, index) => (
-                  <span key={index}>{madeWithIcon}</span>
-                ))}
+                {project.madeWith.map(
+                  (madeWithIcon: JSX.Element, index: number) => (
+                    <span key={index}>{madeWithIcon}</span>
+                  )
+                )}
               </div>
               <div className="project-links">
                 {project.liveSiteUrl ? (
