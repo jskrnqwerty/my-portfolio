@@ -9,15 +9,28 @@ const Header = () => {
   //   // { name: "Resume", path: "#resume" },
   //   { name: "Contact", path: "#contact-me" },
   // ];
-  const downloadResume = () => {};
+  const downloadResume = () => {
+    console.log("Resume download started");
+    const fileUrl = "./resume.pdf";
+    const fileName =
+      "Resume - Web Developer - Jaskaran Singh Kainth (jskrn.com).pdf";
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.setAttribute("download", fileName);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <>
       <nav className="menu">
         <a
-          href="./resume_web-developer_jaskaran-singh-kainth.pdf"
+          // href="./resume.pdf"
           className="open-to-work"
           onClick={downloadResume}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <OpenToWorkIcon />
         </a>

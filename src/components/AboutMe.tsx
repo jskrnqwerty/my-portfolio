@@ -3,7 +3,6 @@ import GitHubIcon from "./icons/GitHubIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";
 import TwitterIcon from "./icons/TwitterIcon";
 import Me from "./icons/Me";
-import DownloadButton from "./DownloadButton";
 
 const AboutMe = () => {
   return (
@@ -41,7 +40,9 @@ const AboutMe = () => {
               <span>
                 <a
                   className="link"
-                  href="./resume_web-developer_jaskaran-singh-kainth.pdf"
+                  href="./resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   grab my résumé
                 </a>
