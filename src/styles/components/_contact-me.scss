@@ -6,11 +6,11 @@
   flex-direction: column;
   align-items: center;
 
-  .contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: sz.$main-grid-gap;
-  }
+  // .contact-container {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr;
+  //   gap: sz.$main-grid-gap;
+  // }
 
   form {
     display: flex;
@@ -34,17 +34,17 @@
     min-width: 100%;
   }
 
-  a {
-    font-weight: 700;
-    color: clr.$text;
-    text-decoration: underline 3px clr.$accent;
-    cursor: pointer;
-  }
+  // a {
+  //   font-weight: 700;
+  //   color: clr.$text;
+  //   text-decoration: underline 3px clr.$accent;
+  //   cursor: pointer;
+  // }
 
-  a:hover {
-    @extend %transition;
-    color: clr.$accent;
-  }
+  // a:hover {
+  //   @extend %transition;
+  //   color: clr.$accent;
+  // }
 
   .name-input,
   .email-input,
@@ -59,9 +59,13 @@
   }
 
   @media screen and (max-width: sz.$breakpoint-1) {
-    .contact-container {
-      display: flex;
-      flex-direction: column-reverse;
+    // .contact-container {
+    //   display: flex;
+    //   flex-direction: column-reverse;
+    // }
+
+    .left-wrapper {
+      min-width: 100%;
     }
   }
 }

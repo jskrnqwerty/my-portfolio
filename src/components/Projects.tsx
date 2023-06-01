@@ -42,7 +42,7 @@ const Projects = () => {
                 {project.liveSiteUrl ? (
                   <a
                     href={project.liveSiteUrl}
-                    className="project-link"
+                    className="link"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -54,7 +54,7 @@ const Projects = () => {
                 {project.githubRepoUrl ? (
                   <a
                     href={project.githubRepoUrl}
-                    className="project-link"
+                    className="link"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -66,7 +66,7 @@ const Projects = () => {
                 {project.frontendMentorUrl ? (
                   <a
                     href={project.frontendMentorUrl}
-                    className="project-link"
+                    className="link"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -12,7 +12,7 @@ const OpenToWorkIcon = () => {
       className="icon"
       aria-label="Open to work"
     >
-      <title>Contact Jaskaran</title>
+      <title>Click to download résumé</title>
       <g
         transform="translate(0.000000,3333.000000) scale(0.100000,-0.100000)"
         // fill="#000000"

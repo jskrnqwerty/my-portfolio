@@ -3,6 +3,7 @@ import GitHubIcon from "./icons/GitHubIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";
 import TwitterIcon from "./icons/TwitterIcon";
 import Me from "./icons/Me";
+import DownloadButton from "./DownloadButton";
 
 const AboutMe = () => {
   return (
@@ -13,14 +14,14 @@ const AboutMe = () => {
           /jus-kurun sing kehnth/
         </p>
       </h2>
-      <div className="about-me-info-container">
-        {/* <div className="about-me-left"> */}
-        <div className="about-me-icon">
-          <Me />
+      <div className="about-me-style-container">
+        <div className="left-wrapper">
+          <div className="left-wrapper_item">
+            <Me />
+          </div>
         </div>
-        {/* </div> */}
-        <div className="about-me-right">
-          <div className="about-me-text">
+        <div className="right-wrapper">
+          <div className="right-wrapper_top-item">
             <p>
               Hello World! I'm Jaskaran Singh Kainth, a Front-end Web Developer
               based out of Toronto. From photography on a blank frame to lines
@@ -36,14 +37,25 @@ const AboutMe = () => {
             <p className="last-paragraph">
               I'm excited to make the leap and continue refining my skills with
               the right company. Drop me a line and/or your favourite restaurant
-              in Toronto in the contact form below or check me out at:
+              in Toronto in the contact form,{" "}
+              <span>
+                <a
+                  className="link"
+                  href="./resume_web-developer_jaskaran-singh-kainth.pdf"
+                >
+                  grab my résumé
+                </a>
+              </span>{" "}
+              or check me out at:
             </p>
           </div>
-          <div className="my-socials">
-            <LinkedinIcon />
-            <GitHubIcon />
-            <TwitterIcon />
-            <FrontendMentorIcon />
+          <div className="right-wrapper_bottom-item">
+            <div className="my-socials">
+              <LinkedinIcon />
+              <GitHubIcon />
+              <TwitterIcon />
+              <FrontendMentorIcon />
+            </div>
           </div>
         </div>
       </div>

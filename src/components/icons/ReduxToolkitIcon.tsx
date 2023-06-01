@@ -1,6 +1,6 @@
 import { iconHoverColor } from "../../data/Data";
 
-const ReduxIcon = () => {
+const ReduxToolkitIcon = () => {
   return (
     <svg
       // width="800px"
@@ -22,4 +22,4 @@ const ReduxIcon = () => {
   );
 };
 
-export default ReduxIcon;
+export default ReduxToolkitIcon;

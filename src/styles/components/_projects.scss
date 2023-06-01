@@ -86,19 +86,9 @@
       gap: 1.5rem;
     }
 
-    .project-link {
-      // text-transform: uppercase;
-      font-weight: bold;
+    .link {
       font-size: sz.$text;
       padding-top: 1em;
-      text-decoration: underline 2px solid clr.$accent;
-      // border-bottom: 2px solid clr.$accent;
-      // color: clr.$accent;
-    }
-    .project-link:hover {
-      @extend %transition;
-      color: clr.$accent;
-      // text-decoration: underline;
     }
   }
 }

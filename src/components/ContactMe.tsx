@@ -90,8 +90,10 @@ const ContactMe = () => {
       <h2>
         <span className="underline">Contact Me</span>
       </h2>
-      <div className="contact-container">
-        <div className="contact-form">
+      {/* <div className="contact-container"> */}
+      <div className="about-me-style-container">
+        {/* <div className="contact-form"> */}
+        <div className="left-wrapper">
           <form
             // action=""
             ref={formRef}
@@ -159,27 +161,35 @@ const ContactMe = () => {
             </input> */}
           </form>
         </div>
-        <div className="contact-message">
-          <p>
-            If you have any questions about me or my projects, or (politely)
-            argue about the best songs of the 90's, I'm your guy!
-          </p>
-          <p>
-            I'm available to grab a coffee and chat! Drop a comment, question,
-            concern, or Spotify playlist, and thanks for stopping by!
-          </p>
-          <p>
-            Straight shot to my inbox:
-            <br />
-            <a href="mailto: kainth.jaskaran@gmail.com">
-              kainth.jaskaran@gmail.com
-            </a>
-          </p>
-          <div className="my-socials">
-            <LinkedinIcon />
-            <GitHubIcon />
-            <TwitterIcon />
-            <FrontendMentorIcon />
+        {/* <div className="contact-message"> */}
+        <div className="right-wrapper">
+          <div className="right-wrapper_top-item">
+            <p>
+              If you have any questions about me or my projects, or (politely)
+              argue about the best songs of the 90's, I'm your guy!
+            </p>
+            <p>
+              I'm available to grab a coffee and chat! Drop a comment, question,
+              concern, or Spotify playlist, and thanks for stopping by!
+            </p>
+            <p className="last-paragraph">
+              Straight shot to my inbox:
+              <br />
+              <a
+                className="link"
+                href="mailto: kainth.jaskaran@gmail.com"
+              >
+                kainth.jaskaran@gmail.com
+              </a>
+            </p>
+          </div>
+          <div className="right-wrapper_bottom-item">
+            <div className="my-socials">
+              <LinkedinIcon />
+              <GitHubIcon />
+              <TwitterIcon />
+              <FrontendMentorIcon />
+            </div>
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Footer from "./components/Footer";
 import "./styles/styles.css";
+import Resume from "./components/Resume";
 
 function App() {
   return (
@@ -45,6 +46,12 @@ function App() {
       >
         <ContactMe />
       </div>
+      {/* <div
+        id="resume"
+        className="wrapper"
+      >
+        <Resume />
+      </div> */}
       <footer
         id="footer"
         className="wrapper"

@@ -23,7 +23,7 @@ import PhotoshopIcon from "../components/icons/PhotoshopIcon";
 import PythonIcon from "../components/icons/PythonIcon";
 import ReactIcon from "../components/icons/ReactIcon";
 import ReactRouterIcon from "../components/icons/ReactRouterIcon";
-import ReduxIcon from "../components/icons/ReduxIcon";
+import ReduxToolkitIcon from "../components/icons/ReduxToolkitIcon";
 import ResponsiveDesignIcon from "../components/icons/ResponsiveDesignIcon";
 import SassIcon from "../components/icons/SassIcon";
 import SeoIcon from "../components/icons/SeoIcon";
@@ -48,8 +48,8 @@ export const menu: menuType[] = [
   { name: "Home", path: "#" },
   { name: "About", path: "#about-me" },
   { name: "Projects", path: "#projects" },
-  // { name: "Resume", path: "#resume" },
   { name: "Contact", path: "#contact-me" },
+  // { name: "Resume", path: "#resume" },
 ];
 
 export const projects: projectsType[] = [
@@ -173,7 +173,7 @@ export const skills: skillType[] = [
   },
   {
     name: "Redux Toolkit",
-    icon: <ReduxIcon />,
+    icon: <ReduxToolkitIcon />,
   },
   {
     name: "NPM",

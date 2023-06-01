@@ -9,13 +9,15 @@ const Header = () => {
   //   // { name: "Resume", path: "#resume" },
   //   { name: "Contact", path: "#contact-me" },
   // ];
+  const downloadResume = () => {};
 
   return (
     <>
       <nav className="menu">
         <a
-          href="#contact-me"
+          href="./resume_web-developer_jaskaran-singh-kainth.pdf"
           className="open-to-work"
+          onClick={downloadResume}
         >
           <OpenToWorkIcon />
         </a>
