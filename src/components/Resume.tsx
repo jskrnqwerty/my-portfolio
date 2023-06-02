@@ -1,23 +1,19 @@
 // import DownloadButton from "./DownloadButton";
 // import ResumeIcon from "./icons/ResumeIcon";
-import {
-  useNavigate,
-  //  Navigate,
-} from "react-router-dom";
-import {
-  useEffect,
-  // useState,
-} from "react";
+// import {
+//   useNavigate,
+//   //  Navigate,
+// } from "react-router-dom";
+// import { useEffect } from "react";
 import { resumePath } from "../data/Data";
 
 const Resume = () => {
-  // const [showResume, setShowResume] = useState(false);
-  const navigateTo = useNavigate();
-  useEffect(() => {
-    console.log("useEffect triggered");
-    navigateTo(resumePath);
-    window.location.reload();
-  }, []);
+  // const navigateTo = useNavigate();
+  // useEffect(() => {
+  //   console.log("useEffect triggered");
+  //   navigateTo(resumePath);
+  //   window.location.reload();
+  // }, []);
 
   return (
     <>
@@ -28,17 +24,12 @@ const Resume = () => {
         to="/resume.pdf"
         replace={true}
       /> */}
-      {/* <iframe
-        // https://tinytip.co/tips/html-pdf-params/
-        src="./resume.pdf#zoom=100#toolbar=0#view=FitH"
-        width="100%"
-        height="1000px"
-        // allow="picture-in-picture full"
-        // view="FitH"
-        // zoom="100"
-        // toolbar="0"
-        // style="border:none"
-      /> */}
+      <div className="pdf-container">
+        <iframe
+          // https://tinytip.co/tips/html-pdf-params/
+          src={resumePath}
+        />
+      </div>
       {/* <h2>
         <span className="underline">Résumé</span>
         <p className="pronunciation lowercase light-text">
