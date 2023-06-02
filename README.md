@@ -1,1 +1,1 @@
-# ![https://jskrn.com] (https://jskrn.com "Live site")
+[Live Site] (https://jskrn.com)
