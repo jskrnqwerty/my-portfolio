@@ -21,9 +21,9 @@ const DownloadResume = () => {
     console.log("Resume downloaded.");
   }, []);
   return (
-    <div className="download-resume">
-      <h3>Résumé downloaded</h3>
-      <h5>
+    <div className="download-resume wrapper special-page-message">
+      <h1>Résumé downloaded</h1>
+      <h4>
         Go back to{" "}
         <a
           className="link"
@@ -31,7 +31,7 @@ const DownloadResume = () => {
         >
           jskrn.com
         </a>
-      </h5>
+      </h4>
     </div>
   );
 };

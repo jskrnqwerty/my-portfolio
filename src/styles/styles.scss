@@ -10,6 +10,7 @@
 @use "./components/resume";
 @use "./components/skills";
 @use "./components/download-resume";
+@use "./components/error404";
 
 @mixin heading-styles($font-size: 1rem) {
   text-transform: uppercase;
@@ -175,6 +176,10 @@ textarea {
     cursor: pointer;
     height: 2.5rem;
   }
+}
+
+.special-page-message {
+  padding-top: 30vh;
 }
 
 .wrapper {

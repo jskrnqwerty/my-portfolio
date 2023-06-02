@@ -326,12 +326,10 @@ button {
   height: calc(3vw + 2em);
 }
 
-.download-resume {
+.error404 {
+  padding-top: 30vh;
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
-  text-align: left;
-  margin: 5em;
 }
 
 * {
@@ -483,6 +481,10 @@ textarea {
 .my-socials path {
   cursor: pointer;
   height: 2.5rem;
+}
+
+.special-page-message {
+  padding-top: 30vh;
 }
 
 .wrapper {

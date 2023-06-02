@@ -1,7 +1,10 @@
+@use "../abstracts/colors" as clr;
+@use "../abstracts/sizes" as sz;
+
 .download-resume {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-  text-align: left;
-  margin: 5em;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 0.1rem;
+  // text-align: left;
+  // margin: 5em;
 }

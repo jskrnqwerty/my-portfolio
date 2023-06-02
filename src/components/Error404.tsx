@@ -1,9 +1,9 @@
-const PageNotFoundError = () => {
+const Error404 = () => {
   return (
-    <div className="page-not-found">
+    <div className="error404 wrapper special-page-message">
       <h1>Error 404</h1>
-      <h3>Page not found</h3>
-      <h5>
+      {/* <h3>Page not found</h3> */}
+      <h4>
         Go back to{" "}
         <a
           className="link"
@@ -11,9 +11,9 @@ const PageNotFoundError = () => {
         >
           jskrn.com
         </a>
-      </h5>
+      </h4>
     </div>
   );
 };
 
-export default PageNotFoundError;
+export default Error404;
