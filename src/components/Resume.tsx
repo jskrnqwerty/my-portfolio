@@ -12,7 +12,6 @@ import DownloadIcon from "./icons/DownloadIcon";
 const Resume = () => {
   const fileUrl = resumePath;
 
-  // FIXME Redirection works on local server. Does not work on live site.
   // const navigateTo = useNavigate();
   // useEffect(() => {
   //   console.log("useEffect triggered");
