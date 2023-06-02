@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 import Resume from "./components/Resume";
-import Resume2 from "./components/Resume2";
+// import Resume2 from "./components/Resume2";
 
 function App() {
   return (
@@ -28,10 +28,6 @@ function App() {
             //   />
             // }
           />
-          {/* <Route
-            path="/resume2"
-            element={<Resume2 />}
-          /> */}
         </Routes>
       </Router>
     </>
