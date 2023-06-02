@@ -1,5 +1,7 @@
+import { resumePath } from "../data/Data";
+
 const DownloadButton = () => {
-  const fileUrl = "./resume_web-developer_jaskaran-singh-kainth.pdf";
+  const fileUrl = resumePath;
   // const fileName = fileUrl.split("/").pop();
 
   const downloadResume = () => {
@@ -7,14 +9,14 @@ const DownloadButton = () => {
     link.href = fileUrl;
     link.setAttribute(
       "download",
-      "resume_web-developer_jaskaran-singh-kainth.pdf"
+      "Resume - Web Developer - Jaskaran Singh Kainth.pdf"
     );
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
-  return <button onClick={downloadResume}>Download Resume</button>;
+  return <button onClick={downloadResume}>Download</button>;
 };
 
 export default DownloadButton;

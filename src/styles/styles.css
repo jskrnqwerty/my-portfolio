@@ -3,7 +3,9 @@ span.underline, #intro .intro-text h1 span, #header .menu_item:hover {
 }
 
 button:hover,
-.btn:hover, .link:hover, #footer a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover .stroke-accent, .icon:hover .fill-bg, .icon:hover .fill-accent {
+.btn:hover, .link:hover, .pdf-container .download-icon:hover path,
+.pdf-container .download-icon:hover polyline,
+.pdf-container .download-icon:hover line, #footer a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover .stroke-accent, .icon:hover .fill-bg, .icon:hover .fill-accent {
   transition: all ease 200ms;
 }
 
@@ -278,17 +280,41 @@ button:hover,
   padding-top: 1em;
 }
 
-button {
-  min-width: 100%;
+.pdf-container .download-icon {
+  position: fixed;
+  bottom: 1em;
+  right: 2em;
+  padding: 1rem;
 }
-
-.pdf-container {
-  display: flex;
+.pdf-container .download-icon svg {
+  height: 3em;
+}
+.pdf-container .download-icon path,
+.pdf-container .download-icon polyline,
+.pdf-container .download-icon line {
+  stroke: black;
+}
+.pdf-container .download-icon:hover path,
+.pdf-container .download-icon:hover polyline,
+.pdf-container .download-icon:hover line {
+  stroke: rgb(2, 112, 2);
+}
+.pdf-container .download-icon,
+.pdf-container svg,
+.pdf-container path,
+.pdf-container g,
+.pdf-container polyline,
+.pdf-container line {
+  cursor: pointer;
 }
 .pdf-container iframe {
   width: 100%;
   height: 100vh;
-  height: 100svh;
+  height: 99.5svh;
+}
+.pdf-container svg {
+  height: 3em;
+  fill: red;
 }
 
 #skills .skills-container {

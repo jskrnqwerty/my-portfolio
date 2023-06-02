@@ -6,15 +6,30 @@
 // } from "react-router-dom";
 // import { useEffect } from "react";
 import { resumePath } from "../data/Data";
+// import DownloadButton from "./DownloadButton";
+import DownloadIcon from "./icons/DownloadIcon";
 
 const Resume = () => {
+  const fileUrl = resumePath;
+
+  // FIXME Redirection works on local server. Does not work on live site.
   // const navigateTo = useNavigate();
   // useEffect(() => {
   //   console.log("useEffect triggered");
-  //FIXME Redirection works on local server. Does not work on live site.
-  //   navigateTo(resumePath);
+  //   navigateTo(`/${resumePath}`);
   //   window.location.reload();
   // }, []);
+  const downloadResume = () => {
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.setAttribute(
+      "download",
+      "Resume - Web Developer - Jaskaran Singh Kainth.pdf"
+    );
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <>
@@ -26,6 +41,14 @@ const Resume = () => {
         replace={true}
       /> */}
       <div className="pdf-container">
+        {/* <h5>updated on May 30, 2023</h5> */}
+        {/* <DownloadButton /> */}
+        <div
+          className="download-icon"
+          onClick={downloadResume}
+        >
+          <DownloadIcon />
+        </div>
         <iframe
           // https://tinytip.co/tips/html-pdf-params/
           src={resumePath}
