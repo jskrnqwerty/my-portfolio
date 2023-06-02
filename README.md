@@ -1,1 +1,1 @@
-# https://jskrn.com
+# [www.jskrn.com](https://jskrn.com/ "Live site")
