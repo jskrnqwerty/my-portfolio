@@ -1,17 +1,22 @@
 // import DownloadButton from "./DownloadButton";
 // import ResumeIcon from "./icons/ResumeIcon";
-import { Navigate, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import {
+  useNavigate,
+  //  Navigate,
+} from "react-router-dom";
+import {
+  useEffect,
+  // useState,
+} from "react";
 
 const Resume = () => {
   // const [showResume, setShowResume] = useState(false);
-  const navigate = useNavigate();
+  const navigateTo = useNavigate();
   useEffect(() => {
     console.log("useEffect triggered");
-    navigate("/resume.pdf");
+    navigateTo("/Resume - Web Developer - Jaskaran Singh Kainth.pdf");
     window.location.reload();
   }, []);
-  // useNavigate("/resume.pdf");
 
   return (
     <>
