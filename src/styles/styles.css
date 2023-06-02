@@ -326,12 +326,6 @@ button {
   height: calc(3vw + 2em);
 }
 
-.error404 {
-  padding-top: 30vh;
-  display: flex;
-  flex-direction: column;
-}
-
 * {
   box-sizing: border-box;
   font-family: "Sen", sans-serif;
