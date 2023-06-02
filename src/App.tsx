@@ -1,7 +1,13 @@
 import "./styles/styles.css";
-import Resume from "./components/Resume";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Home from "./components/Home";
+import Resume from "./components/Resume";
+import Resume2 from "./components/Resume2";
 
 function App() {
   return (
@@ -15,7 +21,17 @@ function App() {
           <Route
             path="/resume"
             element={<Resume />}
+            // element={
+            //   <Navigate
+            //     to="/resume.pdf"
+            //     replace
+            //   />
+            // }
           />
+          {/* <Route
+            path="/resume2"
+            element={<Resume2 />}
+          /> */}
         </Routes>
       </Router>
     </>

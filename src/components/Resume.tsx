@@ -1,18 +1,37 @@
 import DownloadButton from "./DownloadButton";
 import ResumeIcon from "./icons/ResumeIcon";
-import { Navigate, redirect, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Resume = () => {
   const [showResume, setShowResume] = useState(false);
   const navigate = useNavigate();
-  navigate("./resume.pdf");
+  // useEffect(() => {
+  //   console.log("useEffect triggered");
+  //   navigate("/resume.pdf");
+  // }, []);
+  // useNavigate("/resume.pdf");
+
   return (
     <>
-      {setShowResume(true)}
-      {showResume ? navigate("/resume.pdf") : ""}
-      <Navigate to="/resume.pdf" />
-
+      {/* <h1>Resume</h1> */}
+      {/* {setShowResume(true)} */}
+      {/* {showResume ? handleRedirect : ""} */}
+      {/* <Navigate
+        to="/resume.pdf"
+        replace={true}
+      /> */}
+      <iframe
+        // https://tinytip.co/tips/html-pdf-params/
+        src="./resume.pdf#zoom=100#toolbar=0#view=FitH"
+        width="100%"
+        height="1000px"
+        // allow="picture-in-picture full"
+        // view="FitH"
+        // zoom="100"
+        // toolbar="0"
+        // style="border:none"
+      />
       {/* <h2>
         <span className="underline">Résumé</span>
         <p className="pronunciation lowercase light-text">
