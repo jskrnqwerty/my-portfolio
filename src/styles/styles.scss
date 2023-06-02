@@ -9,6 +9,7 @@
 @use "./components/projects";
 @use "./components/resume";
 @use "./components/skills";
+@use "./components/download-resume";
 
 @mixin heading-styles($font-size: 1rem) {
   text-transform: uppercase;
@@ -70,6 +71,10 @@ h3 {
 
 h4 {
   @include heading-styles(sz.$text);
+}
+
+h5 {
+  @include heading-styles(1rem);
 }
 
 input,

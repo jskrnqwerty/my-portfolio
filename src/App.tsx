@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 import Resume from "./components/Resume";
+import DownloadResume from "./components/DownloadResume";
 // import Resume2 from "./components/Resume2";
 
 function App() {
@@ -27,6 +28,10 @@ function App() {
             //     replace
             //   />
             // }
+          />
+          <Route
+            path="/resume-download"
+            element={<DownloadResume />}
           />
         </Routes>
       </Router>

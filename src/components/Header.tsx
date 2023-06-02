@@ -1,5 +1,6 @@
 import OpenToWorkIcon from "./icons/OpenToWorkIcon";
 import { menu } from "../data/Data";
+import { resumePath } from "../data/Data";
 
 const Header = () => {
   // const menu: menuType[] = [
@@ -11,7 +12,7 @@ const Header = () => {
   // ];
   const downloadResume = () => {
     console.log("Resume download started");
-    const fileUrl = "./resume.pdf";
+    const fileUrl = resumePath;
     const fileName =
       "Resume - Web Developer - Jaskaran Singh Kainth (jskrn.com).pdf";
     const link = document.createElement("a");

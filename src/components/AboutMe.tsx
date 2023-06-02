@@ -3,6 +3,7 @@ import GitHubIcon from "./icons/GitHubIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";
 import TwitterIcon from "./icons/TwitterIcon";
 import Me from "./icons/Me";
+import { resumePath } from "../data/Data";
 
 const AboutMe = () => {
   return (
@@ -40,7 +41,7 @@ const AboutMe = () => {
               <span>
                 <a
                   className="link"
-                  href="./resume.pdf"
+                  href={resumePath}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

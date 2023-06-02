@@ -8,13 +8,14 @@ import {
   useEffect,
   // useState,
 } from "react";
+import { resumePath } from "../data/Data";
 
 const Resume = () => {
   // const [showResume, setShowResume] = useState(false);
   const navigateTo = useNavigate();
   useEffect(() => {
     console.log("useEffect triggered");
-    navigateTo("/Resume - Web Developer - Jaskaran Singh Kainth.pdf");
+    navigateTo(resumePath);
     window.location.reload();
   }, []);
 
