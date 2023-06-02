@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { resumePath } from "../data/Data";
 
+//FIXME Download works on local server. Does not work on live site.
 const DownloadResume = () => {
   useEffect(() => {
     const downloadResume = () => {

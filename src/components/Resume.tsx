@@ -11,6 +11,7 @@ const Resume = () => {
   // const navigateTo = useNavigate();
   // useEffect(() => {
   //   console.log("useEffect triggered");
+  //FIXME Redirection works on local server. Does not work on live site.
   //   navigateTo(resumePath);
   //   window.location.reload();
   // }, []);

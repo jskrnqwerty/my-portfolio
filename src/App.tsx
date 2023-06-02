@@ -1,6 +1,6 @@
 import "./styles/styles.css";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   // Navigate,
@@ -8,6 +8,7 @@ import {
 import Home from "./components/Home";
 import Resume from "./components/Resume";
 import DownloadResume from "./components/DownloadResume";
+import PageNotFoundError from "./components/PageNotFoundError";
 // import Resume2 from "./components/Resume2";
 
 function App() {
@@ -32,6 +33,10 @@ function App() {
           <Route
             path="/resume-download"
             element={<DownloadResume />}
+          />
+          <Route
+            path="*"
+            element={<PageNotFoundError />}
           />
         </Routes>
       </Router>
