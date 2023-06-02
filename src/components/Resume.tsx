@@ -1,15 +1,16 @@
-import DownloadButton from "./DownloadButton";
-import ResumeIcon from "./icons/ResumeIcon";
+// import DownloadButton from "./DownloadButton";
+// import ResumeIcon from "./icons/ResumeIcon";
 import { Navigate, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Resume = () => {
-  const [showResume, setShowResume] = useState(false);
+  // const [showResume, setShowResume] = useState(false);
   const navigate = useNavigate();
-  // useEffect(() => {
-  //   console.log("useEffect triggered");
-  //   navigate("/resume.pdf");
-  // }, []);
+  useEffect(() => {
+    console.log("useEffect triggered");
+    navigate("/resume.pdf");
+    window.location.reload();
+  }, []);
   // useNavigate("/resume.pdf");
 
   return (
@@ -21,7 +22,7 @@ const Resume = () => {
         to="/resume.pdf"
         replace={true}
       /> */}
-      <iframe
+      {/* <iframe
         // https://tinytip.co/tips/html-pdf-params/
         src="./resume.pdf#zoom=100#toolbar=0#view=FitH"
         width="100%"
@@ -31,7 +32,7 @@ const Resume = () => {
         // zoom="100"
         // toolbar="0"
         // style="border:none"
-      />
+      /> */}
       {/* <h2>
         <span className="underline">Résumé</span>
         <p className="pronunciation lowercase light-text">
