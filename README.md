@@ -1,1 +1,1 @@
-[Live Site] (https://jskrn.com)
+# https://jskrn.com
