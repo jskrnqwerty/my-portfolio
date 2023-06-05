@@ -14,7 +14,7 @@ const Footer = () => {
         <span className="hands icon">
           <HandsIcon />
         </span>{" "}
-        by Jaskaran 2023
+        by Jaskaran • Updated in June of 2023
       </p>
     </>
   );
