@@ -12,6 +12,8 @@ import FigmaIcon from "../components/icons/FIgmaIcon";
 import GitHubIcon from "../components/icons/GitHubIcon";
 import GitHubPagesIcon from "../components/icons/GitHubPagesIcon";
 import GitIcon from "../components/icons/GitIcon";
+import GoogleAnalytics4Icon from "../components/icons/GoogleAnalytics4Icon";
+import GoogleMerchantIcon from "../components/icons/GoogleMerchantIcon";
 import HtmlIcon from "../components/icons/HtmlIcon";
 import JavascriptIcon from "../components/icons/JavascriptIcon";
 import MarkdownIcon from "../components/icons/MarkdownIcon";
@@ -30,6 +32,7 @@ import SeoIcon from "../components/icons/SeoIcon";
 import SquarespaceIcon from "../components/icons/SquarespaceIcon";
 // import ThinkingIcon from "/components/icons/ThinkingIcon";
 import TypescriptIcon from "../components/icons/TypescriptIcon";
+import VercelIcon from "../components/icons/VercelIcon";
 import ViteIcon from "../components/icons/ViteIcon";
 
 import {
@@ -196,8 +199,9 @@ export const skills: skillType[] = [
     name: "Photoshop",
     icon: <PhotoshopIcon />,
   },
-  { name: "GitHub Pages", icon: <GitHubPagesIcon /> },
   { name: "Netlify", icon: <NetlifyIcon /> },
+  { name: "Vercel", icon: <VercelIcon /> },
+  { name: "GitHub Pages", icon: <GitHubPagesIcon /> },
   { name: "Squarespace", icon: <SquarespaceIcon /> },
   { name: "BigCommerce", icon: <BigCommerceIcon /> },
   { name: "Python", icon: <PythonIcon /> },
@@ -211,6 +215,8 @@ export const skills: skillType[] = [
   { name: "DOM", icon: <DomIcon /> },
   { name: "CSS Flexbox", icon: <CSSFlexBoxIcon /> },
   { name: "CSS Grid", icon: <CSSGridIcon /> },
+  { name: "Google Analytics", icon: <GoogleAnalytics4Icon /> },
+  { name: "Google Merchant", icon: <GoogleMerchantIcon /> },
   // {
   //   name: "Accessibility",
   //   icon: <AccesibilityIcon />,
