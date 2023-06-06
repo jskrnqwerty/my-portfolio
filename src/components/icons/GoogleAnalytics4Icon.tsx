@@ -11,11 +11,12 @@ const GoogleAnalytics4Icon = () => {
       // width="192px"
       // height="192px"
       viewBox="0 0 192 192"
-      enable-background="new 0 0 192 192"
+      enableBackground="new 0 0 192 192"
       // xml:space="preserve"
       className="google-analytics icon"
       aria-label="Google Analytics"
     >
+      <title>Google Analytics</title>
       <rect
         x="0"
         y="0"

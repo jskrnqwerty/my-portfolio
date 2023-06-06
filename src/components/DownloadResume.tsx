@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import { resumePath } from "../data/Data";
+import GA4 from "react-ga4";
 
 //FIXME Download works on local server. Does not work on live site.
 const DownloadResume = () => {
+  GA4.event({ category: "button", action: "submit", label: "download resume" });
   useEffect(() => {
     const downloadResume = () => {
       console.log("Resume download started");

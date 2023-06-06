@@ -59,7 +59,7 @@ const GoogleMerchantIcon = () => {
       </defs>
       <g
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <path
           d="M.2 98.333h409.6V375.67c0 18.85-15.278 34.13-34.13 34.13H34.33C15.48 409.8.2 394.514.2 375.67z"
@@ -82,7 +82,7 @@ const GoogleMerchantIcon = () => {
           // fill="#fff"
           fill={bgColor}
         />
-        <g fill-rule="nonzero">
+        <g fillRule="nonzero">
           <use
             // fill="#000"
             className="fill-accent"
@@ -93,7 +93,7 @@ const GoogleMerchantIcon = () => {
           <use
             // fill="#fff"
             fill={bgColor}
-            fill-rule="evenodd"
+            fillRule="evenodd"
             href="#c"
           />
         </g>

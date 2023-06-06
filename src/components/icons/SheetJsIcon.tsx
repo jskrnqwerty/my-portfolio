@@ -11,11 +11,12 @@ const SheetJsIcon = () => {
       y="0px"
       // width="100%"
       viewBox="0 0 1024 1024"
-      enable-background="new 0 0 1024 1024"
+      enableBackground="new 0 0 1024 1024"
       // xml:space="preserve"
       className="sheet-js icon"
       aria-label="Sheet JS"
     >
+      <title>SheetJS</title>
       <path
         fill={bgColor}
         // fill="#FFFFFF"
