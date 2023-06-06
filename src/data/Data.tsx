@@ -133,6 +133,7 @@ export const projects: projectsType[] = [
       <TypescriptIcon />,
       <SassIcon />,
       <VercelIcon />,
+      <GoogleAnalytics4Icon />,
       <ResponsiveDesignIcon />,
     ],
     liveSiteUrl: "#",
