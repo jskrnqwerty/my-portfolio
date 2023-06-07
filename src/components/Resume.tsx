@@ -4,10 +4,15 @@
 //   useNavigate,
 //   //  Navigate,
 // } from "react-router-dom";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import { resumePath } from "../data/Data";
 // import DownloadButton from "./DownloadButton";
 import DownloadIcon from "./icons/DownloadIcon";
+import ReactGa4 from "react-ga4";
+
+const trackEvent = (category: string, action: string, label: string) => {
+  ReactGa4.event({ category: category, action: action, label: label });
+};
 
 const Resume = () => {
   const fileUrl = resumePath;
@@ -18,7 +23,13 @@ const Resume = () => {
   //   navigateTo(`/${resumePath}`);
   //   window.location.reload();
   // }, []);
+
+  useEffect(() => {
+    trackEvent("resume", "view_resume", "my_web_dev_resume");
+  }, []);
+
   const downloadResume = () => {
+    trackEvent("resume", "download_resume", "my_web_dev_resume");
     const link = document.createElement("a");
     link.href = fileUrl;
     link.setAttribute(

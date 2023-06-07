@@ -46,7 +46,7 @@ const ContactMe = () => {
   const handleClick = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     sendEmail();
-    trackEvent("Form", "Submit form", "form");
+    trackEvent("contact_me", "submit_form", "contact_form");
   };
 
   return (

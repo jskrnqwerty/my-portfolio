@@ -4,6 +4,7 @@ import LinkedinIcon from "./icons/LinkedinIcon";
 import TwitterIcon from "./icons/TwitterIcon";
 import Me from "./icons/Me";
 import { resumePath } from "../data/Data";
+import ReactGa4 from "react-ga4";
 
 const AboutMe = () => {
   return (
@@ -44,6 +45,13 @@ const AboutMe = () => {
                   href={resumePath}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() =>
+                    ReactGa4.event({
+                      category: "contact_me",
+                      action: "click_email",
+                      label: "email_about_me",
+                    })
+                  }
                 >
                   grab my résumé
                 </a>
