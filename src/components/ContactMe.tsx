@@ -4,100 +4,61 @@ import FrontendMentorIcon from "./icons/FrontendMentorIcon";
 import GitHubIcon from "./icons/GitHubIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";
 import TwitterIcon from "./icons/TwitterIcon";
+import ReactGa4 from "react-ga4";
 
 const ContactMe = () => {
   const [name, setName] = useState<string>("");
-  // const [isName, setIsName] = useState<boolean>(true);
   const [email, setEmail] = useState<string>("");
-  // const [isEmail, setIsEmail] = useState<boolean>(true);
-  // const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
   const [message, setMessage] = useState<string>("");
-  // const [isMessage, setIsMessage] = useState<boolean>(true);
   const [isMessageSent, setIsMessageSent] = useState<boolean>(false);
-
+  const [isFromError, setIsFormError] = useState<boolean>(false);
   const formRef: any = useRef(); //TODO: remove "any" type from formRef
-
   const currForm = formRef.current;
+  const SERVICE_ID = import.meta.env.VITE_REACT_APP_EMAIL_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_REACT_APP_EMAIL_TEMPLATE_1;
+  const PUBLIC_API_KEY = import.meta.env.VITE_REACT_APP_EMAIL_PUBLIC_API_KEY;
 
-  // if (currForm === "") return null;
-
-  const resetForm = () => {
-    setName("");
-    setEmail("");
-    setMessage("");
+  const trackEvent = (category: string, action: string, label: string) => {
+    console.log("GA Event track triggered.");
+    ReactGa4.event({ category: category, action: action, label: label });
   };
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = () => {
+    const resetForm = () => {
+      setName("");
+      setEmail("");
+      setMessage("");
+    };
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, currForm, PUBLIC_API_KEY).then(
+      (result) => {
+        console.log(result.text);
+        setIsMessageSent(true);
+        resetForm();
+        // e.target.reset();
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
+
+  const handleClick = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_krp21or",
-        // "template_3xbsl89",
-        "template_vp10ayu",
-        currForm,
-        "CiIl2S76uR87bcKtb"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setIsMessageSent(true);
-          resetForm();
-          // e.target.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    sendEmail();
+    trackEvent("Form", "Submit form", "form");
   };
-  // const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-  //   e.preventDefault();
-
-  //   if (name === "") {
-  //     setIsName(false);
-  //     console.log("Please enter your name");
-  //   }
-  //   if (email === "") {
-  //     setIsEmail(false);
-  //     console.log("Please enter your email");
-  //   } else {
-  //     checkEmailValidity();
-  //   }
-  //   if (message === "") {
-  //     setIsMessage(false);
-  //     console.log("Please enter your message");
-  //   }
-  //   if (isName && isMessage && isEmailValid === true) {
-  //     console.log("Form submitted:");
-  //     console.log("isMessageSent:", isMessageSent);
-  //     setIsMessageSent(true);
-  //     console.log("isMessageSent:", isMessageSent);
-  //   }
-  // };
-
-  // const checkEmailValidity = () => {
-  //   const emailRegex =
-  //     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/g;
-  //   // /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/g;
-
-  //   const isValid = emailRegex.test(email);
-  //   console.log("isValid", isValid);
-  //   setIsEmailValid(isValid);
-  // };
 
   return (
     <>
       <h2>
         <span className="underline">Contact Me</span>
       </h2>
-      {/* <div className="contact-container"> */}
       <div className="about-me-style-container">
-        {/* <div className="contact-form"> */}
         <div className="left-wrapper">
           <form
             // action=""
             ref={formRef}
-            onSubmit={sendEmail}
+            onSubmit={handleClick}
           >
             <div className="name-input">
               <input
@@ -109,11 +70,9 @@ const ContactMe = () => {
                 value={name}
                 onChange={(e) => {
                   setName(e.target.value);
-                  // setIsName(true);
                 }}
                 required
               />
-              {/* {!isName ? <p className="error">Please enter your name</p> : ""} */}
             </div>
             <div className="email-input">
               <input
@@ -129,13 +88,6 @@ const ContactMe = () => {
                 }}
                 required
               />
-              {/* {!isEmail ? (
-                <p className="error">Please enter your email address</p>
-              ) : !isEmailValid ? (
-                <p className="error">Please enter a valid email address</p>
-              ) : (
-                ""
-              )} */}
             </div>
             <div className="message-input">
               <textarea
@@ -144,24 +96,18 @@ const ContactMe = () => {
                 value={message}
                 onChange={(e) => {
                   setMessage(e.target.value);
-                  // setIsMessage(true);
                 }}
                 required
               />
-              {/* {!isMessage ? <p className="error">Say something</p> : ""} */}
             </div>
             <input
               type="submit"
               className="btn"
               aria-label="Submit form"
-              // onClick={(e) => handleClick(e)}
               value={isMessageSent ? "Message Sent!!!" : "Get In Touch"}
             />
-            {/* {isMessageSent ? "Error!!!" : "Get In Touch"}
-            </input> */}
           </form>
         </div>
-        {/* <div className="contact-message"> */}
         <div className="right-wrapper">
           <div className="right-wrapper_top-item">
             <p>

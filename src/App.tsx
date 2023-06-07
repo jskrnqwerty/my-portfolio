@@ -21,11 +21,40 @@ function App() {
 
   const location = useLocation();
   const _Ga4MeasurementId = "G-7QD6WJMQTD";
+  // enum sendTitleEnum {
+  //   a = page.home.title,
+  //   b = resume.home.title,
+  //   c = downloadResume.home.title,
+  // }
+  // page.home.title || resume.home.title || downloadResume.home.title;
+
   useEffect(() => {
-    ReactGA4.initialize(_Ga4MeasurementId);
-    // ReactGA4.send({ hitType: "pageview", page: "/", title: "Home" });
-    ReactGA4.send({ hitType: "pageview", page: location.pathname });
-    console.log("location:", location.pathname);
+    const sendAnalyticsData = () => {
+      ReactGA4.initialize(_Ga4MeasurementId);
+      // ReactGA4.send({ hitType: "pageview", page: "/", title: "Home" });
+      let sendTitle = "";
+      switch (location.pathname) {
+        case page.home.path:
+          sendTitle = page.home.title;
+          break;
+        case page.resume.title:
+          sendTitle = page.resume.title;
+          break;
+        case page.downloadResume.title:
+          sendTitle = page.downloadResume.title;
+          break;
+      }
+      ReactGA4.send({
+        hitType: "pageview",
+        page: location.pathname,
+        hash: location.hash,
+        title: sendTitle,
+      });
+      console.log("path:", location.pathname);
+      console.log("hash:", location.hash);
+    };
+
+    sendAnalyticsData();
   }, [location]);
 
   return (
