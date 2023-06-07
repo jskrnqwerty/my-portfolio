@@ -38,6 +38,7 @@ const ContactMe = () => {
       },
       (error) => {
         console.log(error.text);
+        setIsFormError(true);
       }
     );
   };
@@ -104,7 +105,13 @@ const ContactMe = () => {
               type="submit"
               className="btn"
               aria-label="Submit form"
-              value={isMessageSent ? "Message Sent!!!" : "Get In Touch"}
+              value={
+                isFromError
+                  ? "Something went wrong!"
+                  : isMessageSent
+                  ? "Message Sent!!!"
+                  : "Get In Touch"
+              }
             />
           </form>
         </div>
