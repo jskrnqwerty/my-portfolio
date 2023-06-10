@@ -21,12 +21,6 @@ function App() {
 
   const location = useLocation();
   const _Ga4MeasurementId = "G-7QD6WJMQTD";
-  // enum sendTitleEnum {
-  //   a = page.home.title,
-  //   b = resume.home.title,
-  //   c = downloadResume.home.title,
-  // }
-  // page.home.title || resume.home.title || downloadResume.home.title;
 
   useEffect(() => {
     const sendAnalyticsData = () => {
@@ -50,8 +44,8 @@ function App() {
         hash: location.hash,
         title: sendTitle,
       });
-      console.log("path:", location.pathname);
-      console.log("hash:", location.hash);
+      // console.log("path:", location.pathname);
+      // console.log("hash:", location.hash);
     };
 
     sendAnalyticsData();

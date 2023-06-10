@@ -12,11 +12,13 @@ import FigmaIcon from "../components/icons/FIgmaIcon";
 import GitHubIcon from "../components/icons/GitHubIcon";
 import GitHubPagesIcon from "../components/icons/GitHubPagesIcon";
 import GitIcon from "../components/icons/GitIcon";
+import GoogleAdsIcon from "../components/icons/GoogleAdsIcon";
 import GoogleAnalytics4Icon from "../components/icons/GoogleAnalytics4Icon";
 import GoogleMerchantIcon from "../components/icons/GoogleMerchantIcon";
 import HtmlIcon from "../components/icons/HtmlIcon";
 import JavascriptIcon from "../components/icons/JavascriptIcon";
 import MarkdownIcon from "../components/icons/MarkdownIcon";
+import MetaAdsIcon from "../components/icons/MetaAdsIcon";
 import MuiIcon from "../components/icons/MuiIcon";
 import NetlifyIcon from "../components/icons/NetlifyIcon";
 import NpmIcon from "../components/icons/NpmIcon";
@@ -31,7 +33,7 @@ import SassIcon from "../components/icons/SassIcon";
 import SeoIcon from "../components/icons/SeoIcon";
 import SheetJsIcon from "../components/icons/SheetJsIcon";
 import SquarespaceIcon from "../components/icons/SquarespaceIcon";
-// import ThinkingIcon from "/components/icons/ThinkingIcon";
+// import ThinkingIcon from "../components/icons/ThinkingIcon";
 import TypescriptIcon from "../components/icons/TypescriptIcon";
 import VercelIcon from "../components/icons/VercelIcon";
 import ViteIcon from "../components/icons/ViteIcon";
@@ -163,11 +165,6 @@ export const skills: skillType[] = [
   { name: "Netlify", icon: <NetlifyIcon /> },
   { name: "GitHub Pages", icon: <GitHubPagesIcon /> },
   { name: "Markdown", icon: <MarkdownIcon /> },
-  { name: "Squarespace", icon: <SquarespaceIcon /> },
-  { name: "BigCommerce", icon: <BigCommerceIcon /> },
-  { name: "Google Analytics", icon: <GoogleAnalytics4Icon /> },
-  { name: "Google Merchant", icon: <GoogleMerchantIcon /> },
-  { name: "SEO", icon: <SeoIcon /> },
   { name: "Figma", icon: <FigmaIcon /> },
   { name: "Photoshop", icon: <PhotoshopIcon /> },
   { name: "Python", icon: <PythonIcon /> },
@@ -176,6 +173,13 @@ export const skills: skillType[] = [
   { name: "DOM", icon: <DomIcon /> },
   { name: "CSS Flexbox", icon: <CSSFlexBoxIcon /> },
   { name: "CSS Grid", icon: <CSSGridIcon /> },
+  { name: "Squarespace", icon: <SquarespaceIcon /> },
+  { name: "BigCommerce", icon: <BigCommerceIcon /> },
+  { name: "Google Analytics", icon: <GoogleAnalytics4Icon /> },
+  { name: "Google Merchant", icon: <GoogleMerchantIcon /> },
+  { name: "Google Ads", icon: <GoogleAdsIcon /> },
+  { name: "Meta Ads", icon: <MetaAdsIcon /> },
+  { name: "SEO", icon: <SeoIcon /> },
   // { name: "Accessibility", icon: <AccesibilityIcon /> },
   // { name: "Pattern recognition", icon: <PatternIcon /> },
   // { name: "Critical Thinking", icon: <ThinkingIcon /> },
