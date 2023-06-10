@@ -11,7 +11,9 @@ const GoogleAdsIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
       // xmlns:xlink="http://www.w3.org/1999/xlink"
       preserveAspectRatio="xMidYMid"
+      aria-label="Google Ads"
     >
+      <title>Google Ads</title>
       <g>
         <path
           className="fill-accent"
