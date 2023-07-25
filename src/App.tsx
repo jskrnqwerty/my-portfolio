@@ -13,6 +13,8 @@ import ReactGA4 from "react-ga4";
 import { useEffect } from "react";
 
 function App() {
+  const GA4_MEASUREMENT_ID = import.meta.env.VITE_REACT_APP_GA4MEASUREMENTID;
+
   const page = {
     home: { title: "Home", path: "/" },
     resume: { title: "Resume", path: "/resume" },
@@ -20,11 +22,10 @@ function App() {
   };
 
   const location = useLocation();
-  const _Ga4MeasurementId = "G-7QD6WJMQTD";
 
   useEffect(() => {
     const sendAnalyticsData = () => {
-      ReactGA4.initialize(_Ga4MeasurementId);
+      ReactGA4.initialize(GA4_MEASUREMENT_ID);
       // ReactGA4.send({ hitType: "pageview", page: "/", title: "Home" });
       let sendTitle = "";
       switch (location.pathname) {
