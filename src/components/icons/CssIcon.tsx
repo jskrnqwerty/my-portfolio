@@ -3,7 +3,7 @@ import { iconHoverColor, bgColor } from "../../data/Data";
 const CssIcon = () => {
   return (
     <svg
-      className="css icon fill-accent"
+      className="css icon"
       // width="800px"
       // height="800px"
       viewBox="0 0 32 32"

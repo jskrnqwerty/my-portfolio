@@ -4,9 +4,10 @@ const GoogleAdsIcon = () => {
   return (
     <svg
       className="google-ads icon"
+      fill="none"
       // width="800px"
       // height="800px"
-      viewBox="0 -13 256 256"
+      viewBox="0 0 256 256"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       // xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -16,8 +17,8 @@ const GoogleAdsIcon = () => {
       <title>Google Ads</title>
       <g>
         <path
-          className="fill-accent"
-          fill={iconHoverColor}
+          // className="fill-accent"
+          // fill={iconHoverColor}
           // fill="#FBBC04"
           d="M5.888,166.405103 L90.88,20.9 C101.676138,27.2558621 156.115862,57.3844138 164.908138,63.1135172 L79.9161379,208.627448 C70.6206897,220.906621 -5.888,185.040138 5.888,166.396276 L5.888,166.405103 Z"
         ></path>
