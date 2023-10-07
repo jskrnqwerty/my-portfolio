@@ -1,12 +1,29 @@
-span.underline, #intro .intro-text h1 span, #header .menu_item:hover {
+span.underline,
+#intro .intro-text h1 span,
+#header .menu_item:hover {
   border-bottom: 0.3rem solid rgb(255, 166, 0);
 }
 
 button:hover,
-.btn:hover, .link:hover, .pdf-container .download-icon:hover path,
+.btn:hover,
+.link:hover,
+.pdf-container .download-icon:hover path,
 .pdf-container .download-icon:hover polyline,
-.pdf-container .download-icon:hover line, #footer a:hover, .icon:hover .fill-accent-soft-skill, .icon:hover .stroke-accent, .icon:hover .fill-bg, .icon:hover .fill-accent {
+.pdf-container .download-icon:hover line,
+#footer a:hover,
+.icon:hover .fill-accent-soft-skill,
+.icon:hover .stroke-accent,
+.icon:hover .fill-bg,
+.icon:hover .fill-accent {
   transition: all ease 200ms;
+}
+
+.icon {
+  transition: transform 500ms;
+}
+
+.icon:hover {
+  transform: translateY(-0.25rem);
 }
 
 .icon:hover .fill-accent {
@@ -206,7 +223,7 @@ button:hover,
   flex-direction: column;
   row-gap: calc(3vw + 1em);
   -moz-column-gap: 9em;
-       column-gap: 9em;
+  column-gap: 9em;
 }
 #projects .projects-container img {
   max-width: 100%;
@@ -442,7 +459,8 @@ li {
   list-style-type: none;
 }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   text-transform: uppercase;
 }
 
@@ -479,7 +497,7 @@ textarea {
   font-weight: 700;
   color: rgb(0, 0, 0);
   -webkit-text-decoration: underline 3px rgb(255, 166, 0);
-          text-decoration: underline 3px rgb(255, 166, 0);
+  text-decoration: underline 3px rgb(255, 166, 0);
   cursor: pointer;
 }
 
@@ -568,4 +586,4 @@ textarea {
     text-transform: uppercase;
     font-size: 1.2rem;
   }
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
