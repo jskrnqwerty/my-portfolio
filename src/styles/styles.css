@@ -19,11 +19,12 @@ button:hover,
 }
 
 .icon {
-  transition: transform 500ms;
+  transition: transform 1000ms;
 }
 
 .icon:hover {
-  transform: translateY(-0.25rem);
+  transform: translateY(-0.35rem);
+  transition: transform 400ms;
 }
 
 .icon:hover .fill-accent {
