@@ -20,11 +20,11 @@ function App() {
   const page = {
     home: { title: "Home", path: "/" },
     resume: { title: "Resume", path: "/resume" },
-    resumeEcom: { title: "Resume E-commerce", path: "/resume-ecom" },
     downloadResume: { title: "Download Resume", path: "/resume-download" },
+    resumeEcom: { title: "Resume E-commerce", path: "/resume-ecom" },
     downloadResumeEcom: {
-      title: "Download Resume",
-      path: "/resume-download-ecom",
+      title: "Download E-commerce Resume",
+      path: "/resume-ecom-download",
     },
   };
 
