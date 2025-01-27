@@ -7,7 +7,9 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 import Resume from "./components/Resume";
+import ResumeEcom from "./components/ResumeEcom";
 import DownloadResume from "./components/DownloadResume";
+import DownloadResumeEcom from "./components/DownloadResumeEcom";
 import Error404 from "./components/Error404";
 import ReactGA4 from "react-ga4";
 import { useEffect } from "react";
@@ -18,7 +20,12 @@ function App() {
   const page = {
     home: { title: "Home", path: "/" },
     resume: { title: "Resume", path: "/resume" },
+    resumeEcom: { title: "Resume E-commerce", path: "/resume-ecom" },
     downloadResume: { title: "Download Resume", path: "/resume-download" },
+    downloadResumeEcom: {
+      title: "Download Resume",
+      path: "/resume-download-ecom",
+    },
   };
 
   const location = useLocation();
@@ -37,6 +44,12 @@ function App() {
           break;
         case page.downloadResume.title:
           sendTitle = page.downloadResume.title;
+          break;
+        case page.resumeEcom.title:
+          sendTitle = page.resumeEcom.title;
+          break;
+        case page.downloadResumeEcom.title:
+          sendTitle = page.downloadResumeEcom.title;
           break;
       }
       ReactGA4.send({
@@ -72,6 +85,14 @@ function App() {
         <Route
           path={page.downloadResume.path}
           element={<DownloadResume />}
+        />
+        <Route
+          path={page.resumeEcom.path}
+          element={<ResumeEcom />}
+        />
+        <Route
+          path={page.downloadResumeEcom.path}
+          element={<DownloadResumeEcom />}
         />
         <Route
           path="*"

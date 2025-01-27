@@ -50,6 +50,7 @@ export const accentColor: iconColors = "#000";
 export const bgColor: bgColors = "rgb(245, 245, 245)";
 export const iconHoverColor = accentColor;
 export const resumePath = "Resume - Web Developer - Jaskaran Singh Kainth.pdf";
+export const resumePathEcom = "Resume - E-commerce - Jaskaran Singh Kainth.pdf";
 
 export const menu: menuType[] = [
   { name: "Home", path: "#" },
