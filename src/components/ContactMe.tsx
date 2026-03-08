@@ -1,9 +1,9 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import FrontendMentorIcon from "./icons/FrontendMentorIcon";
-import GitHubIcon from "./icons/GitHubIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";
-import TwitterIcon from "./icons/TwitterIcon";
+import GitHubIcon from "./icons/GitHubIcon";
+// import TwitterIcon from "./icons/TwitterIcon";
+// import FrontendMentorIcon from "./icons/FrontendMentorIcon";
 import ReactGa4 from "react-ga4";
 
 const ContactMe = () => {
@@ -125,7 +125,7 @@ const ContactMe = () => {
               I'm available to grab a coffee and chat! Drop a comment, question,
               concern, or Spotify playlist, and thanks for stopping by!
             </p>
-            <p className="last-paragraph">
+            {/*<p className="last-paragraph">
               Straight shot to my inbox:
               <br />
               <a
@@ -134,14 +134,14 @@ const ContactMe = () => {
               >
                 kainth.jaskaran@gmail.com
               </a>
-            </p>
+            </p>*/}
           </div>
           <div className="right-wrapper_bottom-item">
             <div className="my-socials">
               <LinkedinIcon />
               <GitHubIcon />
-              <TwitterIcon />
-              <FrontendMentorIcon />
+              {/* <TwitterIcon />
+              <FrontendMentorIcon /> */}
             </div>
           </div>
         </div>

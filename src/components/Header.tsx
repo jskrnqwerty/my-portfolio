@@ -1,4 +1,4 @@
-import OpenToWorkIcon from "./icons/OpenToWorkIcon";
+//import OpenToWorkIcon from "./icons/OpenToWorkIcon";
 import { menu } from "../data/Data";
 import { resumePath } from "../data/Data";
 
@@ -33,7 +33,7 @@ const Header = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <OpenToWorkIcon />
+          {/*  <OpenToWorkIcon /> */}
         </a>
         {menu.map((item, index) => (
           <div

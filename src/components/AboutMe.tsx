@@ -1,10 +1,10 @@
-import FrontendMentorIcon from "./icons/FrontendMentorIcon";
-import GitHubIcon from "./icons/GitHubIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";
-import TwitterIcon from "./icons/TwitterIcon";
+import GitHubIcon from "./icons/GitHubIcon";
+// import TwitterIcon from "./icons/TwitterIcon";
+// import FrontendMentorIcon from "./icons/FrontendMentorIcon";
 import Me from "./icons/Me";
-import { resumePath } from "../data/Data";
-import ReactGa4 from "react-ga4";
+// import { resumePath } from "../data/Data";
+// import ReactGa4 from "react-ga4";
 
 const AboutMe = () => {
   return (
@@ -38,8 +38,9 @@ const AboutMe = () => {
             <p className="last-paragraph">
               I'm excited to make the leap and continue refining my skills with
               the right company. Drop me a line and/or your favourite restaurant
-              in Toronto in the contact form,{" "}
-              <span>
+              in Toronto in the contact form{" "}
+              {/*,{" "}
+               <span>
                 <a
                   className="link"
                   href={resumePath}
@@ -55,7 +56,7 @@ const AboutMe = () => {
                 >
                   grab my résumé
                 </a>
-              </span>{" "}
+              </span> {" "} */}
               or check me out at:
             </p>
           </div>
@@ -63,8 +64,8 @@ const AboutMe = () => {
             <div className="my-socials">
               <LinkedinIcon />
               <GitHubIcon />
-              <TwitterIcon />
-              <FrontendMentorIcon />
+              {/* <TwitterIcon />
+              <FrontendMentorIcon /> */}
             </div>
           </div>
         </div>
